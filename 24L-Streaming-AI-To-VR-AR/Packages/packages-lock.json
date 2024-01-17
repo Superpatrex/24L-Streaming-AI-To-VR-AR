@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "com.srcnalt.openai-unity": {
-      "version": "https://github.com/srcnalt/OpenAI-Unity.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1"
-      },
-      "hash": "f7f501c076f27a12a2cbb2fa1235a106ce7b16e3"
-    },
     "com.cesium.unity": {
       "version": "1.7.1",
       "depth": 0,
@@ -20,6 +11,15 @@
         "com.unity.inputsystem": "1.4.2"
       },
       "url": "https://unity.pkg.cesium.com"
+    },
+    "com.srcnalt.openai-unity": {
+      "version": "https://github.com/srcnalt/OpenAI-Unity.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "hash": "f7f501c076f27a12a2cbb2fa1235a106ce7b16e3"
     },
     "com.unity.burst": {
       "version": "1.8.8",

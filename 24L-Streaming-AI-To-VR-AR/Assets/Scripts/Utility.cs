@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Utility
 {
@@ -62,14 +63,18 @@ namespace Utility
         {
             string [] items = latLongString.Split(' ');
 
-            if (items.Length != 5)
+            if (items.Length < 5)
             {
                 throw new ArgumentException("The string representation of the latitude and longitude and the location name is not in the correct format.");
             }
 
+            int latIndex = 4;
+            string [] locationName = new string[items.Length - latIndex]; 
+            Array.Copy(items, locationName, 4);
+
             this.Lat = double.Parse(items[0]) * ((items[1][0] == 'N') ? 1 : -1);
             this.Long = double.Parse(items[2]) * ((items[3][0] == 'E') ? 1 : -1);
-            this.LocationName = items[4];
+            this.LocationName = string.Join(" ", locationName);
         }
 
         /// <summary>
