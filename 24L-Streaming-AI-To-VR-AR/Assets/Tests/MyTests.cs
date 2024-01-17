@@ -58,10 +58,10 @@ public class MyTests
         Assert.AreEqual(locationName, actualLocationName, "Location names are not equal");
     }
 
-    [TestCase("28.3765 N 81.5494 W Epcot", 28.3765, -81.5494, "Epcot")]
-    [TestCase("28.3765 N 81.5494 W Walt Disney World Epcot Park", 28.3765, -81.5494, "Walt Disney World Epcot Park")]
-    [TestCase("30.5595 S 22.9375 E Cape Town", -30.5595, 22.9375, "Cape Town")]
-    [TestCase("30.5595 S 22.9375 E Cape Town South Africa", -30.5595, 22.9375, "Cape Town South Africa")]
+    [TestCase("28.3765 N, 81.5494 W Epcot", 28.3765, -81.5494, "Epcot")]
+    [TestCase("28.3765 N, 81.5494 W Walt Disney World Epcot Park", 28.3765, -81.5494, "Walt Disney World Epcot Park")]
+    [TestCase("30.5595 S, 22.9375 E Cape Town", -30.5595, 22.9375, "Cape Town")]
+    [TestCase("30.5595 S, 22.9375 E Cape Town South Africa", -30.5595, 22.9375, "Cape Town South Africa")]
     public void LatLongLocationIndividualPass(string latlongString, double lat, double lon, string locationName)
     {
         // Arrange
@@ -76,5 +76,28 @@ public class MyTests
         Assert.AreEqual(lat, actualLat, "Latitude values are not equal");
         Assert.AreEqual(lon, actualLong, "Longitude values are not equal");
         Assert.AreEqual(locationName, actualLocationName, "Location names are not equal");
+    }
+
+    [TestCase("28.3765 N, 81.5494 W Epcot")]
+    [TestCase("28.3765 N, 81.5494 W Walt Disney World Epcot Park")]
+    [TestCase("30.5595 S, 22.9375 E Cape Town")]
+    [TestCase("30.5595 S, 22.9375 E Cape Town South Africa")]
+    public void LatLongLocationToStringPass(string latLongString)
+    {
+        // Create LatLongLocation
+        LatLongLocation latLongLocation = new LatLongLocation(latLongString);
+
+        // Ensure that when we give it a string to represent we are able to get that string back
+        Assert.AreEqual(latLongLocation.ToString(), latLongString);
+    }
+
+    [Test]
+    public void LatLongLocationFail()
+    {
+        //Assert.AreEqual(new LatLongLocation(null), );
+        //Assert.AreEqual(new LatLongLocation("LMAO THIS ISN'T GONNA WORK), );
+        //Assert.AreEqual(new LatLongLocation("a"), );
+        //Assert.AreEqual(new LatLongLocation("N, W"), );
+        //Assert.AreEqual(new LatLongLocation("E E E E E E E E"));
     }
 }

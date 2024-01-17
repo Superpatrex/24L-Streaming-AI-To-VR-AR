@@ -61,6 +61,11 @@ namespace Utility
         /// <param name="latLongString">String representation of the latittude and longitude and the location name such as "28.3765 N, 81.5494 W Epcot"</param>
         public LatLongLocation(string latLongString)
         {
+            if (latLongString == null)
+            {
+                throw new ArgumentException("Input string cannot be null");
+            }
+
             string [] items = latLongString.Split(' ');
 
             if (items.Length < 5)
@@ -70,7 +75,7 @@ namespace Utility
 
             int latIndex = 4;
             string [] locationName = new string[items.Length - latIndex]; 
-            Array.Copy(items, locationName, 4);
+            Array.Copy(items, 4, locationName, 0, locationName.Length);
 
             this.Lat = double.Parse(items[0]) * ((items[1][0] == 'N') ? 1 : -1);
             this.Long = double.Parse(items[2]) * ((items[3][0] == 'E') ? 1 : -1);
