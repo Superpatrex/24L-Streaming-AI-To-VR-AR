@@ -16,10 +16,10 @@ namespace OpenAI
 
         // Private fields
         private List<ChatMessage> _msg = new List<ChatMessage>();
-        private OpenAIApi _openAI = new OpenAIApi("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");
+        private OpenAIApi _openAI = new OpenAIApi("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");
 
         private static string _userInput = "";
-        private static string _latLongString = "Give me the latitude of longitude in decimals of the location to which is specified. For instance, if the user were to say \"Epcot\" or \"Take me to Epcot\"  or \"Where is Epcot\" return \"28.3765 N, 81.5494 W\". Only return the latitude and longitude.";
+        private static string _latLongString = "Give me the latitude of longitude in decimals of the location to which is specified. For instance, if the user were to say \"Epcot\" or \"Take me to Epcot\"  or \"Where is Epcot\" return \"28.3765 N, 81.5494 W\". Only return the latitude and longitude and the name of the location after the latitude and longitude separated with a space.";
         private static string _funFact = "You are an artificial intelligence model that only gives fun facts about virtual reality, flight simulators, and artificial intelligence. For instance, when prompted the artificial intelligence should give a fact like \"The precursor to the flight simulator was the \"Tonneau Antoinette\"\". Only produce one have and make it succinct and making it 10-20 words. Do not respond to the user's actual questions or comments only produce facts.";
         private static string _userQuestion = "You are the vRITA artificial intelligence that's sole function is to answer the user's questions. You will be inputted XML data and a user's question. You will return an answer to the user based on the XML data or if the the question does not directly require the XML data then just answer the question. Answers should be in the metric system.";
         private static string _openAIModel = "gpt-4-1106-preview";
@@ -33,7 +33,7 @@ namespace OpenAI
         [SerializeField] public TMP_Text outputLatLongField;
 
         public static string returnString = "";
-        public static AIReturnType returnType;
+        [SerializeField] public static AIReturnType returnType = AIReturnType.RETURN_TEXT_BOX;
         public static string userInput
         {
             get => _userInput;
@@ -75,27 +75,24 @@ namespace OpenAI
         /// <summary>
         /// Send the latitude and longitude to the OpenAI API. Used for the button.
         /// </summary>
-        public void SendLatLongButtonHandler(AIReturnType type)
+        public void SendLatLongButtonHandler()
         {
-            returnType = type;
             m_LatEvemt.Invoke();
         }
 
         /// <summary>
         /// Send the user question to the OpenAI API. Used for the button.
         /// </summary>
-        public void SendUserQuestionButtonHandler(AIReturnType type)
+        public void SendUserQuestionButtonHandler()
         {
-            returnType = type;
             m_QuestionEvent.Invoke();
         }
 
         /// <summary>
         /// Send the fun fact to the OpenAI API. Used for the button.
         /// </summary>
-        public void SendFunFactButtonHandler(AIReturnType type)
+        public void SendFunFactButtonHandler()
         {
-            returnType = type;
             m_FunFactEvent.Invoke();
         }
 
@@ -176,14 +173,6 @@ namespace OpenAI
             {
                 Debug.Log("Error: " + e);
             }
-
-            Debug.Log("HELLLOOOOO????" + returnString);
-        }
-
-        public async Task LatLongGetString()
-        {
-            await Task.Run(() => SendLatLong());
-            await Task.Delay(3000);
         }
 
         /// <summary>

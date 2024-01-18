@@ -5,14 +5,13 @@
         "UnityEngine",
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor",
-        "OpenAI.Editor",
         "OpenAI.PlayMode.Tests",
         "OpenAI.Runtime"
     ],
-    "includePlatforms": [
-        "Editor"
+    "includePlatforms": [],
+    "excludePlatforms": [
+    
     ],
-    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [],
