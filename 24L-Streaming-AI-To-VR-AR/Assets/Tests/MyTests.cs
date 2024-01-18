@@ -4,6 +4,8 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using Utility;
+using OpenAI;
+using System.Threading.Tasks;
 
 public class MyTests
 {
@@ -62,7 +64,7 @@ public class MyTests
     [TestCase("28.3765 N, 81.5494 W Walt Disney World Epcot Park", 28.3765, -81.5494, "Walt Disney World Epcot Park")]
     [TestCase("30.5595 S, 22.9375 E Cape Town", -30.5595, 22.9375, "Cape Town")]
     [TestCase("30.5595 S, 22.9375 E Cape Town South Africa", -30.5595, 22.9375, "Cape Town South Africa")]
-    public void LatLongLocationIndividualPass(string latlongString, double lat, double lon, string locationName)
+    public void LatLongLocationStringPass(string latlongString, double lat, double lon, string locationName)
     {
         // Arrange
         LatLongLocation latLongLocation = new LatLongLocation(latlongString);
@@ -91,13 +93,65 @@ public class MyTests
         Assert.AreEqual(latLongLocation.ToString(), latLongString);
     }
 
-    [Test]
-    public void LatLongLocationFail()
+    [TestCase(null)]
+    [TestCase(" ")]
+    [TestCase("               ")]
+    [TestCase("      Epcot    ")]
+    [TestCase("Epcot    ")]
+    [TestCase("LMAO THIS ISN'T GONNA WORK")]
+    [TestCase("a")]
+    [TestCase("N, W")]
+    [TestCase("E E E E E E E E")]
+    [TestCase("28.3765 N, 81.5494 W")]
+    [TestCase("28.3765 N, 81.5494 W ")]
+    [TestCase("28.3765 Nay, 81.5494 W")]
+    [TestCase("28.3765 N, 81.5494 Wwow")]
+    [TestCase("28.3765 Nnay, 81.5494 Wwow")]
+    [TestCase("28.1 N, W")]
+    [TestCase("N, 28.1 W")]
+    [TestCase("N, W")]
+    public void LatLongLocationStringFail(string latLonString)
     {
-        //Assert.AreEqual(new LatLongLocation(null), );
-        //Assert.AreEqual(new LatLongLocation("LMAO THIS ISN'T GONNA WORK), );
-        //Assert.AreEqual(new LatLongLocation("a"), );
-        //Assert.AreEqual(new LatLongLocation("N, W"), );
-        //Assert.AreEqual(new LatLongLocation("E E E E E E E E"));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(latLonString));
+    }
+
+    [TestCase(28.3765, 'N', 81.5494, 'W', null)]
+    [TestCase(28.3765, 'N', 81.5494, 'W', "")]
+    [TestCase(28.3765, 'N', 81.5494, 'W', " ")]
+    [TestCase(28.3765, 'N', 81.5494, 'W', "                   ")]
+    [TestCase(28.3765, 'N', 81.5494, 'X', "Epcot")]
+    [TestCase(28.3765, 'X', 81.5494, 'E', "Epcot")]
+    [TestCase(28.3765, 'X', 81.5494, 'X', "Epcot")]
+    [TestCase(-28.3765, 'N', 81.5494, 'E', "Epcot")]
+    [TestCase(28.3765, 'N', -81.5494, 'E', "Epcot")]
+    [TestCase(28.3765, 'N', 500.5494, 'E', "Epcot")]
+    [TestCase(500.3765, 'N', 81.5494, 'E', "Epcot")]
+    [TestCase(500.3765, 'N', 500.5494, 'E', "Epcot")]
+    public void LatLongLocationIndivFail(double lat, char latDirection, double lon, char longDirection, string locationName)
+    {
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
+        Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
     }
 }
