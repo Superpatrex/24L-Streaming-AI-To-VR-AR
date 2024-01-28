@@ -154,4 +154,34 @@ public class MyTests
         Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
         Assert.Throws<System.ArgumentException>(() => new LatLongLocation(lat, latDirection, lon, longDirection, locationName));
     }
+
+    [UnityTest]
+    public IEnumerator OpenWeatherAPIStringPass()
+    {
+        IEnumerator enumerator = WeatherAPI.GetApiData("28.3765", "81.5494");
+
+        while (enumerator.MoveNext())
+        {
+            yield return enumerator.Current;
+        }
+
+        Assert.IsNotNull(WeatherAPI.ReturnJsonString);
+        Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString))
+    }
+
+    [UnityTest]
+    public IEnumerator OpenWeatherAPIPass()
+    {
+        LatLongLocation item = new LatLongLocation("28.3765 N, 81.5494 W Epcot");
+        
+        IEnumerator enumerator = WeatherAPI.GetApiData(item);
+
+        while (enumerator.MoveNext())
+        {
+            yield return enumerator.Current;
+        }
+
+        Assert.IsNotNull(WeatherAPI.ReturnJsonString);
+        Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString))
+    }
 }
