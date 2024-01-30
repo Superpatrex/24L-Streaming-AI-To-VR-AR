@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using UnityEngine;
 using UnityEngine.Networking;
+using Utility;
 
 public class WeatherAPI : MonoBehaviour
 {
@@ -25,21 +26,21 @@ public class WeatherAPI : MonoBehaviour
         }
         else if (lon == null)
         {
-            throw new ArgumentException('lon cannot be null');
+            throw new ArgumentException("lon cannot be null");
         }
         else if (!double.TryParse(lat, out _))
         {
-            throw new ArgumentException('lat needs to be a double');
+            throw new ArgumentException("lat needs to be a double");
         }
         else if (!double.TryParse(lon, out _))
         {
-            throw new ArgumentException('lon needs to be a double');
+            throw new ArgumentException("lon needs to be a double");
         }
         else if (Math.Abs(double.Parse(lat)) > 90.0)
         {
             throw new ArgumentException("lat cannot be more than 90.0");
         }
-        else if (Math.Abs(double.Parse(long)) > 180.0)
+        else if (Math.Abs(double.Parse(lon)) > 180.0)
         {
             throw new ArgumentException("lon cannot be more than 180.0");
         }
@@ -67,7 +68,7 @@ public class WeatherAPI : MonoBehaviour
 
     public static IEnumerator GetApiData(LatLongLocation latLonItem)
     {
-        WeatherAPI.GetApiData(latLonItem.Lat, latLonItem.Lon);
+        yield return WeatherAPI.GetApiData(latLonItem.Lat.ToString(), latLonItem.Long.ToString());
     }
 
     void BeginGetApiData(string lat, string lon)

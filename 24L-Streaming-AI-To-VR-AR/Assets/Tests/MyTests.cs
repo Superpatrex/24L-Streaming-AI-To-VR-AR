@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 using Utility;
 using OpenAI;
 using System.Threading.Tasks;
+using System;
 
 public class MyTests
 {
@@ -166,7 +167,7 @@ public class MyTests
         }
 
         Assert.IsNotNull(WeatherAPI.ReturnJsonString);
-        Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString))
+        Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString));
     }
 
     [UnityTest]
@@ -182,6 +183,6 @@ public class MyTests
         }
 
         Assert.IsNotNull(WeatherAPI.ReturnJsonString);
-        Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString))
+        Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString));
     }
 }
