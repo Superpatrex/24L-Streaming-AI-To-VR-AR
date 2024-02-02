@@ -1,0 +1,46 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "UI_AI",
+            "id": "7e750695-8431-4d2a-b0f0-5af4c6fd0935",
+            "actions": [
+                {
+                    "name": "ActivateUI",
+                    "type": "Button",
+                    "id": "b8fd10ce-8898-4e9d-88b2-62c2d2eaafa2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "114b44ba-0e54-4bcf-8b91-8ce274407961",
+                    "path": "<OculusTouchController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "UI_Controls_Scheme",
+                    "action": "ActivateUI",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "UI_Controls_Scheme",
+            "bindingGroup": "UI_Controls_Scheme",
+            "devices": [
+                {
+                    "devicePath": "<OculusTouchController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
