@@ -2275,6 +2275,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 427508525896068280, guid: 2f264ea60def0a944a4d178ffdefefe3, type: 3}
+      propertyPath: m_TransitionDuration
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 759821149584311854, guid: 2f264ea60def0a944a4d178ffdefefe3, type: 3}
       propertyPath: m_text
       value: Talk
@@ -2425,6 +2429,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8830979627823563116, guid: 2f264ea60def0a944a4d178ffdefefe3, type: 3}
+      propertyPath: m_Target
+      value: 
+      objectReference: {fileID: 1128544408}
     - target: {fileID: 8830979627823563116, guid: 2f264ea60def0a944a4d178ffdefefe3, type: 3}
       propertyPath: m_SnapOnEnable
       value: 1
