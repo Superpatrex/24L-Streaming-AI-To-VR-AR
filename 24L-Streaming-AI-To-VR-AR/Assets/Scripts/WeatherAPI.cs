@@ -2,17 +2,49 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
-
 using UnityEngine;
 using UnityEngine.Networking;
+using Utility;
 
-public class MyScript : MonoBehaviour
+public class WeatherAPI : MonoBehaviour
 {
-    public string lat;
-    public string lon;
-
-    private IEnumerator GetApiData()
+    public static string ReturnJsonString
     {
+        get => returnJsonString;
+        set => returnJsonString = value;
+    }
+
+    // Private fields
+    private static string returnJsonString;
+
+    public static IEnumerator GetApiData(string lat, string lon)
+    {
+        // Making sure that data being passed in is correct
+        if (lat == null)
+        {
+            throw new ArgumentException("lat cannot be null");
+        }
+        else if (lon == null)
+        {
+            throw new ArgumentException("lon cannot be null");
+        }
+        else if (!double.TryParse(lat, out _))
+        {
+            throw new ArgumentException("lat needs to be a double");
+        }
+        else if (!double.TryParse(lon, out _))
+        {
+            throw new ArgumentException("lon needs to be a double");
+        }
+        else if (Math.Abs(double.Parse(lat)) > 90.0)
+        {
+            throw new ArgumentException("lat cannot be more than 90.0");
+        }
+        else if (Math.Abs(double.Parse(lon)) > 180.0)
+        {
+            throw new ArgumentException("lon cannot be more than 180.0");
+        }
+
         string apiKey = "ecd4a3434faff0a74647d977fc4be299";
         string url = $"https://pro.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&APPID={apiKey}&mode=xml&units=imperial";
         using (UnityWebRequest www = UnityWebRequest.Get(url))
@@ -29,16 +61,18 @@ public class MyScript : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
 
                 string resultString = www.downloadHandler.text;
-                Debug.Log(resultString);
+                ReturnJsonString = resultString;
             }
         }
     }
 
-    void Start()
+    public static IEnumerator GetApiData(LatLongLocation latLonItem)
     {
-        StartCoroutine(GetApiData());
-    }   
-   
+        yield return WeatherAPI.GetApiData(latLonItem.Lat.ToString(), latLonItem.Long.ToString());
+    }
 
-
+    void BeginGetApiData(string lat, string lon)
+    {
+        StartCoroutine(GetApiData(lat, lon));
+    }
 }

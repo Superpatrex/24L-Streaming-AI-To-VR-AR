@@ -6,7 +6,8 @@
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor",
         "OpenAI.PlayMode.Tests",
-        "OpenAI.Runtime"
+        "OpenAI.Runtime",
+        "Unity.VisualScripting"
     ],
     "includePlatforms": [],
     "excludePlatforms": [
