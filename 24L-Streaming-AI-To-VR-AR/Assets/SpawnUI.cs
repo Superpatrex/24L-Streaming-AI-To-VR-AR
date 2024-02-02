@@ -5,14 +5,6 @@ public class SpawnUI : MonoBehaviour
 {
     public GameObject targetObject;
     public InputAction activateUI;
-    // public PlayerInput playerInput;
-
-
-
-    // public void onActivateUI()
-    // {
-    //     ToggleObject();
-    // }
 
     void OnEnable()
     {
@@ -37,12 +29,5 @@ public class SpawnUI : MonoBehaviour
             targetObject.SetActive(!targetObject.activeSelf);
         };
     }
-
-
-    void ToggleObject()
-    {
-        targetObject.SetActive(!targetObject.activeSelf);
-    }
-
   
 }
