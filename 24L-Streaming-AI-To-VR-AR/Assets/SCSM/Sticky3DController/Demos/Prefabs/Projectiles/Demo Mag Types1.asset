@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ca91a3a786b2f4eab3864ab577f185, type: 3}
+  m_Name: Demo Mag Types1
+  m_EditorClassIdentifier: 
+  magTypes:
+  - magType: 0
+    magTypeName: Mag Type A
+  - magType: 1
+    magTypeName: Mag Type B
+  - magType: 2
+    magTypeName: Mag Type C
+  - magType: 3
+    magTypeName: Mag Type D
+  - magType: 4
+    magTypeName: Mag Type E
+  - magType: 5
+    magTypeName: Mag Type F
+  - magType: 6
+    magTypeName: Mag Type G
+  - magType: 7
+    magTypeName: Mag Type H
+  - magType: 8
+    magTypeName: Mag Type I
+  - magType: 9
+    magTypeName: Mag Type J
+  - magType: 10
+    magTypeName: Mag Type K
+  - magType: 11
+    magTypeName: Mag Type L
+  - magType: 12
+    magTypeName: Mag Type M
+  - magType: 13
+    magTypeName: Mag Type N
+  - magType: 14
+    magTypeName: Mag Type O
+  - magType: 15
+    magTypeName: Mag Type P
+  - magType: 16
+    magTypeName: Mag Type Q
+  - magType: 17
+    magTypeName: Mag Type R
+  - magType: 18
+    magTypeName: Mag Type S
+  - magType: 19
+    magTypeName: Mag Type T
+  - magType: 20
+    magTypeName: Mag Type U
+  - magType: 21
+    magTypeName: Mag Type V
+  - magType: 22
+    magTypeName: Mag Type W
+  - magType: 23
+    magTypeName: Mag Type X
+  - magType: 24
+    magTypeName: Mag Type Y
+  - magType: 25
+    magTypeName: Mag Type Z

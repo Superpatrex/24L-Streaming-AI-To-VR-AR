@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1577c9dcb2b01a24b8099e0eb8bd1806, type: 3}
+  m_Name: Sticky3D Weapon Anim Set Bob P320
+  m_EditorClassIdentifier: 
+  aimIKTurnDelay: 0.25
+  aimIKFPNearClippingPlane: 0.2
+  aimIKFPWeaponOffset: {x: 0, y: -0.065, z: 0.4}
+  heldTransitionDuration: 0.5
+  isAimIKWhenNotAiming: 0
+  isAppliedToAllCharacters: 0
+  isFreeLookWhenHeld: 0
+  isOnlyFireWhenAiming1: 0
+  isOnlyFireWhenAiming2: 0
+  isSkipParmVerify: 0
+  isAimTPUsingFPCamera: 0
+  isWeaponSettingsOverride: 0
+  stickyModelIDs: 01000000
+  animClipPairList:
+  - guidHash: 21962417
+    originalClip: {fileID: 7400058, guid: 50beed2f82cb8144ca452adcde04e537, type: 3}
+    replacementClip: {fileID: -3271382833266019176, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: -402407178
+    originalClip: {fileID: 7400002, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 8121592914386698911, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: -836484537
+    originalClip: {fileID: 7400004, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: -2022694833249634977, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: -1087318622
+    originalClip: {fileID: 7400006, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 619694896904504794, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: 2081807487
+    originalClip: {fileID: 7400010, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 7616306592672782459, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: 1962230406
+    originalClip: {fileID: 7400016, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 6756148894955710988, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: 1318833216
+    originalClip: {fileID: 7400018, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 2953975094243852908, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: 1769967366
+    originalClip: {fileID: 7400022, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 7616306592672782459, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: -84106634
+    originalClip: {fileID: 7400024, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: -1042240680711011156, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: 398470087
+    originalClip: {fileID: 7400026, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: -587681615780334079, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: 37406512
+    originalClip: {fileID: 7400014, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: 1147655885163260673, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  - guidHash: -2014591424
+    originalClip: {fileID: 7400020, guid: 98b9a868298b1e043bec7ec620f24a83, type: 3}
+    replacementClip: {fileID: -4323805104833770594, guid: e5864b6307878414d8fd4ed1419967b5,
+      type: 3}
+  animClipPairRevertDelay: 0.5
+  animActionExtList: []
+  isModelsExpandedInEditor: 1

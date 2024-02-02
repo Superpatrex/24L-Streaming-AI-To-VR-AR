@@ -1,0 +1,2311 @@
+fileFormatVersion: 2
+guid: baecc2a4c3dbf6a4295228b74c3aff80
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: breast.L
+    100002: breast.R
+    100004: f_index.01.L
+    100006: f_index.01.R
+    100008: f_index.02.L
+    100010: f_index.02.R
+    100012: f_index.03.L
+    100014: f_index.03.R
+    100016: f_middle.01.L
+    100018: f_middle.01.R
+    100020: f_middle.02.L
+    100022: f_middle.02.R
+    100024: f_middle.03.L
+    100026: f_middle.03.R
+    100028: f_pinky.01.L
+    100030: f_pinky.01.R
+    100032: f_pinky.02.L
+    100034: f_pinky.02.R
+    100036: f_pinky.03.L
+    100038: f_pinky.03.R
+    100040: f_ring.01.L
+    100042: f_ring.01.R
+    100044: f_ring.02.L
+    100046: f_ring.02.R
+    100048: f_ring.03.L
+    100050: f_ring.03.R
+    100052: foot.L
+    100054: foot.R
+    100056: forearm.L
+    100058: forearm.R
+    100060: hand.L
+    100062: hand.R
+    100064: heel.02.L
+    100066: heel.02.R
+    100068: palm.01.L
+    100070: palm.01.R
+    100072: palm.02.L
+    100074: palm.02.R
+    100076: palm.03.L
+    100078: palm.03.R
+    100080: palm.04.L
+    100082: palm.04.R
+    100084: pelvis.L
+    100086: pelvis.R
+    100088: //RootNode
+    100090: shin.L
+    100092: shin.R
+    100094: shoulder.L
+    100096: shoulder.R
+    100098: spine
+    100100: spine.001
+    100102: spine.002
+    100104: spine.003
+    100106: spine.004
+    100108: spine.005
+    100110: spine.006
+    100112: thigh.L
+    100114: thigh.R
+    100116: thumb.01.L
+    100118: thumb.01.R
+    100120: thumb.02.L
+    100122: thumb.02.R
+    100124: thumb.03.L
+    100126: thumb.03.R
+    100128: toe.L
+    100130: toe.R
+    100132: upper_arm.L
+    100134: upper_arm.R
+    100136: s3d_bob
+    400000: breast.L
+    400002: breast.R
+    400004: f_index.01.L
+    400006: f_index.01.R
+    400008: f_index.02.L
+    400010: f_index.02.R
+    400012: f_index.03.L
+    400014: f_index.03.R
+    400016: f_middle.01.L
+    400018: f_middle.01.R
+    400020: f_middle.02.L
+    400022: f_middle.02.R
+    400024: f_middle.03.L
+    400026: f_middle.03.R
+    400028: f_pinky.01.L
+    400030: f_pinky.01.R
+    400032: f_pinky.02.L
+    400034: f_pinky.02.R
+    400036: f_pinky.03.L
+    400038: f_pinky.03.R
+    400040: f_ring.01.L
+    400042: f_ring.01.R
+    400044: f_ring.02.L
+    400046: f_ring.02.R
+    400048: f_ring.03.L
+    400050: f_ring.03.R
+    400052: foot.L
+    400054: foot.R
+    400056: forearm.L
+    400058: forearm.R
+    400060: hand.L
+    400062: hand.R
+    400064: heel.02.L
+    400066: heel.02.R
+    400068: palm.01.L
+    400070: palm.01.R
+    400072: palm.02.L
+    400074: palm.02.R
+    400076: palm.03.L
+    400078: palm.03.R
+    400080: palm.04.L
+    400082: palm.04.R
+    400084: pelvis.L
+    400086: pelvis.R
+    400088: //RootNode
+    400090: shin.L
+    400092: shin.R
+    400094: shoulder.L
+    400096: shoulder.R
+    400098: spine
+    400100: spine.001
+    400102: spine.002
+    400104: spine.003
+    400106: spine.004
+    400108: spine.005
+    400110: spine.006
+    400112: thigh.L
+    400114: thigh.R
+    400116: thumb.01.L
+    400118: thumb.01.R
+    400120: thumb.02.L
+    400122: thumb.02.R
+    400124: thumb.03.L
+    400126: thumb.03.R
+    400128: toe.L
+    400130: toe.R
+    400132: upper_arm.L
+    400134: upper_arm.R
+    400136: s3d_bob
+    7400000: s3d_bob_idle_ik
+    7400002: s3d_bob_walk_forward_ik
+    7400004: s3d_bob_walk_backward_ik
+    7400006: s3d_bob_walk_backward_diagonal_ik
+    7400008: s3d_bob_walk_right_ik
+    7400010: s3d_bob_jump_ik
+    7400012: s3d_bob_interact_ik
+    7400014: s3d_bob_run_backward_ik
+    7400016: s3d_bob_run_forward_ik
+    7400018: s3d_bob_crouch_idle_ik
+    7400020: s3d_bob_crouch_forward_ik
+    7400022: s3d_bob_crouch_backward_ik
+    7400024: s3d_bob_crouch_backward_diagonal_ik
+    7400026: s3d_bob_crouch_right_ik
+    7400028: s3d_bob_jetpack_ik
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: s3d_bob_idle_ik
+      takeName: s3d_bob_idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_walk_forward_ik
+      takeName: s3d_bob_walk_forward
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_walk_backward_ik
+      takeName: s3d_bob_walk_backward
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_walk_backward_diagonal_ik
+      takeName: s3d_bob_walk_backward_diagonal
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_walk_right_ik
+      takeName: s3d_bob_walk_right
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_jump_ik
+      takeName: s3d_bob_jump
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_interact_ik
+      takeName: s3d_bob_interact
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_run_backward_ik
+      takeName: s3d_bob_run_backward
+      firstFrame: 15
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_run_forward_ik
+      takeName: s3d_bob_run_forward
+      firstFrame: 15
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_crouch_idle_ik
+      takeName: s3d_bob_crouch_idle
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_crouch_forward_ik
+      takeName: s3d_bob_crouch_forward
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_crouch_backward_ik
+      takeName: s3d_bob_crouch_backward
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_crouch_backward_diagonal_ik
+      takeName: s3d_bob_crouch_backward_diagonal
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_crouch_right_ik
+      takeName: s3d_bob_crouch_right
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_bob_jetpack_ik
+      takeName: s3d_bob_jetpack
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: spine
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shin.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shin.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot.L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot.R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.001
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.002
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.004
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.005
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder.L
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: shoulder.R
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upper_arm.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upper_arm.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: forearm.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: forearm.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand.L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand.R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe.L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toe.R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.006
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb.01.L
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb.02.L
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb.03.L
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index.01.L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index.02.L
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index.03.L
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle.01.L
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle.02.L
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle.03.L
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring.01.L
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring.02.L
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring.03.L
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky.01.L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky.02.L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky.03.L
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb.01.R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb.02.R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb.03.R
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index.01.R
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index.02.R
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_index.03.R
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle.01.R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle.02.R
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_middle.03.R
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring.01.R
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring.02.R
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_ring.03.R
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky.01.R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky.02.R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: f_pinky.03.R
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine.003
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: s3d_bob2(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_bob
+      parentName: s3d_bob2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: spine
+      parentName: s3d_bob
+      position: {x: -8.881784e-18, y: 0.0009108266, z: 0.00904056}
+      rotation: {x: 0.7210652, y: -0.000000082596216, z: -0.00000008595774, w: 0.6928672}
+      scale: {x: 1, y: 0.9999983, z: 0.9999983}
+    - name: spine.001
+      parentName: spine
+      position: {x: -2.1853662e-17, y: 0.0013205648, z: 3.7252902e-11}
+      rotation: {x: -0.01033473, y: 3.907985e-14, z: 0.0000000024639704, w: 0.9999466}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: spine.002
+      parentName: spine.001
+      position: {x: -2.4754088e-17, y: 0.001214106, z: -9.313225e-11}
+      rotation: {x: -0.027372058, y: -5.7473876e-14, z: 0.0000000065260126, w: 0.9996253}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: spine.003
+      parentName: spine.002
+      position: {x: -1.16204955e-17, y: 0.0015478749, z: -3.7252902e-11}
+      rotation: {x: 0.09599587, y: 6.1050496e-14, z: -0.000000022887184, w: 0.9953817}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999997}
+    - name: spine.004
+      parentName: spine.003
+      position: {x: -1.0040805e-17, y: 0.001744636, z: -7.45058e-10}
+      rotation: {x: 0.12985006, y: -1.7877369e-14, z: -0.00000003095867, w: 0.9915337}
+      scale: {x: 1.0000008, y: 0.9999993, z: 0.99999994}
+    - name: spine.005
+      parentName: spine.004
+      position: {x: 3.7862085e-17, y: 0.00060219027, z: 6.3329936e-10}
+      rotation: {x: -0.10386821, y: 0.00000011856448, z: 0.000000012382047, w: 0.99459106}
+      scale: {x: 0.99999994, y: 0.9999995, z: 0.9999995}
+    - name: spine.006
+      parentName: spine.005
+      position: {x: -1.0373011e-16, y: 0.0005637193, z: -2.2351741e-10}
+      rotation: {x: -0.10434543, y: -0.000000118558475, z: 0.000000012438941, w: 0.99454117}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.000001}
+    - name: spine.006_end
+      parentName: spine.006
+      position: {x: -0, y: 0.00056371687, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder.L
+      parentName: spine.003
+      position: {x: -0.00054031634, y: 0.0017679399, z: 0.0007272201}
+      rotation: {x: -0.6591234, y: 0.37430274, z: 0.30485266, w: 0.5766444}
+      scale: {x: 1.0000021, y: 1.0000073, z: 1.0000062}
+    - name: upper_arm.L
+      parentName: shoulder.L
+      position: {x: -0.00037163205, y: 0.0014601628, z: -0.0002037921}
+      rotation: {x: 0.22570497, y: -0.713138, z: 0.18843623, w: 0.636383}
+      scale: {x: 1.0000035, y: 1.0000023, z: 1.0000036}
+    - name: forearm.L
+      parentName: upper_arm.L
+      position: {x: -5.122274e-10, y: 0.0024764987, z: 3.7252902e-11}
+      rotation: {x: 0.022551566, y: 0.11252722, z: 0.00854224, w: 0.99335605}
+      scale: {x: 1.0000049, y: 1.0000051, z: 0.9999997}
+    - name: hand.L
+      parentName: forearm.L
+      position: {x: -1.1641532e-10, y: 0.002848767, z: 5.2154064e-10}
+      rotation: {x: 0.034388404, y: -0.016162483, z: 0.04569347, w: 0.99823266}
+      scale: {x: 1.0000008, y: 1.0000029, z: 0.99999875}
+    - name: palm.01.L
+      parentName: hand.L
+      position: {x: 0.000034074354, y: 0.00038678938, z: 0.00023164965}
+      rotation: {x: 0.08535409, y: -0.67715925, z: -0.06332067, w: 0.7281214}
+      scale: {x: 1.0000023, y: 1.0000087, z: 1.0000067}
+    - name: f_index.01.L
+      parentName: palm.01.L
+      position: {x: -0.000030603893, y: 0.0006538461, z: -0.000012730452}
+      rotation: {x: -0.014629574, y: -0.096282706, z: 0.12765336, w: 0.987026}
+      scale: {x: 1.000015, y: 0.9999969, z: 1.0000045}
+    - name: f_index.02.L
+      parentName: f_index.01.L
+      position: {x: -5.9604643e-10, y: 0.00031589824, z: -3.352761e-10}
+      rotation: {x: -0.011518332, y: -0.0030905814, z: 0.01887069, w: 0.99975085}
+      scale: {x: 1.0000032, y: 1.0000013, z: 1.0000026}
+    - name: f_index.03.L
+      parentName: f_index.02.L
+      position: {x: -7.4505804e-11, y: 0.00027721166, z: 0.0000000011920929}
+      rotation: {x: 0.0070179156, y: -0.04530688, z: 0.0018765084, w: 0.9989468}
+      scale: {x: 0.9999986, y: 1.0000004, z: 1.0000025}
+    - name: f_index.03.L_end
+      parentName: f_index.03.L
+      position: {x: -0, y: 0.00027721413, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thumb.01.L
+      parentName: palm.01.L
+      position: {x: 0.000019796304, y: -0.00010116819, z: 0.00018539773}
+      rotation: {x: -0.120483704, y: -0.6083339, z: -0.26226762, w: 0.7393438}
+      scale: {x: 1.0000035, y: 1.0000216, z: 0.99999326}
+    - name: thumb.02.L
+      parentName: thumb.01.L
+      position: {x: -1.3038516e-10, y: 0.00037347563, z: -4.0978193e-10}
+      rotation: {x: 0.023666233, y: -0.08903561, z: 0.0068282965, w: 0.99572384}
+      scale: {x: 1.0000001, y: 0.9999691, z: 1.0000312}
+    - name: thumb.03.L
+      parentName: thumb.02.L
+      position: {x: -9.685754e-10, y: 0.0003249403, z: 3.72529e-10}
+      rotation: {x: 0.0011293357, y: -0.055068485, z: 0.040908176, w: 0.9976436}
+      scale: {x: 1.0000073, y: 1.0000067, z: 1.0000062}
+    - name: thumb.03.L_end
+      parentName: thumb.03.L
+      position: {x: -0, y: 0.0003249397, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm.02.L
+      parentName: hand.L
+      position: {x: 0.00006752714, y: 0.00041275067, z: 0.00006475695}
+      rotation: {x: 0.06219933, y: -0.6930047, z: -0.019582111, w: 0.7179778}
+      scale: {x: 1.0000006, y: 1.0000062, z: 1.0000024}
+    - name: f_middle.01.L
+      parentName: palm.02.L
+      position: {x: -0.00001625292, y: 0.00059175637, z: -0.00004025096}
+      rotation: {x: -0.018474165, y: -0.044120945, z: 0.06928322, w: 0.9964497}
+      scale: {x: 1.0000074, y: 0.99999964, z: 1.0000044}
+    - name: f_middle.02.L
+      parentName: f_middle.01.L
+      position: {x: -2.9802322e-10, y: 0.00034724042, z: -8.754432e-10}
+      rotation: {x: -0.026869778, y: 0.013796462, z: -0.00091248064, w: 0.9995433}
+      scale: {x: 1.0000026, y: 0.9999992, z: 1.0000012}
+    - name: f_middle.03.L
+      parentName: f_middle.02.L
+      position: {x: 1.11758706e-10, y: 0.00027611025, z: 7.8231094e-10}
+      rotation: {x: -0.0023550054, y: -0.0060200156, z: -0.012699771, w: 0.9998985}
+      scale: {x: 1.0000042, y: 1.0000023, z: 1.0000024}
+    - name: f_middle.03.L_end
+      parentName: f_middle.03.L
+      position: {x: -0, y: 0.0002761121, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm.03.L
+      parentName: hand.L
+      position: {x: 0.000070660404, y: 0.00039229004, z: -0.00009004522}
+      rotation: {x: 0.005386704, y: -0.70603955, z: 0.04895965, w: 0.70645756}
+      scale: {x: 1.0000072, y: 1.000004, z: 1.0000064}
+    - name: f_ring.01.L
+      parentName: palm.03.L
+      position: {x: -0.0000032913313, y: 0.00059137016, z: -0.0000035702064}
+      rotation: {x: -0.083745696, y: 0.020630203, z: -0.01223405, w: 0.99619853}
+      scale: {x: 1.0000036, y: 1.0000029, z: 1.0000057}
+    - name: f_ring.02.L
+      parentName: f_ring.01.L
+      position: {x: -1.11758706e-10, y: 0.0003819965, z: 2.4214386e-10}
+      rotation: {x: 0.018927416, y: -0.0035180917, z: 0.0021938065, w: 0.99981225}
+      scale: {x: 1.0000024, y: 1.0000036, z: 1.0000013}
+    - name: f_ring.03.L
+      parentName: f_ring.02.L
+      position: {x: -3.7252902e-11, y: 0.00024805203, z: -1.3038516e-10}
+      rotation: {x: 0.01900655, y: 0.020248976, z: -0.00047887463, w: 0.99961424}
+      scale: {x: 1.0000086, y: 1.0000021, z: 0.99999815}
+    - name: f_ring.03.L_end
+      parentName: f_ring.03.L
+      position: {x: -0, y: 0.00024805174, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm.04.L
+      parentName: hand.L
+      position: {x: 0.000058420384, y: 0.0003499944, z: -0.0002384549}
+      rotation: {x: -0.019065771, y: -0.7389138, z: 0.06373236, w: 0.67050815}
+      scale: {x: 1.000006, y: 1.0000002, z: 1.0000032}
+    - name: f_pinky.01.L
+      parentName: palm.04.L
+      position: {x: 0.0000013022498, y: 0.0005796552, z: -0.000006608041}
+      rotation: {x: -0.045961816, y: 0.103086926, z: -0.03633551, w: 0.9929453}
+      scale: {x: 1.0000036, y: 1.0000036, z: 1.0000025}
+    - name: f_pinky.02.L
+      parentName: f_pinky.01.L
+      position: {x: 3.5390257e-10, y: 0.00020665675, z: -4.2840836e-10}
+      rotation: {x: -0.020491248, y: -0.004842936, z: 0.020059098, w: 0.99957705}
+      scale: {x: 1.0000025, y: 1.000001, z: 1.0000001}
+    - name: f_pinky.03.L
+      parentName: f_pinky.02.L
+      position: {x: -1.4901161e-10, y: 0.0002322895, z: 2.7008354e-10}
+      rotation: {x: -0.009811761, y: 0.02369307, z: -0.0010475862, w: 0.9996706}
+      scale: {x: 1.0000027, y: 1.0000032, z: 1.0000049}
+    - name: f_pinky.03.L_end
+      parentName: f_pinky.03.L
+      position: {x: -0, y: 0.00023228752, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder.R
+      parentName: spine.003
+      position: {x: 0.0005403166, y: 0.0017679399, z: 0.00072721974}
+      rotation: {x: -0.6591235, y: -0.3743022, z: -0.30485263, w: 0.5766446}
+      scale: {x: 1.0000002, y: 1.000003, z: 1.0000031}
+    - name: upper_arm.R
+      parentName: shoulder.R
+      position: {x: 0.0003716322, y: 0.0014601632, z: -0.00020378805}
+      rotation: {x: 0.22570479, y: 0.713138, z: -0.18843596, w: 0.6363831}
+      scale: {x: 0.99999785, y: 0.9999986, z: 0.9999995}
+    - name: forearm.R
+      parentName: upper_arm.R
+      position: {x: -1.862645e-10, y: 0.0024764957, z: -1.11758706e-10}
+      rotation: {x: 0.022551598, y: -0.112527646, z: -0.008542792, w: 0.99335593}
+      scale: {x: 1.0000008, y: 1.0000029, z: 1.0000007}
+    - name: hand.R
+      parentName: forearm.R
+      position: {x: -1.862645e-10, y: 0.00284877, z: -5.494803e-10}
+      rotation: {x: 0.03438799, y: 0.016160054, z: -0.045695934, w: 0.99823254}
+      scale: {x: 1.0000052, y: 1.0000063, z: 0.99999976}
+    - name: palm.01.R
+      parentName: hand.R
+      position: {x: -0.000034073248, y: 0.00038679075, z: 0.00023165024}
+      rotation: {x: 0.08535257, y: 0.6771623, z: 0.0633224, w: 0.72811854}
+      scale: {x: 1.0000019, y: 1.000008, z: 1.000005}
+    - name: f_index.01.R
+      parentName: palm.01.R
+      position: {x: 0.000030604242, y: 0.00065384567, z: -0.000012730993}
+      rotation: {x: -0.014630415, y: 0.096281916, z: -0.12765335, w: 0.9870261}
+      scale: {x: 1.0000072, y: 0.9999969, z: 1.0000025}
+    - name: f_index.02.R
+      parentName: f_index.01.R
+      position: {x: 4.842877e-10, y: 0.00031589813, z: 2.4214386e-10}
+      rotation: {x: -0.011518494, y: 0.0030911781, z: -0.018870674, w: 0.9997508}
+      scale: {x: 1.000003, y: 1.0000025, z: 1.000003}
+    - name: f_index.03.R
+      parentName: f_index.02.R
+      position: {x: -4.0978193e-10, y: 0.00027721268, z: 4.0978193e-10}
+      rotation: {x: 0.0070184036, y: 0.045306385, z: -0.0018764278, w: 0.9989467}
+      scale: {x: 1.0000018, y: 1.0000024, z: 1.0000035}
+    - name: f_index.03.R_end
+      parentName: f_index.03.R
+      position: {x: -0, y: 0.00027721233, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thumb.01.R
+      parentName: palm.01.R
+      position: {x: -0.000019796662, y: -0.00010116722, z: 0.0001853966}
+      rotation: {x: -0.12048119, y: 0.6083343, z: 0.2622675, w: 0.739344}
+      scale: {x: 1.0000012, y: 1.000011, z: 0.9999948}
+    - name: thumb.02.R
+      parentName: thumb.01.R
+      position: {x: -2.0489097e-10, y: 0.00037347464, z: -3.72529e-10}
+      rotation: {x: 0.0236671, y: 0.08903782, z: -0.0068264795, w: 0.9957236}
+      scale: {x: 1.0000038, y: 0.9999801, z: 1.0000322}
+    - name: thumb.03.R
+      parentName: thumb.02.R
+      position: {x: -2.0489097e-10, y: 0.0003249382, z: 1.862645e-10}
+      rotation: {x: 0.0011296024, y: 0.055067893, z: -0.040912893, w: 0.9976434}
+      scale: {x: 1.0000036, y: 1.0000002, z: 0.9999974}
+    - name: thumb.03.R_end
+      parentName: thumb.03.R
+      position: {x: -0, y: 0.0003249427, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm.02.R
+      parentName: hand.R
+      position: {x: -0.00006752699, y: 0.00041275084, z: 0.000064758024}
+      rotation: {x: 0.06219787, y: 0.69300866, z: 0.019583946, w: 0.7179741}
+      scale: {x: 0.9999976, y: 1.0000013, z: 1.0000006}
+    - name: f_middle.01.R
+      parentName: palm.02.R
+      position: {x: 0.000016252323, y: 0.0005917574, z: -0.000040251194}
+      rotation: {x: -0.018473607, y: 0.044117674, z: -0.06928339, w: 0.9964498}
+      scale: {x: 1.0000057, y: 0.9999969, z: 1.0000027}
+    - name: f_middle.02.R
+      parentName: f_middle.01.R
+      position: {x: 2.2351741e-10, y: 0.00034723978, z: -3.5390257e-10}
+      rotation: {x: -0.0268694, y: -0.013795982, z: 0.0009124905, w: 0.99954337}
+      scale: {x: 1.000002, y: 1.0000044, z: 1.0000017}
+    - name: f_middle.03.R
+      parentName: f_middle.02.R
+      position: {x: 7.4505804e-11, y: 0.00027611098, z: -1.4901161e-10}
+      rotation: {x: -0.00235302, y: 0.006016271, z: 0.01269969, w: 0.9998985}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000027}
+    - name: f_middle.03.R_end
+      parentName: f_middle.03.R
+      position: {x: -0, y: 0.00027611037, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm.03.R
+      parentName: hand.R
+      position: {x: -0.00007066147, y: 0.00039229036, z: -0.00009004399}
+      rotation: {x: -0.0053859022, y: -0.7060418, z: 0.04895882, w: -0.70645523}
+      scale: {x: 1.0000004, y: 0.9999996, z: 0.99999905}
+    - name: f_ring.01.R
+      parentName: palm.03.R
+      position: {x: 0.0000032916478, y: 0.00059136975, z: -0.0000035706476}
+      rotation: {x: 0.08374637, y: 0.020631045, z: -0.012234148, w: -0.9961984}
+      scale: {x: 1.0000013, y: 0.9999998, z: 1.0000014}
+    - name: f_ring.02.R
+      parentName: f_ring.01.R
+      position: {x: 4.1909514e-11, y: 0.00038199782, z: -2.3981556e-10}
+      rotation: {x: 0.018934404, y: 0.0035100537, z: -0.0021949222, w: 0.9998122}
+      scale: {x: 1.0000043, y: 1.0000067, z: 1.0000026}
+    - name: f_ring.03.R
+      parentName: f_ring.02.R
+      position: {x: 1.11758706e-10, y: 0.00024805238, z: -2.5145708e-10}
+      rotation: {x: 0.019001551, y: -0.020243237, z: 0.0004797431, w: 0.9996145}
+      scale: {x: 1.0000042, y: 1.0000043, z: 1.0000042}
+    - name: f_ring.03.R_end
+      parentName: f_ring.03.R
+      position: {x: -0, y: 0.00024805244, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: palm.04.R
+      parentName: hand.R
+      position: {x: -0.00005842227, y: 0.00034999492, z: -0.0002384544}
+      rotation: {x: -0.019069292, y: 0.7389158, z: -0.06372872, w: 0.67050606}
+      scale: {x: 0.9999999, y: 0.9999978, z: 0.9999981}
+    - name: f_pinky.01.R
+      parentName: palm.04.R
+      position: {x: -0.0000013019517, y: 0.0005796545, z: -0.000006609242}
+      rotation: {x: -0.0459594, y: -0.103086874, z: 0.036335323, w: 0.9929454}
+      scale: {x: 0.99999934, y: 1.0000007, z: 0.9999975}
+    - name: f_pinky.02.R
+      parentName: f_pinky.01.R
+      position: {x: -5.5879353e-11, y: 0.00020665582, z: 1.816079e-10}
+      rotation: {x: -0.02048853, y: 0.0048404858, z: -0.02005981, w: 0.99957716}
+      scale: {x: 1.0000033, y: 1.0000015, z: 1.0000018}
+    - name: f_pinky.03.R
+      parentName: f_pinky.02.R
+      position: {x: -2.5320333e-11, y: 0.0002322879, z: 3.1723174e-10}
+      rotation: {x: -0.009817091, y: -0.023688342, z: 0.0010479487, w: 0.9996707}
+      scale: {x: 1.0000048, y: 1.0000046, z: 1.0000051}
+    - name: f_pinky.03.R_end
+      parentName: f_pinky.03.R
+      position: {x: -0, y: 0.00023228812, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breast.L
+      parentName: spine.003
+      position: {x: -0.0011839999, y: -0.000027502114, z: 0.00017580358}
+      rotation: {x: 0.00000010195622, y: 0.76029813, z: 0.6495743, w: -0.000000057400907}
+      scale: {x: 1.0000058, y: 1.0000031, z: 1.0000025}
+    - name: breast.L_end
+      parentName: breast.L
+      position: {x: -0, y: 0.0016224668, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: breast.R
+      parentName: spine.003
+      position: {x: 0.0011840002, y: -0.000027502114, z: 0.00017580303}
+      rotation: {x: 0.00000010195622, y: 0.76029813, z: 0.6495743, w: -0.000000057400907}
+      scale: {x: 1.0000058, y: 1.0000031, z: 1.0000025}
+    - name: breast.R_end
+      parentName: breast.R
+      position: {x: -0, y: 0.001622467, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis.L
+      parentName: spine
+      position: {x: 2.3980816e-16, y: 1.8626451e-11, z: 3.7252902e-11}
+      rotation: {x: -0.10233855, y: 0.7499714, z: 0.39272755, w: 0.52233595}
+      scale: {x: 1.0000033, y: 1.0000017, z: 1.0000032}
+    - name: pelvis.L_end
+      parentName: pelvis.L
+      position: {x: -0, y: 0.000746213, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis.R
+      parentName: spine
+      position: {x: 2.575717e-16, y: 1.8626451e-11, z: 3.7252902e-11}
+      rotation: {x: -0.1023383, y: -0.7499713, z: -0.39272696, w: 0.52233654}
+      scale: {x: 1.000002, y: 1.0000006, z: 1.0000024}
+    - name: pelvis.R_end
+      parentName: pelvis.R
+      position: {x: -0, y: 0.00074621325, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thigh.L
+      parentName: spine
+      position: {x: -0.0009799999, y: 0.0005725385, z: 0.0004054954}
+      rotation: {x: 0.99920744, y: -0.03765223, z: 0.00048039854, w: 0.012911353}
+      scale: {x: 0.99998623, y: 1.0000095, z: 1.0000114}
+    - name: shin.L
+      parentName: thigh.L
+      position: {x: -5.122274e-11, y: 0.004801586, z: 4.1909514e-11}
+      rotation: {x: 0.007235218, y: -0.0003572134, z: -0.026027467, w: 0.99963504}
+      scale: {x: 0.99999845, y: 0.9999982, z: 0.99999887}
+    - name: foot.L
+      parentName: shin.L
+      position: {x: 1.0244548e-10, y: 0.0040490185, z: -2.1420418e-10}
+      rotation: {x: -0.5180846, y: -0.000052007108, z: -0.019989204, w: 0.8550958}
+      scale: {x: 1.0000001, y: 1.0000048, z: 1.0000039}
+    - name: toe.L
+      parentName: foot.L
+      position: {x: 4.249159e-11, y: 0.0012562319, z: -2.3283064e-12}
+      rotation: {x: 0.011033281, y: 0.96758753, z: -0.25214157, w: 0.008798043}
+      scale: {x: 1.0000074, y: 0.99999595, z: 1.000002}
+    - name: toe.L_end
+      parentName: toe.L
+      position: {x: -0, y: 0.0010094668, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: heel.02.L
+      parentName: foot.L
+      position: {x: -0.000008742044, y: 0.00037230263, z: 0.0006656082}
+      rotation: {x: -0.79862595, y: 0.18501467, z: -0.32598066, w: 0.4708534}
+      scale: {x: 0.99999607, y: 1.0000023, z: 1.0000012}
+    - name: heel.02.L_end
+      parentName: heel.02.L
+      position: {x: -0, y: 0.001009467, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: thigh.R
+      parentName: spine
+      position: {x: 0.00098, y: 0.00057253795, z: 0.00040549508}
+      rotation: {x: 0.9992074, y: 0.037653387, z: -0.00049085915, w: 0.012911644}
+      scale: {x: 1.0000198, y: 1.0000105, z: 1.0000087}
+    - name: shin.R
+      parentName: thigh.R
+      position: {x: -5.3551046e-11, y: 0.004801586, z: -3.7252902e-11}
+      rotation: {x: 0.0072356607, y: 0.00035726908, z: 0.02602584, w: 0.99963504}
+      scale: {x: 1.0000011, y: 1.0000042, z: 1.0000039}
+    - name: foot.R
+      parentName: shin.R
+      position: {x: 4.6566128e-12, y: 0.004049018, z: -3.7252902e-11}
+      rotation: {x: -0.5180839, y: 0.000051816667, z: 0.019987935, w: 0.8550963}
+      scale: {x: 1.0000002, y: 1.0000073, z: 1.0000063}
+    - name: toe.R
+      parentName: foot.R
+      position: {x: 1.9907019e-10, y: 0.0012562264, z: 2.7939677e-11}
+      rotation: {x: -0.011032897, y: 0.96758693, z: -0.25214353, w: -0.008796733}
+      scale: {x: 0.9999991, y: 1.0000074, z: 0.9999971}
+    - name: toe.R_end
+      parentName: toe.R
+      position: {x: -0, y: 0.0010094676, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: heel.02.R
+      parentName: foot.R
+      position: {x: 0.000008741486, y: 0.0003723018, z: 0.000665608}
+      rotation: {x: -0.7986268, y: -0.18501532, z: 0.325979, w: 0.47085267}
+      scale: {x: 1.000004, y: 0.9999948, z: 0.99999964}
+    - name: heel.02.R_end
+      parentName: heel.02.R
+      position: {x: -0, y: 0.001009468, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_bob_hair
+      parentName: s3d_bob2(Clone)
+      position: {x: -0.000000009536746, y: 4.62516e-14, z: 0.000000004768387}
+      rotation: {x: -0.7071068, y: 2.973756e-14, z: 3.0491197e-14, w: 0.7071067}
+      scale: {x: 9.999999, y: 10.000002, z: 9.999999}
+    - name: s3d_bob_eyebrows
+      parentName: s3d_bob2(Clone)
+      position: {x: -0.000000009536746, y: 4.62516e-14, z: 0.000000004768387}
+      rotation: {x: -0.7071068, y: 2.973756e-14, z: 3.0491197e-14, w: 0.7071067}
+      scale: {x: 9.999999, y: 10.000002, z: 9.999999}
+    - name: s3d_bob_skin
+      parentName: s3d_bob2(Clone)
+      position: {x: -0.000000009536746, y: 4.62516e-14, z: 0.000000004768387}
+      rotation: {x: -0.7071068, y: 2.973756e-14, z: 3.0491197e-14, w: 0.7071067}
+      scale: {x: 9.999999, y: 10.000002, z: 9.999999}
+    - name: s3d_bob_eyes
+      parentName: s3d_bob2(Clone)
+      position: {x: -0.000000009536746, y: 4.62516e-14, z: 0.000000004768387}
+      rotation: {x: -0.7071068, y: 2.973756e-14, z: 3.0491197e-14, w: 0.7071067}
+      scale: {x: 9.999999, y: 10.000002, z: 9.999999}
+    - name: s3d_bob_clothing
+      parentName: s3d_bob2(Clone)
+      position: {x: -0.000000009536746, y: 4.62516e-14, z: 0.000000004768387}
+      rotation: {x: -0.7071068, y: 2.973756e-14, z: 3.0491197e-14, w: 0.7071067}
+      scale: {x: 9.999999, y: 10.000002, z: 9.999999}
+    - name: s3d_bob_shoes
+      parentName: s3d_bob2(Clone)
+      position: {x: -0.000000009536746, y: 4.62516e-14, z: 0.000000004768387}
+      rotation: {x: -0.7071068, y: 2.973756e-14, z: 3.0491197e-14, w: 0.7071067}
+      scale: {x: 9.999999, y: 10.000002, z: 9.999999}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 98b9a868298b1e043bec7ec620f24a83,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

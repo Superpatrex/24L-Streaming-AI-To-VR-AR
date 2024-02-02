@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 261a4ee80a3b8ba4a81876b2ab766a1f, type: 3}
+  m_Name: Sticky3D Smoke Effects Set1
+  m_EditorClassIdentifier: 
+  effectsModuleList:
+  - {fileID: 8458092781340589137, guid: 90f075d190a3c8a4cae51217cb90f3e2, type: 3}
+  - {fileID: 8458092781340589137, guid: af255a8aa2107074cbcff58e803bf2fc, type: 3}
