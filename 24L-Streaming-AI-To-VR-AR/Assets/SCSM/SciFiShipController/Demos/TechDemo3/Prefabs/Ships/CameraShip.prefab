@@ -1,0 +1,485 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8780907021795287143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8780907021795287140}
+  - component: {fileID: 8780907021795287141}
+  - component: {fileID: 8780907021795287142}
+  - component: {fileID: 8780907021795287139}
+  m_Layer: 0
+  m_Name: CameraShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8780907021795287140
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907021795287143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8780907022305576386}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &8780907021795287141
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907021795287143}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8780907021795287142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907021795287143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff76e040520ea54389db3b37e7116a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowRepaint: 1
+  shipInstance:
+    initialiseOnAwake: 1
+    shipPhysicsModel: 20
+    mass: 100
+    centreOfMass: {x: 0, y: 0, z: 0}
+    setCentreOfMassManually: 0
+    showCOMGizmosInSceneView: 1
+    showCOLGizmosInSceneView: 0
+    showCOTGizmosInSceneView: 0
+    thrusterList:
+    - name: Forward Thruster
+      maxThrust: 10000
+      relativePosition: {x: 0, y: 0, z: 0}
+      thrustDirection: {x: 0, y: 0, z: 1}
+      currentInput: 0
+      forceUse: 1
+      primaryMomentUse: 0
+      secondaryMomentUse: 0
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+      fuelLevel: 100
+      fuelBurnRate: 0
+      heatLevel: 0
+      heatUpRate: 0
+      heatDownRate: 2
+      overHeatThreshold: 80
+      isBurnoutOnMaxHeat: 0
+    - name: Up Thruster
+      maxThrust: 1000
+      relativePosition: {x: 0, y: 0, z: 0}
+      thrustDirection: {x: 0, y: 1, z: 0}
+      currentInput: 0
+      forceUse: 3
+      primaryMomentUse: 0
+      secondaryMomentUse: 0
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+      fuelLevel: 100
+      fuelBurnRate: 0
+      heatLevel: 0
+      heatUpRate: 0
+      heatDownRate: 2
+      overHeatThreshold: 80
+      isBurnoutOnMaxHeat: 0
+    - name: Down Thruster
+      maxThrust: 1000
+      relativePosition: {x: 0, y: 0, z: 0}
+      thrustDirection: {x: 0, y: -1, z: 0}
+      currentInput: 0
+      forceUse: 4
+      primaryMomentUse: 0
+      secondaryMomentUse: 0
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+      fuelLevel: 100
+      fuelBurnRate: 0
+      heatLevel: 0
+      heatUpRate: 0
+      heatDownRate: 2
+      overHeatThreshold: 80
+      isBurnoutOnMaxHeat: 0
+    - name: Right Thruster
+      maxThrust: 1000
+      relativePosition: {x: 0, y: 0, z: 0}
+      thrustDirection: {x: 1, y: 0, z: 0}
+      currentInput: 0
+      forceUse: 5
+      primaryMomentUse: 0
+      secondaryMomentUse: 0
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+      fuelLevel: 100
+      fuelBurnRate: 0
+      heatLevel: 0
+      heatUpRate: 0
+      heatDownRate: 2
+      overHeatThreshold: 80
+      isBurnoutOnMaxHeat: 0
+    - name: Left Thruster
+      maxThrust: 1000
+      relativePosition: {x: 0, y: 0, z: 0}
+      thrustDirection: {x: -1, y: 0, z: 0}
+      currentInput: 0
+      forceUse: 6
+      primaryMomentUse: 0
+      secondaryMomentUse: 0
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+      fuelLevel: 100
+      fuelBurnRate: 0
+      heatLevel: 0
+      heatUpRate: 0
+      heatDownRate: 2
+      overHeatThreshold: 80
+      isBurnoutOnMaxHeat: 0
+    useCentralFuel: 1
+    centralFuelLevel: 100
+    wingList: []
+    controlSurfaceList: []
+    weaponList: []
+    useWeaponsWhenMovementDisabled: 0
+    isThrusterListExpanded: 1
+    isWingListExpanded: 1
+    isControlSurfaceListExpanded: 1
+    isWeaponListExpanded: 1
+    isMainDamageExpanded: 1
+    isDamageListExpanded: 1
+    showDamageInEditor: 1
+    dragCoefficients: {x: 0.5, y: 1, z: 0.1}
+    dragReferenceAreas: {x: 0.03162404, y: 0.031475484, z: 0.03136552}
+    centreOfDragXMoment: {x: 0, y: 0.00010525605, z: -0.000013604445}
+    centreOfDragYMoment: {x: -0.00000027667608, y: 0, z: -0.0000025888237}
+    centreOfDragZMoment: {x: -0.00000020357001, y: 0.00009609538, z: 0}
+    angularDragFactor: 1
+    disableDragMoments: 0
+    wingStallEffect: 1
+    arcadeUseBrakeComponent: 1
+    arcadeBrakeStrength: 10
+    arcadeBrakeIgnoreMediumDensity: 0
+    arcadeBrakeMinAcceleration: 25
+    rotationalFlightAssistStrength: 3
+    translationalFlightAssistStrength: 3
+    brakeFlightAssistStrength: 0
+    brakeFlightAssistMinSpeed: -10
+    brakeFlightAssistMaxSpeed: 10
+    rollPower: 1
+    pitchPower: 1
+    yawPower: 1
+    limitPitchAndRoll: 0
+    maxPitch: 10
+    maxTurnRoll: 15
+    pitchSpeed: 30
+    turnRollSpeed: 30
+    rollControlMode: 10
+    pitchRollMatchResponsiveness: 4
+    stickToGroundSurface: 0
+    avoidGroundSurface: 0
+    orientUpInAir: 0
+    targetGroundDistance: 5
+    useGroundMatchSmoothing: 0
+    useGroundMatchLookAhead: 0
+    minGroundDistance: 2
+    maxGroundDistance: 8
+    maxGroundCheckDistance: 25
+    groundMatchResponsiveness: 50
+    groundMatchDamping: 50
+    maxGroundMatchAccelerationFactor: 3
+    centralMaxGroundMatchAccelerationFactor: 1
+    groundNormalCalculationMode: 20
+    groundNormalHistoryLength: 5
+    groundLayerMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    inputControlAxis: 0
+    inputControlLimit: 0
+    inputControlMovingRigidness: 25
+    inputControlTurningRigidness: 25
+    inputControlForwardAngle: 0
+    arcadePitchAcceleration: 100
+    arcadeYawAcceleration: 100
+    arcadeRollAcceleration: 250
+    arcadeMaxFlightTurningAcceleration: 500
+    arcadeMaxGroundTurningAcceleration: 500
+    mediumDensity: 1.293
+    gravitationalAcceleration: 9.81
+    gravityDirection: {x: -0, y: -1, z: -0}
+    shipDamageModel: 10
+    mainDamageRegion:
+      name: Main Damage Region
+      isInvincible: 1
+      relativePosition: {x: 0, y: 0, z: 0}
+      size: {x: 10, y: 10, z: 10}
+      startingHealth: 100
+      useShielding: 0
+      shieldingDamageThreshold: 10
+      shieldingAmount: 100
+      shieldingRechargeRate: 0
+      shieldingRechargeDelay: 10
+      collisionDamageResistance: 10
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      destructionEffectsObject: {fileID: 0}
+      isMoveDestructionEffectsObject: 0
+      destructObject: {fileID: 0}
+      regionChildTransform: {fileID: 0}
+      isRadarEnabled: 0
+      guidHash: -1721335572
+      damageMultipliersArray:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    localisedDamageRegionList: []
+    useDamageMultipliers: 0
+    useLocalisedDamageMultipliers: 0
+    respawningMode: 10
+    respawnTime: 5
+    collisionRespawnPositionDelay: 5
+    customRespawnPosition: {x: 0, y: 0, z: 0}
+    customRespawnRotation: {x: 0, y: 0, z: 0}
+    respawnVelocity: {x: 0, y: 0, z: 0}
+    respawningPathGUIDHash: 0
+    applyControllerRumble: 0
+    minRumbleDamage: 0
+    maxRumbleDamage: 10
+    damageRumbleTime: 0.5
+    stuckTime: 0
+    stuckSpeedThreshold: 0.1
+    stuckAction: 10
+    stuckActionPathGUIDHash: 0
+    factionId: 0
+    squadronId: -1
+    radarBlipSize: 1
+    isRadarEnabled: 0
+  thrusterEffectObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  selectedTabInt: 3
+  editorSearchThrusterFilter: 
+--- !u!114 &8780907021795287139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907021795287143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f100114b1680cd345bfbd0e3d5a75d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialiseOnAwake: 1
+  movementAlgorithm: 30
+  obstacleAvoidanceQuality: 15
+  obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  pathFollowingQuality: 15
+  maxSpeed: 100
+  shipRadius: 1
+  targetingAccuracy: 1
+  fireAngle: 10
+  maxBankAngle: 30
+  maxBankTurnAngle: 15
+  maxPitchAngle: 90
+  turnPitchThreshold: 30
+  rollBias: 0.5
+  isHorizontalDataDiscarded: 0
+  isVerticalDataDiscarded: 0
+  isLongitudinalDataDiscarded: 0
+  isPitchDataDiscarded: 0
+  isYawDataDiscarded: 0
+  isRollDataDiscarded: 0
+  isPrimaryFireDataDiscarded: 0
+  isSecondaryFireDataDiscarded: 0
+  isDockDataDiscarded: 0
+--- !u!1 &8780907022305576387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8780907022305576386}
+  - component: {fileID: 8780907022305576399}
+  - component: {fileID: 8780907022305576384}
+  - component: {fileID: 8780907022305576385}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8780907022305576386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907022305576387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8780907021795287140}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8780907022305576399
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907022305576387}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8780907022305576384
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907022305576387}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &8780907022305576385
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8780907022305576387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: f14796981146a974f834e99fa2c7bbd6
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: SSCCup1
+    100002: SSCCup2
+    100004: //RootNode
+    100006: SSCDeskScreen1
+    100008: SSCPen1
+    100010: SSCFlask1
+    100012: SSCPen2
+    100014: SSCBook1
+    100016: SSCBook2
+    100018: SSCBook3
+    100020: SSCBook4
+    100022: SSCPuzzle1
+    100024: SSCDeskScreen2
+    400000: SSCCup1
+    400002: SSCCup2
+    400004: //RootNode
+    400006: SSCDeskScreen1
+    400008: SSCPen1
+    400010: SSCFlask1
+    400012: SSCPen2
+    400014: SSCBook1
+    400016: SSCBook2
+    400018: SSCBook3
+    400020: SSCBook4
+    400022: SSCPuzzle1
+    400024: SSCDeskScreen2
+    2100000: SSCSmallProps1
+    2100002: No Name
+    2300000: SSCCup1
+    2300002: SSCCup2
+    2300004: SSCDeskScreen1
+    2300006: SSCPen1
+    2300008: SSCFlask1
+    2300010: SSCPen2
+    2300012: SSCBook1
+    2300014: SSCBook2
+    2300016: SSCBook3
+    2300018: SSCBook4
+    2300020: SSCPuzzle1
+    2300022: SSCDeskScreen2
+    3300000: SSCCup1
+    3300002: SSCCup2
+    3300004: SSCDeskScreen1
+    3300006: SSCPen1
+    3300008: SSCFlask1
+    3300010: SSCPen2
+    3300012: SSCBook1
+    3300014: SSCBook2
+    3300016: SSCBook3
+    3300018: SSCBook4
+    3300020: SSCPuzzle1
+    3300022: SSCDeskScreen2
+    4300000: SSCCup1
+    4300002: SSCCup2
+    4300004: SSCDeskScreen1
+    4300006: SSCPen1
+    4300008: SSCFlask1
+    4300010: SSCPen2
+    4300012: SSCBook1
+    4300014: SSCBook2
+    4300016: SSCBook3
+    4300018: SSCBook4
+    4300020: SSCPuzzle1
+    4300022: SSCDeskScreen2
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SSCSmallProps1
+    second: {fileID: 2100000, guid: 1e660e8cec3ca564ab87f56d22795cfe, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

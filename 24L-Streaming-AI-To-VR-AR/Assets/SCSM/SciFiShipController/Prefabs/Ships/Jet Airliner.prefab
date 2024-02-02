@@ -1,0 +1,1126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1088899578751180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4984651530734006}
+  - component: {fileID: 33513649290936896}
+  - component: {fileID: 23980611881313552}
+  m_Layer: 0
+  m_Name: aeroplane_misc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4984651530734006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088899578751180}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 4547796942085092}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33513649290936896
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088899578751180}
+  m_Mesh: {fileID: 4300002, guid: f1e6b0440a9f89641bca4278b968b3aa, type: 3}
+--- !u!23 &23980611881313552
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088899578751180}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 359f89b91e32d43d78fe88b87f6590c2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1163546370457086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4606273045071672}
+  - component: {fileID: 65441524469541020}
+  m_Layer: 0
+  m_Name: Left Wing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4606273045071672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163546370457086}
+  m_LocalRotation: {x: 0, y: -0.258819, z: 0, w: 0.9659259}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4677139421369418}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!65 &65441524469541020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163546370457086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17, y: 1, z: 3}
+  m_Center: {x: -13, y: -1, z: -4}
+--- !u!1 &1195853517737828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4709536313092572}
+  - component: {fileID: 65081498003771798}
+  m_Layer: 0
+  m_Name: Right Wing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4709536313092572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195853517737828}
+  m_LocalRotation: {x: 0, y: 0.2588191, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4677139421369418}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
+--- !u!65 &65081498003771798
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195853517737828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17, y: 1, z: 3}
+  m_Center: {x: 13, y: -1, z: -4}
+--- !u!1 &1196924816722032
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4677139421369418}
+  - component: {fileID: 136141862307927972}
+  - component: {fileID: 136872495835578370}
+  - component: {fileID: 136031716421971972}
+  m_Layer: 0
+  m_Name: Collision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4677139421369418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196924816722032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4606273045071672}
+  - {fileID: 4709536313092572}
+  - {fileID: 4114121292884586}
+  - {fileID: 4827748078467696}
+  m_Father: {fileID: 4108883720099678}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &136141862307927972
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196924816722032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 37
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: -10.5}
+--- !u!136 &136872495835578370
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196924816722032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 5
+  m_Direction: 2
+  m_Center: {x: -5.6, y: -2, z: -5.5}
+--- !u!136 &136031716421971972
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196924816722032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 5
+  m_Direction: 2
+  m_Center: {x: 5.6, y: -2, z: -5.5}
+--- !u!1 &1233395928652298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4925525095847596}
+  - component: {fileID: 33175372509637334}
+  - component: {fileID: 23634376203087386}
+  m_Layer: 0
+  m_Name: aeroplane_undercarriage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4925525095847596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233395928652298}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 4547796942085092}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33175372509637334
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233395928652298}
+  m_Mesh: {fileID: 4300000, guid: f1e6b0440a9f89641bca4278b968b3aa, type: 3}
+--- !u!23 &23634376203087386
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233395928652298}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 359f89b91e32d43d78fe88b87f6590c2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1337403173981302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4547796942085092}
+  m_Layer: 0
+  m_Name: Jet Airliner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4547796942085092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337403173981302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4919709656636940}
+  - {fileID: 4984651530734006}
+  - {fileID: 4925525095847596}
+  m_Father: {fileID: 4108883720099678}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1506677810772410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4114121292884586}
+  - component: {fileID: 65021563359457098}
+  m_Layer: 0
+  m_Name: Rudder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4114121292884586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506677810772410}
+  m_LocalRotation: {x: -0.13052624, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4677139421369418}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -15, y: 0, z: 0}
+--- !u!65 &65021563359457098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506677810772410}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 6, z: 4}
+  m_Center: {x: 0, y: 11, z: -24}
+--- !u!1 &1648062084048902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4919709656636940}
+  - component: {fileID: 33840278836178216}
+  - component: {fileID: 23431348713133938}
+  m_Layer: 0
+  m_Name: aeroplane_body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4919709656636940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648062084048902}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 4547796942085092}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33840278836178216
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648062084048902}
+  m_Mesh: {fileID: 4300004, guid: f1e6b0440a9f89641bca4278b968b3aa, type: 3}
+--- !u!23 &23431348713133938
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648062084048902}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 359f89b91e32d43d78fe88b87f6590c2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1760561261590728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4108883720099678}
+  - component: {fileID: 54225120631136984}
+  - component: {fileID: 114735440116482476}
+  - component: {fileID: 114579066404584690}
+  m_Layer: 0
+  m_Name: Jet Airliner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4108883720099678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760561261590728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4677139421369418}
+  - {fileID: 4547796942085092}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &54225120631136984
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760561261590728}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 2
+--- !u!114 &114735440116482476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760561261590728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff76e040520ea54389db3b37e7116a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowRepaint: 1
+  shipInstance:
+    initialiseOnAwake: 1
+    shipPhysicsModel: 10
+    mass: 50000
+    centreOfMass: {x: 0, y: -0.5, z: -8}
+    setCentreOfMassManually: 1
+    showCOMGizmosInSceneView: 1
+    showCOLGizmosInSceneView: 0
+    showCOTGizmosInSceneView: 0
+    thrusterList:
+    - name: Left Thruster
+      maxThrust: 120000
+      relativePosition: {x: -5.6, y: -2, z: -5}
+      thrustDirection: {x: 0, y: 0, z: 1}
+      currentInput: 0
+      forceUse: 1
+      primaryMomentUse: 5
+      secondaryMomentUse: 4
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 0
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+    - name: Right Thruster
+      maxThrust: 120000
+      relativePosition: {x: 5.6, y: -2, z: -5}
+      thrustDirection: {x: 0, y: 0, z: 1}
+      currentInput: 0
+      forceUse: 1
+      primaryMomentUse: 6
+      secondaryMomentUse: 4
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      minEffectsRate: 0
+      limitEffectsOnZ: 0
+      minEffectsOnZ: -5000
+      maxEffectsOnZ: 5000
+      limitEffectsOnY: 0
+      minEffectsOnY: -5000
+      maxEffectsOnY: 5000
+      showInEditor: 0
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      rampUpDuration: 0
+      rampDownDuration: 0
+    wingList:
+    - name: Wing
+      angleOfAttack: 5
+      span: 15.5
+      chord: 4
+      relativePosition: {x: -8, y: -1, z: -8}
+      liftDirection: {x: 0, y: 1, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    - name: Wing
+      angleOfAttack: 5
+      span: 15.5
+      chord: 4
+      relativePosition: {x: 8, y: -1, z: -8}
+      liftDirection: {x: 0, y: 1, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    controlSurfaceList:
+    - type: 10
+      span: 10
+      chord: 1
+      relativePosition: {x: -10.75, y: -1, z: -11}
+      rotationAxis: {x: 1, y: 0, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 0
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    - type: 10
+      span: 10
+      chord: 0.75
+      relativePosition: {x: 10.75, y: -1, z: -11}
+      rotationAxis: {x: 1, y: 0, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 0
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    - type: 12
+      span: 6
+      chord: 1.5
+      relativePosition: {x: 0, y: 4.9, z: -26.7}
+      rotationAxis: {x: 1, y: 0, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 0
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    - type: 11
+      span: 13
+      chord: 1
+      relativePosition: {x: 0, y: 0, z: -27}
+      rotationAxis: {x: 1, y: 0, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 0
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    - type: 20
+      span: 10
+      chord: 8
+      relativePosition: {x: -10.75, y: -1, z: -10}
+      rotationAxis: {x: 1, y: 0, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    - type: 20
+      span: 10
+      chord: 8
+      relativePosition: {x: 10.75, y: -1, z: -10}
+      rotationAxis: {x: 1, y: 0, z: 0}
+      damageRegionIndex: -1
+      minPerformance: 0.25
+      startingHealth: 100
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+    weaponList: []
+    isThrusterListExpanded: 1
+    isWingListExpanded: 1
+    isControlSurfaceListExpanded: 1
+    isWeaponListExpanded: 1
+    isMainDamageExpanded: 1
+    isDamageListExpanded: 1
+    showDamageInEditor: 1
+    dragCoefficients: {x: 0.75, y: 1.28, z: 0.0265}
+    dragReferenceAreas: {x: 160.66132, y: 282.24286, z: 56.545773}
+    centreOfDragXMoment: {x: 0, y: -0.59082943, z: -10.754296}
+    centreOfDragYMoment: {x: -0.002836384, y: -0.5, z: -11.7017975}
+    centreOfDragZMoment: {x: -0.001432061, y: 0.57520205, z: -8}
+    angularDragFactor: 1
+    disableDragMoments: 0
+    wingStallEffect: 1
+    arcadeUseBrakeComponent: 1
+    arcadeBrakeStrength: 100
+    arcadeBrakeIgnoreMediumDensity: 0
+    arcadeBrakeMinAcceleration: 25
+    rotationalFlightAssistStrength: 10
+    translationalFlightAssistStrength: 3
+    brakeFlightAssistStrength: 0
+    brakeFlightAssistMinSpeed: -10
+    brakeFlightAssistMaxSpeed: 10
+    rollPower: 1
+    pitchPower: 1
+    yawPower: 1
+    limitPitchAndRoll: 0
+    maxPitch: 10
+    maxTurnRoll: 15
+    pitchSpeed: 30
+    turnRollSpeed: 30
+    rollControlMode: 10
+    pitchRollMatchResponsiveness: 4
+    stickToGroundSurface: 0
+    avoidGroundSurface: 0
+    orientUpInAir: 0
+    targetGroundDistance: 5
+    useGroundMatchSmoothing: 0
+    useGroundMatchLookAhead: 0
+    minGroundDistance: 2
+    maxGroundDistance: 8
+    maxGroundCheckDistance: 25
+    groundMatchResponsiveness: 50
+    groundMatchDamping: 50
+    maxGroundMatchAccelerationFactor: 3
+    centralMaxGroundMatchAccelerationFactor: 1
+    groundNormalCalculationMode: 10
+    groundNormalHistoryLength: 5
+    groundLayerMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    inputControlAxis: 0
+    inputControlLimit: 0
+    inputControlMovingRigidness: 25
+    inputControlTurningRigidness: 25
+    inputControlForwardAngle: 0
+    arcadePitchAcceleration: 100
+    arcadeYawAcceleration: 100
+    arcadeRollAcceleration: 250
+    arcadeMaxFlightTurningAcceleration: 500
+    arcadeMaxGroundTurningAcceleration: 500
+    mediumDensity: 1.293
+    gravitationalAcceleration: 9.81
+    gravityDirection: {x: -0, y: -1, z: -0}
+    shipDamageModel: 10
+    mainDamageRegion:
+      name: Main Damage Region
+      relativePosition: {x: 0, y: 0, z: 0}
+      size: {x: 10, y: 10, z: 10}
+      startingHealth: 100
+      useShielding: 0
+      shieldingDamageThreshold: 10
+      shieldingAmount: 100
+      shieldingRechargeRate: 0
+      shieldingRechargeDelay: 10
+      collisionDamageResistance: 10
+      showInEditor: 1
+      selectedInSceneView: 0
+      showGizmosInSceneView: 1
+      destructionEffectsObject: {fileID: 114476361157412378, guid: aff61d7cec33c4947820bc5aa3dfe221,
+        type: 3}
+      isMoveDestructionEffectsObject: 0
+      destructObject: {fileID: 0}
+      regionChildTransform: {fileID: 0}
+      isRadarEnabled: 0
+      guidHash: -859825324
+      damageMultipliersArray:
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+      - 1
+    localisedDamageRegionList: []
+    useDamageMultipliers: 0
+    useLocalisedDamageMultipliers: 0
+    respawningMode: 20
+    respawnTime: 5
+    collisionRespawnPositionDelay: 5
+    customRespawnPosition: {x: 0, y: 0, z: 0}
+    customRespawnRotation: {x: 0, y: 0, z: 0}
+    respawnVelocity: {x: 0, y: 0, z: 0}
+    respawningPathGUIDHash: 0
+    applyControllerRumble: 0
+    minRumbleDamage: 0
+    maxRumbleDamage: 10
+    damageRumbleTime: 0.5
+    stuckTime: 0
+    stuckSpeedThreshold: 0.1
+    stuckAction: 10
+    stuckActionPathGUIDHash: 0
+    factionId: 0
+    squadronId: -1
+    radarBlipSize: 1
+    isRadarEnabled: 0
+  thrusterEffectObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  selectedTabInt: 2
+  editorSearchThrusterFilter: 
+--- !u!114 &114579066404584690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760561261590728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e07c81fee451331498d1e80f65efc197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputMode: 0
+  isAutoCruiseEnabled: 0
+  initialiseOnAwake: 1
+  isEnabledOnInitialise: 1
+  isCustomInputsOnlyOnInitialise: 0
+  allowRepaint: 1
+  horizontalInputPositiveKeycode: 0
+  horizontalInputNegativeKeycode: 0
+  verticalInputPositiveKeycode: 0
+  verticalInputNegativeKeycode: 0
+  longitudinalInputPositiveKeycode: 273
+  longitudinalInputNegativeKeycode: 274
+  pitchInputPositiveKeycode: 119
+  pitchInputNegativeKeycode: 115
+  yawInputPositiveKeycode: 100
+  yawInputNegativeKeycode: 97
+  rollInputPositiveKeycode: 275
+  rollInputNegativeKeycode: 276
+  primaryFireKeycode: 323
+  secondaryFireKeycode: 324
+  dockingKeycode: 0
+  isMouseForPitchEnabledDKI: 0
+  isMouseForYawEnabledDKI: 0
+  pitchSensitivityDKI: 0.5
+  yawSensitivityDKI: 0.5
+  pitchDeadzoneDKI: 0.0125
+  yawDeadzoneDKI: 0.01
+  horizontalInputAxisMode: 0
+  verticalInputAxisMode: 0
+  longitudinalInputAxisMode: 10
+  pitchInputAxisMode: 10
+  yawInputAxisMode: 10
+  rollInputAxisMode: 10
+  primaryFireButtonEnabled: 0
+  secondaryFireButtonEnabled: 0
+  dockingButtonEnabled: 0
+  maxRumble1: 0
+  maxRumble2: 0
+  isSensitivityForHorizontalEnabled: 0
+  isSensitivityForVerticalEnabled: 0
+  isSensitivityForLongitudinalEnabled: 0
+  isSensitivityForPitchEnabled: 0
+  isSensitivityForYawEnabled: 0
+  isSensitivityForRollEnabled: 0
+  horizontalAxisSensitivity: 3
+  verticalAxisSensitivity: 3
+  longitudinalAxisSensitivity: 3
+  pitchAxisSensitivity: 3
+  yawAxisSensitivity: 3
+  rollAxisSensitivity: 3
+  horizontalAxisGravity: 3
+  verticalAxisGravity: 3
+  longitudinalAxisGravity: 3
+  pitchAxisGravity: 3
+  yawAxisGravity: 3
+  rollAxisGravity: 3
+  isHorizontalDataDiscarded: 0
+  isVerticalDataDiscarded: 0
+  isLongitudinalDataDiscarded: 0
+  isPitchDataDiscarded: 0
+  isYawDataDiscarded: 0
+  isRollDataDiscarded: 0
+  isPrimaryFireDataDiscarded: 0
+  isSecondaryFireDataDiscarded: 0
+  isDockDataDiscarded: 0
+  positiveHorizontalInputAxisName: Horizontal
+  negativeHorizontalInputAxisName: Horizontal
+  positiveVerticalInputAxisName: Xbox One RS Vertical
+  negativeVerticalInputAxisName: Vertical
+  positiveLongitudinalInputAxisName: Xbox One Triggers
+  negativeLongitudinalInputAxisName: Vertical
+  positivePitchInputAxisName: Xbox One LS Vertical
+  negativePitchInputAxisName: Vertical
+  positiveYawInputAxisName: Xbox One LS Horizontal
+  negativeYawInputAxisName: Horizontal
+  positiveRollInputAxisName: Xbox One RS Horizontal
+  negativeRollInputAxisName: Horizontal
+  primaryFireInputAxisName: Fire1
+  secondaryFireInputAxisName: Fire2
+  dockingInputAxisName: Dock
+  invertHorizontalInputAxis: 0
+  invertVerticalInputAxis: 0
+  invertLongitudinalInputAxis: 0
+  invertPitchInputAxis: 0
+  invertYawInputAxis: 0
+  invertRollInputAxis: 0
+  isPositiveHorizontalInputAxisValid: 1
+  isNegativeHorizontalInputAxisValid: 1
+  isPositiveVerticalInputAxisValid: 0
+  isNegativeVerticalInputAxisValid: 1
+  isPositiveLongitudinalInputAxisValid: 0
+  isNegativeLongitudinalInputAxisValid: 1
+  isPositivePitchInputAxisValid: 0
+  isNegativePitchInputAxisValid: 1
+  isPositiveYawInputAxisValid: 0
+  isNegativeYawInputAxisValid: 1
+  isPositiveRollInputAxisValid: 0
+  isNegativeRollInputAxisValid: 1
+  isPrimaryFireInputAxisValid: 1
+  isSecondaryFireInputAxisValid: 1
+  isDockingInputAxisValid: 0
+  isMouseForPitchEnabledLIS: 0
+  isMouseForYawEnabledLIS: 0
+  pitchSensitivityLIS: 0.5
+  yawSensitivityLIS: 0.5
+  pitchDeadzoneLIS: 0.05
+  yawDeadzoneLIS: 0.05
+  isOVRInputUpdatedIfRequired: 0
+  ovrHorizontalInputType: 1
+  ovrVerticalInputType: 1
+  ovrLongitudinalInputType: 1
+  ovrPitchInputType: 1
+  ovrYawInputType: 1
+  ovrRollInputType: 1
+  positiveHorizontalInputOVR: 0
+  negativeHorizontalInputOVR: 0
+  positiveVerticalInputOVR: 0
+  negativeVerticalInputOVR: 0
+  positiveLongitudinalInputOVR: 0
+  negativeLongitudinalInputOVR: 0
+  positivePitchInputOVR: 0
+  negativePitchInputOVR: 0
+  positiveYawInputOVR: 0
+  negativeYawInputOVR: 0
+  positiveRollInputOVR: 0
+  negativeRollInputOVR: 0
+  primaryFireInputOVR: 0
+  secondaryFireInputOVR: 0
+  dockingInputOVR: 0
+  positiveHorizontalInputActionIdUIS: 
+  positiveVerticalInputActionIdUIS: 
+  positiveLongitudinalInputActionIdUIS: 
+  positivePitchInputActionIdUIS: 
+  positiveYawInputActionIdUIS: 
+  positiveRollInputActionIdUIS: 
+  primaryFireInputActionIdUIS: 
+  secondaryFireInputActionIdUIS: 
+  dockingInputActionIdUIS: 
+  quitInputActionIdUIS: QuitApp
+  positiveHorizontalInputActionDataSlotUIS: 0
+  positiveVerticalInputActionDataSlotUIS: 0
+  positiveLongitudinalInputActionDataSlotUIS: 0
+  positivePitchInputActionDataSlotUIS: 0
+  positiveYawInputActionDataSlotUIS: 0
+  positiveRollInputActionDataSlotUIS: 0
+  primaryFireInputActionDataSlotUIS: 0
+  secondaryFireInputActionDataSlotUIS: 0
+  dockingInputActionDataSlotUIS: 0
+  isMouseForPitchEnabledUIS: 0
+  isMouseForYawEnabledUIS: 0
+  pitchSensitivityUIS: 0.5
+  yawSensitivityUIS: 0.5
+  pitchDeadzoneUIS: 0.05
+  yawDeadzoneUIS: 0.05
+  rewiredPlayerNumber: 0
+  positiveHorizontalInputActionId: -1
+  negativeHorizontalInputActionId: -1
+  positiveVerticalInputActionId: -1
+  negativeVerticalInputActionId: -1
+  positiveLongitudinalInputActionId: -1
+  negativeLongitudinalInputActionId: -1
+  positivePitchInputActionId: -1
+  negativePitchInputActionId: -1
+  positiveYawInputActionId: -1
+  negativeYawInputActionId: -1
+  positiveRollInputActionId: -1
+  negativeRollInputActionId: -1
+  primaryFireInputActionId: -1
+  secondaryFireInputActionId: -1
+  dockingInputActionId: -1
+  viveHorizontalInputType: 1
+  viveVerticalInputType: 1
+  viveLongitudinalInputType: 1
+  vivePitchInputType: 1
+  viveYawInputType: 1
+  viveRollInputType: 1
+  viveHorizontalRoleType: 2
+  viveVerticalRoleType: 2
+  viveLongitudinalRoleType: 2
+  vivePitchRoleType: 2
+  viveYawRoleType: 2
+  viveRollRoleType: 2
+  vivePrimaryFireRoleType: 2
+  viveSecondaryFireRoleType: 2
+  viveDockingRoleType: 2
+  positiveHorizontalInputRoleId: 0
+  negativeHorizontalInputRoleId: 0
+  positiveVerticalInputRoleId: 0
+  negativeVerticalInputRoleId: 0
+  positiveLongitudinalInputRoleId: 0
+  negativeLongitudinalInputRoleId: 0
+  positivePitchInputRoleId: 0
+  negativePitchInputRoleId: 0
+  positiveYawInputRoleId: 0
+  negativeYawInputRoleId: 0
+  positiveRollInputRoleId: 0
+  negativeRollInputRoleId: 0
+  primaryFireInputRoleId: 0
+  secondaryFireInputRoleId: 0
+  dockingInputRoleId: 0
+  positiveHorizontalInputCtrlVive: 0
+  negativeHorizontalInputCtrlVive: 0
+  positiveVerticalInputCtrlVive: 0
+  negativeVerticalInputCtrlVive: 0
+  positiveLongitudinalInputCtrlVive: 0
+  negativeLongitudinalInputCtrlVive: 0
+  positivePitchInputCtrlVive: 0
+  negativePitchInputCtrlVive: 0
+  positiveYawInputCtrlVive: 0
+  negativeYawInputCtrlVive: 0
+  positiveRollInputCtrlVive: 0
+  negativeRollInputCtrlVive: 0
+  primaryFireInputCtrlVive: 0
+  secondaryFireInputCtrlVive: 0
+  dockingInputCtrlVive: 0
+  customPlayerInputList: []
+  isCustomPlayerInputListExpanded: 0
+  horizontalShowInEditor: 0
+  verticalShowInEditor: 0
+  longitudinalShowInEditor: 0
+  pitchShowInEditor: 0
+  yawShowInEditor: 0
+  rollShowInEditor: 0
+  primaryFireShowInEditor: 0
+  secondaryFireShowInEditor: 0
+  dockingShowInEditor: 0
+  rumbleShowInEditor: 0
+  onscreenControlsShowInEditor: 0
+  customPlayerInputsShowInEditor: 0
+  primaryFireCanBeHeld: 1
+  secondaryFireCanBeHeld: 1
+--- !u!1 &1876908085819184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4827748078467696}
+  - component: {fileID: 135938316583888278}
+  - component: {fileID: 135408236602083460}
+  - component: {fileID: 135091213182666670}
+  m_Layer: 0
+  m_Name: Wheels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4827748078467696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876908085819184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4677139421369418}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &135938316583888278
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876908085819184}
+  m_Material: {fileID: 13400000, guid: 844662cfc463da3478e0ecce2a4763a4, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: -3.6, z: 2.85}
+--- !u!135 &135408236602083460
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876908085819184}
+  m_Material: {fileID: 13400000, guid: 844662cfc463da3478e0ecce2a4763a4, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Center: {x: -3.6, y: -3.4, z: -9.65}
+--- !u!135 &135091213182666670
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876908085819184}
+  m_Material: {fileID: 13400000, guid: 844662cfc463da3478e0ecce2a4763a4, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Center: {x: 3.6, y: -3.4, z: -9.65}
