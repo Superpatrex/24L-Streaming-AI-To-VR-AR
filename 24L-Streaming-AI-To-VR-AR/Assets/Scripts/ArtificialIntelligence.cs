@@ -16,7 +16,7 @@ namespace OpenAI
 
         // Private fields
         private List<ChatMessage> _msg = new List<ChatMessage>();
-        private OpenAIApi _openAI = new OpenAIApi("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");
+        private OpenAIApi _openAI = new OpenAIApi("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");
 
         private static string _userInput = "";
         private static string _latLongString = "Give me the latitude of longitude in decimals of the location to which is specified. For instance, if the user were to say \"Epcot\" or \"Take me to Epcot\"  or \"Where is Epcot\" return \"28.3765 N, 81.5494 W\". Only return the latitude and longitude and the name of the location after the latitude and longitude separated with a space.";
