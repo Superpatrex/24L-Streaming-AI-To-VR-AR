@@ -8,8 +8,6 @@ public class CameraViews : MonoBehaviour
     public Camera PlaneCamera;
     public Camera SpectorCamera;
 
-    public TMP_Text text;
-
     private static CameraViews ThisInstance;
     private Camera LastCamera;
     private Camera CurrentCamera;
@@ -31,22 +29,12 @@ public class CameraViews : MonoBehaviour
             CurrentCamera.enabled = false;
             CurrentCamera = SpectorCamera;
             CurrentCamera.enabled = true;
-            text.text = "Penis";
         }
         else if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha2))
         {   
             CurrentCamera.enabled = false;
             CurrentCamera = PlaneCamera;
             CurrentCamera.enabled = true;
-            text.text = "Yeet";
         }
-    }
-
-    public void DoSomething()
-    {
-        CurrentCamera.enabled = false;
-        CurrentCamera = PlaneCamera;
-        CurrentCamera.enabled = true;
-        text.text = "Yeet";
     }
 }

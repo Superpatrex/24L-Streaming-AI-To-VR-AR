@@ -256,7 +256,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaneCamera: {fileID: 1136174456}
   SpectorCamera: {fileID: 1521557311}
-  text: {fileID: 829629422}
 --- !u!1 &187802290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,23 +1800,23 @@ MonoBehaviour:
   _localToGlobeFixedMatrix:
     c0:
       x: 0.9991169807484115
-      y: 0.04201498280588073
-      z: 0
+      y: 0.04201498280588072
+      z: 4.612238327226151e-18
       w: 0
     c1:
-      x: 0.03128295542494675
-      y: -0.7439091934766949
-      z: 0.6675486527711664
+      x: 0.03128296343915127
+      y: -0.7439093840546099
+      z: 0.667548440017517
       w: 0
     c2:
-      x: -0.028047035137868003
-      y: 0.6669589559362876
-      z: 0.7445663938940251
+      x: -0.028047026199030285
+      y: 0.66695874337058
+      z: 0.7445665846403046
       w: 0
     c3:
-      x: 199856.5580705575
-      y: -4752592.231318878
-      z: 4236199.886979937
+      x: 199840.91659108593
+      y: -4752220.276680308
+      z: 4235866.112968117
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
 --- !u!114 &541796565
@@ -1974,10 +1973,10 @@ MonoBehaviour:
   _originAuthority: 0
   _latitude: 41.878101
   _longitude: -87.59201
-  _height: 1000
-  _ecefX: 199856.5580705575
-  _ecefY: -4752592.231318878
-  _ecefZ: 4236199.886979937
+  _height: 200
+  _ecefX: 199831.53170340302
+  _ecefY: -4751997.103897166
+  _ecefZ: 4235665.848561024
   _scale: 1
 --- !u!4 &569545134
 Transform:
@@ -2090,17 +2089,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3127377416852887305, guid: e367714f162349d48a5cb6f00133e149, type: 3}
   m_PrefabInstance: {fileID: 722745006}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &829629422 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3998632108082137882, guid: 2f264ea60def0a944a4d178ffdefefe3, type: 3}
-  m_PrefabInstance: {fileID: 1523057442}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1034317662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2239,9 +2227,6 @@ GameObject:
   - component: {fileID: 1136174456}
   - component: {fileID: 1136174455}
   - component: {fileID: 1136174454}
-  - component: {fileID: 1136174459}
-  - component: {fileID: 1136174458}
-  - component: {fileID: 1136174457}
   m_Layer: 0
   m_Name: PlaneCamera
   m_TagString: Untagged
@@ -2257,13 +2242,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136174452}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.933, y: 2.337, z: -32.13}
+  m_LocalRotation: {x: 0.5695423, y: -0.0012225884, z: -0.00084714085, w: 0.82196075}
+  m_LocalPosition: {x: 19.93, y: -100, z: -49.357}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 69481084}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 69.436, y: -0.485, z: -0.454}
 --- !u!114 &1136174454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2293,7 +2278,7 @@ MonoBehaviour:
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
-  m_AllowXRRendering: 1
+  m_AllowXRRendering: 0
   m_AllowHDROutput: 1
   m_UseScreenCoordOverride: 0
   m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -2367,149 +2352,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1136174457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136174452}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 275ecd2d59d942d41bf31252981978e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _flyToAltitudeProfileCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 4.76524
-      outSlope: 4.76524
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.061909087
-    - serializedVersion: 3
-      time: 0.5
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -4.821313
-      outSlope: -4.821313
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.0535717
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _flyToProgressCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _flyToMaximumAltitudeCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.16666667
-      outSlope: 0.16666667
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 12000000
-      value: 2000000
-      inSlope: 0.16666667
-      outSlope: 0.16666667
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _flyToDuration: 5
-  _flyToGranularityDegrees: 0.01
---- !u!114 &1136174458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136174452}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bef32f31a547984f88be1ab98b65f04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1136174459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1136174452}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74f14e1eb550b9a4fb6c0a2f0456845b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _adjustOrientationForGlobeWhenMoving: 1
-  _detectTransformChanges: 1
-  _localToGlobeFixedMatrix:
-    c0:
-      x: 1
-      y: 0
-      z: 0
-      w: 0
-    c1:
-      x: 0
-      y: 1
-      z: 0
-      w: 0
-    c2:
-      x: 0
-      y: 0
-      z: 1
-      w: 0
-    c3:
-      x: 0
-      y: 0
-      z: 0
-      w: 1
-  _localToGlobeFixedMatrixIsValid: 0
 --- !u!1 &1381363682
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,7 +3065,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -3393,7 +3235,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.5
+  near clip plane: 0.01
   far clip plane: 1000000
   field of view: 60
   orthographic: 0
