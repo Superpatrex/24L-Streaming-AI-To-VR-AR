@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1004559150047614}
+  m_IsPrefabParent: 1
+--- !u!1 &1004559150047614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4343201012087762}
+  - component: {fileID: 114204875993687684}
+  m_Layer: 0
+  m_Name: AsteroidField
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4343201012087762
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004559150047614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114204875993687684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004559150047614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89cb13f2dcb81f740a943a733d03d2d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialiseOnAwake: 1
+  useDOTS: 0
+  obstaclePrefabs:
+  - {fileID: 4284035802695906, guid: e32a280f79f5102449811cc427842046, type: 2}
+  - {fileID: 4268350959475704, guid: e60cac8ca163209469dd8ec65d03877f, type: 2}
+  - {fileID: 4123129452897372, guid: e7756d9c4f44d234b887b76421d9e6ce, type: 2}
+  - {fileID: 4669823331810168, guid: 62261c7485439054a923e1cb70522218, type: 2}
+  - {fileID: 4094128717898860, guid: 9fd1a2316fcfeba4d96932dac628ed61, type: 2}
+  - {fileID: 4454939582639686, guid: edd1cb7eab7cc19499216ea050ea3ab0, type: 2}
+  - {fileID: 4047729992632292, guid: 9439bf78e3fb93443b6f95d202d63158, type: 2}
+  - {fileID: 4605203789366982, guid: 339d80d36796e374fbebc885b96ab79c, type: 2}
+  - {fileID: 4245049005990952, guid: 93e0f2ed342c0874aaed7549ffd8b5f0, type: 2}
+  - {fileID: 4122892848099552, guid: 621f4bb2696a2414e9298b3ae1910eb2, type: 2}
+  obstacleFieldCentre: {x: 500, y: 0, z: 500}
+  obstacleFieldSize: {x: 5000, y: 1000, z: 5000}
+  obstacles: 2500
+  obstacleScaleMin: {x: 5, y: 5, z: 5}
+  obstacleScaleMax: {x: 20, y: 20, z: 20}

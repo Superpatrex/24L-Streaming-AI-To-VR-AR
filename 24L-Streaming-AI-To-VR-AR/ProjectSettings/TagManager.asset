@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Anchor
   layers:
   - Default
   - TransparentFX
@@ -25,16 +26,16 @@ TagManager:
   - 
   - 
   - 
+  - VR Hands
   - 
   - 
   - 
   - 
+  - SSC Celestials
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Small Ships
+  - Climbable
+  - Interactable
   - 
   - 
   m_SortingLayers:

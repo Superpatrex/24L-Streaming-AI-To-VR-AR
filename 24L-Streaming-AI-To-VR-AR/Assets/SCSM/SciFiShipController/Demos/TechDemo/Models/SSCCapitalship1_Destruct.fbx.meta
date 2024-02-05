@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 477be63ea8e4ed6489c5472747c27365
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SSCCapitalship1_EngL_Frag
+    100004: SSCCapitalship1_EngRB_Frag
+    100006: SSCCapitalship1_EngRT_Frag
+    100008: SSCCapitalship1_Front_Frag
+    100010: SSCCapitalship1_Hanger_Frag
+    100012: SSCCapitalship1_Rear_Frag
+    400000: //RootNode
+    400002: SSCCapitalship1_EngL_Frag
+    400004: SSCCapitalship1_EngRB_Frag
+    400006: SSCCapitalship1_EngRT_Frag
+    400008: SSCCapitalship1_Front_Frag
+    400010: SSCCapitalship1_Hanger_Frag
+    400012: SSCCapitalship1_Rear_Frag
+    2100000: SSCCapitalship1_Body_LOD0
+    2100002: SSCCapitalship1_Hanger_LOD0
+    2100004: SSCCapitalship1_Eng_LOD1
+    2100006: SSCCapitalship_Eng_LOD0
+    2300000: SSCCapitalship1_EngL_Frag
+    2300002: SSCCapitalship1_EngRB_Frag
+    2300004: SSCCapitalship1_EngRT_Frag
+    2300006: SSCCapitalship1_Front_Frag
+    2300008: SSCCapitalship1_Hanger_Frag
+    2300010: SSCCapitalship1_Rear_Frag
+    3300000: SSCCapitalship1_EngL_Frag
+    3300002: SSCCapitalship1_EngRB_Frag
+    3300004: SSCCapitalship1_EngRT_Frag
+    3300006: SSCCapitalship1_Front_Frag
+    3300008: SSCCapitalship1_Hanger_Frag
+    3300010: SSCCapitalship1_Rear_Frag
+    4300000: SSCCapitalship1_Front_Frag
+    4300002: SSCCapitalship1_Rear_Frag
+    4300004: SSCCapitalship1_Hanger_Frag
+    4300006: SSCCapitalship1_EngL_Frag
+    4300008: SSCCapitalship1_EngRB_Frag
+    4300010: SSCCapitalship1_EngRT_Frag
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SSCCapitalship1_Body_LOD0
+    second: {fileID: 2100000, guid: 5ee97fb6a67a1e54291068c1f66c4304, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SSCCapitalship1_Eng_LOD1
+    second: {fileID: 2100000, guid: 8cca598b573684c42a8de0ad1e916b21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SSCCapitalship1_Hanger_LOD0
+    second: {fileID: 2100000, guid: 5f33034797c490c4fb653c8d6936370f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SSCCapitalship_Eng_LOD0
+    second: {fileID: 2100000, guid: 6c45e3f07c750d44398dd1d86d0776a7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

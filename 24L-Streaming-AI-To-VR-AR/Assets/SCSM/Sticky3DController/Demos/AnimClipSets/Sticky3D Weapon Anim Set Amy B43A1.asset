@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1577c9dcb2b01a24b8099e0eb8bd1806, type: 3}
+  m_Name: Sticky3D Weapon Anim Set Amy B43A1
+  m_EditorClassIdentifier: 
+  aimIKTurnDelay: 0
+  aimIKFPNearClippingPlane: 0.15
+  aimIKFPWeaponOffset: {x: 0, y: -0.1, z: 0.25}
+  heldTransitionDuration: 0.5
+  isAimIKWhenNotAiming: 0
+  isAppliedToAllCharacters: 0
+  isFreeLookWhenHeld: 1
+  isOnlyFireWhenAiming1: 0
+  isOnlyFireWhenAiming2: 0
+  isSkipParmVerify: 0
+  isAimTPUsingFPCamera: 1
+  isWeaponSettingsOverride: 0
+  stickyModelIDs: 0600000008000000
+  animClipPairList:
+  - guidHash: 1168605317
+    originalClip: {fileID: -1378843485879936035, guid: e266d82bccc75de42a9fe094f1ba7a10, type: 3}
+    replacementClip: {fileID: -4856781140685177315, guid: 5a2362c416d7e734d809ca86110f8a5e, type: 3}
+  - guidHash: 764308571
+    originalClip: {fileID: -295545731815546705, guid: e266d82bccc75de42a9fe094f1ba7a10, type: 3}
+    replacementClip: {fileID: -3770111170058878027, guid: 5a2362c416d7e734d809ca86110f8a5e, type: 3}
+  - guidHash: 1483256838
+    originalClip: {fileID: -1180887191889730840, guid: e266d82bccc75de42a9fe094f1ba7a10, type: 3}
+    replacementClip: {fileID: 2700233900524549696, guid: 5a2362c416d7e734d809ca86110f8a5e, type: 3}
+  - guidHash: 1469149797
+    originalClip: {fileID: -4202398852894155953, guid: e266d82bccc75de42a9fe094f1ba7a10, type: 3}
+    replacementClip: {fileID: 1056793442412870109, guid: 5a2362c416d7e734d809ca86110f8a5e, type: 3}
+  animClipPairRevertDelay: 1.5
+  animActionExtList:
+  - standardAction: 0
+    weaponAction: 3
+    parameterType: 1
+    paramHashCode: 1649726249
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 30
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isExitAction: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: -780915561
+    parameterName: isAction2
+  - standardAction: 0
+    weaponAction: 4
+    parameterType: 1
+    paramHashCode: 134218638
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 31
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isExitAction: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 872342114
+    parameterName: isAction2B
+  - standardAction: 0
+    weaponAction: 41
+    parameterType: 2
+    paramHashCode: -1511740395
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isExitAction: 1
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: -1040989090
+    parameterName: Action2Exit
+  - standardAction: 0
+    weaponAction: 42
+    parameterType: 2
+    paramHashCode: -1511740395
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isExitAction: 1
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 891076774
+    parameterName: Action2Exit
+  - standardAction: 0
+    weaponAction: 43
+    parameterType: 2
+    paramHashCode: -1511740395
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isExitAction: 1
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: -1114048709
+    parameterName: Action2Exit
+  isModelsExpandedInEditor: 1

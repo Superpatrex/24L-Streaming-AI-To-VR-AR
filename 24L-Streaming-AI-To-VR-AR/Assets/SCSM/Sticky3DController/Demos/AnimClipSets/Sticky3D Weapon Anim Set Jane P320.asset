@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1577c9dcb2b01a24b8099e0eb8bd1806, type: 3}
+  m_Name: Sticky3D Weapon Anim Set Jane P320
+  m_EditorClassIdentifier: 
+  aimIKTurnDelay: 0.25
+  aimIKFPNearClippingPlane: 0.3
+  aimIKFPWeaponOffset: {x: 0, y: -0.05, z: 0.4}
+  heldTransitionDuration: 0.5
+  isAimIKWhenNotAiming: 0
+  isAppliedToAllCharacters: 0
+  isFreeLookWhenHeld: 0
+  isOnlyFireWhenAiming1: 0
+  isOnlyFireWhenAiming2: 0
+  isSkipParmVerify: 0
+  isAimTPUsingFPCamera: 0
+  isWeaponSettingsOverride: 0
+  stickyModelIDs: 03000000
+  animClipPairList:
+  - guidHash: 1510296816
+    originalClip: {fileID: -5878612768180919066, guid: 65d4ef37488ac354e8826306b8f8b5cf,
+      type: 3}
+    replacementClip: {fileID: -5878612768180919066, guid: 65d4ef37488ac354e8826306b8f8b5cf,
+      type: 3}
+  animClipPairRevertDelay: 0.5
+  animActionExtList:
+  - standardAction: 0
+    weaponAction: 3
+    parameterType: 1
+    paramHashCode: 1649726249
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 30
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isExitAction: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 1
+    guidHash: -714504977
+    parameterName: isAction2
+  isModelsExpandedInEditor: 1

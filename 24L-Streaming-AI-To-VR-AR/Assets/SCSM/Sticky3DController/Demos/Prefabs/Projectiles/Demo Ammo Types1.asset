@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f17590a36c6d847a02a5b77c6f2b08, type: 3}
+  m_Name: Demo Ammo Types1
+  m_EditorClassIdentifier: 
+  ammoTypes:
+  - ammoType: 0
+    ammoName: .22LR
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 1
+    ammoName: .223 (5.56x 45mm)
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 2
+    ammoName: .30 Carbine
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 3
+    ammoName: .308 (.62x51mm)
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 4
+    ammoName: .357 Mag
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 5
+    ammoName: .38Spi
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 6
+    ammoName: .40 S&W
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 7
+    ammoName: .45ACP
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 8
+    ammoName: .50 BMG
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 9
+    ammoName: 5.7x28mm
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 10
+    ammoName: 7.62x39mm
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 11
+    ammoName: 7.62x54mmR
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 12
+    ammoName: 9 mm standard
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 13
+    ammoName: 9 mm hollow point
+    damageMultiplier: 1.3
+    impactMultiplier: 1.1
+  - ammoType: 14
+    ammoName: 10 mm
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 15
+    ammoName: 12 ga
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 16
+    ammoName: laser pulse 1
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 17
+    ammoName: Ammo Type R
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 18
+    ammoName: Ammo Type S
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 19
+    ammoName: Ammo Type T
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 20
+    ammoName: Ammo Type U
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 21
+    ammoName: Ammo Type V
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 22
+    ammoName: Ammo Type W
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 23
+    ammoName: Ammo Type X
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 24
+    ammoName: Ammo Type Y
+    damageMultiplier: 1
+    impactMultiplier: 1
+  - ammoType: 25
+    ammoName: Ammo Type Z
+    damageMultiplier: 1
+    impactMultiplier: 1
