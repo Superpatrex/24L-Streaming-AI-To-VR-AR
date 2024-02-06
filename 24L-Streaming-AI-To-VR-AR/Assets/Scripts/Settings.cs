@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Settings : MonoBehaviour
 {
+    public Toggle tunnelingToggle;
+    public Dropdown turnDropDown;
+    public Dropdown qualityDropDown;
+    public Slider volumeSlider;
     public static int CesiumGraphicsQuality = 8;
     public static string Turn = "Snap";
     public static float Volume = 1.0f;
@@ -12,8 +17,10 @@ public class Settings : MonoBehaviour
     private static readonly int CesiumGraphicsQualityMax = 16;
     private static readonly int CesiumGraphicsQualityMin = 0;
     
-    public static void SetCesiumGraphicsQuality(int quality)
+    public void SetCesiumGraphicsQuality()
     {
+        int quality = qualityDropDown.value;
+
         if (quality <= CesiumGraphicsQualityMin || quality >= CesiumGraphicsQualityMax)
         {
             Debug.Log("Invalid quality level. Setting to default value of 8.");
@@ -27,21 +34,21 @@ public class Settings : MonoBehaviour
         Debug.Log("Cesium graphics quality set to " + CesiumGraphicsQuality + ".");
     }
 
-    public static void SetTurn(string turn)
+    public void SetTurn()
     {
-        Turn = turn;
-        Debug.Log("Turn set to " + turn + ".");
+        Turn = turnDropDown.value == 0 ? "Snap" : "Smooth";
+        Debug.Log("Turn set to " + Turn + ".");
     }
 
-    public static void SetVolume(float volume)
+    public void SetVolume()
     {
-        AudioListener.volume = volume;
-        Debug.Log("Volume set to " + volume + ".");
+        AudioListener.volume = volumeSlider.value;
+        Debug.Log("Volume set to " + AudioListener.volume + ".");
     }
 
-    public static void SetTunneling(bool tunneling)
+    public void SetTunneling()
     {
-        Tunneling = tunneling;
+        Tunneling = tunnelingToggle.isOn;
         Debug.Log("Tunneling is " + (Tunneling ? "enabled" : "disabled") + ".");
     }
 }

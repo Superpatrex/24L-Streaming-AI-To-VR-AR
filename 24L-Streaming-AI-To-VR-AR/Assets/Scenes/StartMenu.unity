@@ -511,6 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b96c4d1477178841a449a5456de438e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tunnelingToggle: {fileID: 1387075349}
 --- !u!4 &154975083
 Transform:
   m_ObjectHideFlags: 0
@@ -5425,7 +5426,7 @@ MonoBehaviour:
       - m_Target: {fileID: 154975082}
         m_TargetAssemblyTypeName: Settings, ScriptAssembly
         m_MethodName: SetTunneling
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
