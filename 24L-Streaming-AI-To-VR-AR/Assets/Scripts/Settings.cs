@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Settings : MonoBehaviour
 {
     public Toggle tunnelingToggle;
-    public Dropdown turnDropDown;
-    public Dropdown qualityDropDown;
-    public Slider volumeSlider;
+    public TMP_Dropdown turnDropDown;
+    public TMP_Dropdown qualityDropDown;
+    public Scrollbar volumeSlider;
     public static int CesiumGraphicsQuality = 8;
     public static string Turn = "Snap";
     public static float Volume = 1.0f;
