@@ -11,23 +11,6 @@ namespace Utility
 
     }
 
-    public class Settings
-    {
-        private static int _AIVoiceVolume;
-
-        public static int AIVoiceVolume
-        {
-            get
-            {
-                return _AIVoiceVolume;
-            }
-            set
-            {
-                _AIVoiceVolume = (int)Math.Clamp(value, 0, 100);
-            }
-        }
-    }
-
     /// <summary>
     /// A class to hold the latitude and longitude of a location in addition to the location name.
     /// </summary>

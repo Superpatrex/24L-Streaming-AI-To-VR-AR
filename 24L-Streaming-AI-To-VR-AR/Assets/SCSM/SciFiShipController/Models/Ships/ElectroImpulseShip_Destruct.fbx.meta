@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 191115f15d8214c49a4ecf21ec9281b3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ElectroImpulse
+    100002: ElectroImpulse_Frag.00
+    100004: ElectroImpulse_Frag.01
+    100006: ElectroImpulse_Frag.02
+    100008: ElectroImpulse_Frag.04
+    100010: ElectroImpulse_Frag.05
+    100012: ElectroImpulse_Frag.06
+    100014: ElectroImpulse_Frag.07
+    100016: ElectroImpulse_Frag.08
+    100018: ElectroImpulse_Frag.09
+    100020: ElectroImpulse_Frag.10
+    100022: ElectroImpulse_Frag.11
+    100024: //RootNode
+    400000: ElectroImpulse
+    400002: ElectroImpulse_Frag.00
+    400004: ElectroImpulse_Frag.01
+    400006: ElectroImpulse_Frag.02
+    400008: ElectroImpulse_Frag.04
+    400010: ElectroImpulse_Frag.05
+    400012: ElectroImpulse_Frag.06
+    400014: ElectroImpulse_Frag.07
+    400016: ElectroImpulse_Frag.08
+    400018: ElectroImpulse_Frag.09
+    400020: ElectroImpulse_Frag.10
+    400022: ElectroImpulse_Frag.11
+    400024: //RootNode
+    2100000: Body
+    2100002: White
+    2100004: Nossle
+    2100006: Windows
+    2100008: Interior
+    2300000: ElectroImpulse
+    2300002: ElectroImpulse_Frag.00
+    2300004: ElectroImpulse_Frag.01
+    2300006: ElectroImpulse_Frag.02
+    2300008: ElectroImpulse_Frag.04
+    2300010: ElectroImpulse_Frag.05
+    2300012: ElectroImpulse_Frag.06
+    2300014: ElectroImpulse_Frag.07
+    2300016: ElectroImpulse_Frag.08
+    2300018: ElectroImpulse_Frag.09
+    2300020: ElectroImpulse_Frag.10
+    2300022: ElectroImpulse_Frag.11
+    3300000: ElectroImpulse
+    3300002: ElectroImpulse_Frag.00
+    3300004: ElectroImpulse_Frag.01
+    3300006: ElectroImpulse_Frag.02
+    3300008: ElectroImpulse_Frag.04
+    3300010: ElectroImpulse_Frag.05
+    3300012: ElectroImpulse_Frag.06
+    3300014: ElectroImpulse_Frag.07
+    3300016: ElectroImpulse_Frag.08
+    3300018: ElectroImpulse_Frag.09
+    3300020: ElectroImpulse_Frag.10
+    3300022: ElectroImpulse_Frag.11
+    4300000: ElectroImpulse
+    4300002: ElectroImpulse_Frag.04
+    4300004: ElectroImpulse_Frag.05
+    4300006: ElectroImpulse_Frag.00
+    4300008: ElectroImpulse_Frag.11
+    4300010: ElectroImpulse_Frag.09
+    4300012: ElectroImpulse_Frag.07
+    4300014: ElectroImpulse_Frag.06
+    4300016: ElectroImpulse_Frag.02
+    4300018: ElectroImpulse_Frag.08
+    4300020: ElectroImpulse_Frag.01
+    4300022: ElectroImpulse_Frag.10
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 7738ee6a13e05984bad85411fd0dda3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Interior
+    second: {fileID: 2100000, guid: a79c259fd07705e4f824f6b0d88b7269, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nossle
+    second: {fileID: 2100000, guid: 838284a30392a4c4591e1764db7f8d43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: dad405dda1402744097377a32aedc17d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows
+    second: {fileID: 2100000, guid: cef196071691015488d7e94b913e5765, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

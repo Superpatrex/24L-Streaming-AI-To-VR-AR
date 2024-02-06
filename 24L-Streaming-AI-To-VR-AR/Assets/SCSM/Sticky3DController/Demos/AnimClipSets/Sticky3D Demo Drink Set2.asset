@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1d5c3e641f00849825246c31282430, type: 3}
+  m_Name: Sticky3D Demo Drink Set2
+  m_EditorClassIdentifier: 
+  animClipPairList:
+  - guidHash: 1766696145
+    originalClip: {fileID: 7929500770914164545, guid: 596d66227a154c84c825016f184ca5a1, type: 3}
+    replacementClip: {fileID: -8485982757126419835, guid: 596d66227a154c84c825016f184ca5a1, type: 3}

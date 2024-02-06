@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc2903119fed204bac445d6471e16e9, type: 3}
+  m_Name: Sticky3D Demo Surfaces
+  m_EditorClassIdentifier: 
+  surfaceTypeList:
+  - guidHash: -1600066019
+    surfaceName: Concrete 1
+    damageDecals: {fileID: 11400000, guid: 90aa03bdbc792a04a9b176abca70da21, type: 2}
+  - guidHash: -1395572845
+    surfaceName: Dry Gravel
+    damageDecals: {fileID: 0}
+  - guidHash: 1395575538
+    surfaceName: Wet Gravel
+    damageDecals: {fileID: 0}
+  - guidHash: 692570782
+    surfaceName: Forest 1
+    damageDecals: {fileID: 0}
+  - guidHash: 1334887577
+    surfaceName: Forest 2
+    damageDecals: {fileID: 0}
+  - guidHash: -1503327569
+    surfaceName: Grass 1
+    damageDecals: {fileID: 0}
+  - guidHash: -81177102
+    surfaceName: Metal 1
+    damageDecals: {fileID: 11400000, guid: 3223bf39dbdbe054db2796ef6e7a5278, type: 2}
+  - guidHash: 869830739
+    surfaceName: Snow 1
+    damageDecals: {fileID: 0}
+  - guidHash: 52144187
+    surfaceName: Tiles 1
+    damageDecals: {fileID: 0}
+  - guidHash: -317690273
+    surfaceName: Wood 1
+    damageDecals: {fileID: 0}
+  - guidHash: -1941482598
+    surfaceName: Wood 2
+    damageDecals: {fileID: 0}
+  - guidHash: -1422343474
+    surfaceName: Dirt 1
+    damageDecals: {fileID: 0}
+  - guidHash: 216322948
+    surfaceName: Dirt 2
+    damageDecals: {fileID: 0}
+  - guidHash: 1420192128
+    surfaceName: Stone 1
+    damageDecals: {fileID: 0}
+  - guidHash: 101315436
+    surfaceName: Stone 2
+    damageDecals: {fileID: 0}
+  - guidHash: 157417138
+    surfaceName: Wood 3
+    damageDecals: {fileID: 0}
+  - guidHash: 2063625548
+    surfaceName: Carpet 1
+    damageDecals: {fileID: 0}
+  - guidHash: 742838906
+    surfaceName: Carpet 2
+    damageDecals: {fileID: 0}
+  - guidHash: -652199664
+    surfaceName: Carpet 3
+    damageDecals: {fileID: 0}

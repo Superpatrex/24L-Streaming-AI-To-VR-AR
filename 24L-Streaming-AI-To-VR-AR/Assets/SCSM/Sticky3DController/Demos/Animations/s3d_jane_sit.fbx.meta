@@ -1,0 +1,1673 @@
+fileFormatVersion: 2
+guid: ee983409fdc844b438df6a4e7da95ca0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ball_l
+    100002: ball_r
+    100004: breast_l
+    100006: breast_r
+    100008: calf_l
+    100010: calf_r
+    100012: clavicle_l
+    100014: clavicle_r
+    100016: foot_l
+    100018: foot_r
+    100020: hand_l
+    100022: hand_r
+    100024: head
+    100026: index_01_l
+    100028: index_01_r
+    100030: index_02_l
+    100032: index_02_r
+    100034: index_03_l
+    100036: index_03_r
+    100038: lowerarm_l
+    100040: lowerarm_r
+    100042: middle_01_l
+    100044: middle_01_r
+    100046: middle_02_l
+    100048: middle_02_r
+    100050: middle_03_l
+    100052: middle_03_r
+    100054: neck_01
+    100056: pelvis
+    100058: pinky_01_l
+    100060: pinky_01_r
+    100062: pinky_02_l
+    100064: pinky_02_r
+    100066: pinky_03_l
+    100068: pinky_03_r
+    100070: ring_01_l
+    100072: ring_01_r
+    100074: ring_02_l
+    100076: ring_02_r
+    100078: ring_03_l
+    100080: ring_03_r
+    100082: Root
+    100084: //RootNode
+    100086: spine_01
+    100088: spine_02
+    100090: spine_03
+    100092: thigh_l
+    100094: thigh_r
+    100096: thumb_01_l
+    100098: thumb_01_r
+    100100: thumb_02_l
+    100102: thumb_02_r
+    100104: thumb_03_l
+    100106: thumb_03_r
+    100108: upperarm_l
+    100110: upperarm_r
+    100112: s3d_jane
+    400000: ball_l
+    400002: ball_r
+    400004: breast_l
+    400006: breast_r
+    400008: calf_l
+    400010: calf_r
+    400012: clavicle_l
+    400014: clavicle_r
+    400016: foot_l
+    400018: foot_r
+    400020: hand_l
+    400022: hand_r
+    400024: head
+    400026: index_01_l
+    400028: index_01_r
+    400030: index_02_l
+    400032: index_02_r
+    400034: index_03_l
+    400036: index_03_r
+    400038: lowerarm_l
+    400040: lowerarm_r
+    400042: middle_01_l
+    400044: middle_01_r
+    400046: middle_02_l
+    400048: middle_02_r
+    400050: middle_03_l
+    400052: middle_03_r
+    400054: neck_01
+    400056: pelvis
+    400058: pinky_01_l
+    400060: pinky_01_r
+    400062: pinky_02_l
+    400064: pinky_02_r
+    400066: pinky_03_l
+    400068: pinky_03_r
+    400070: ring_01_l
+    400072: ring_01_r
+    400074: ring_02_l
+    400076: ring_02_r
+    400078: ring_03_l
+    400080: ring_03_r
+    400082: Root
+    400084: //RootNode
+    400086: spine_01
+    400088: spine_02
+    400090: spine_03
+    400092: thigh_l
+    400094: thigh_r
+    400096: thumb_01_l
+    400098: thumb_01_r
+    400100: thumb_02_l
+    400102: thumb_02_r
+    400104: thumb_03_l
+    400106: thumb_03_r
+    400108: upperarm_l
+    400110: upperarm_r
+    400112: s3d_jane
+    7400000: s3d_jane_stand_to_sit1
+    7400002: s3d_jane_sitting1
+    7400004: s3d_jane_sit_to_stand1
+    7400006: s3d_jane_sitting2
+    7400008: s3d_jane_stand_to_sit2
+    7400010: s3d_jane_sit_to_stand2
+    7400012: s3d_jane_sitting3
+    7400014: s3d_jane_sit_to_stand3
+    7400016: s3d_jane_stand_to_sit3
+    7400018: s3d_jane_sitting4
+    7400020: s3d_jane_sit_to_stand4
+    7400022: s3d_jane_stand_to_sit4
+    7400024: s3d_jane_sitting5
+    7400026: s3d_jane_sit_to_stand5
+    7400028: s3d_jane_stand_to_sit5
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: <Root Transform>
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: s3d_jane_stand_to_sit1
+      takeName: s3d_jane_stand_to_sit1
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sitting1
+      takeName: s3d_jane_sitting1
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sit_to_stand1
+      takeName: s3d_jane_sit_to_stand1
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sitting2
+      takeName: s3d_jane_sitting2
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_stand_to_sit2
+      takeName: s3d_jane_stand_to_sit2
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sit_to_stand2
+      takeName: s3d_jane_sit_to_stand2
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves:
+      - name: LeftFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      - name: RightFootIKWeight
+        curve:
+          serializedVersion: 2
+          curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          preInfinity: 3
+          postInfinity: 3
+          rotationOrder: 4
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sitting3
+      takeName: s3d_jane_sitting3
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sit_to_stand3
+      takeName: s3d_jane_sit_to_stand3
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_stand_to_sit3
+      takeName: s3d_jane_stand_to_sit3
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sitting4
+      takeName: s3d_jane_sitting4
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sit_to_stand4
+      takeName: s3d_jane_sit_to_stand4
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_stand_to_sit4
+      takeName: s3d_jane_stand_to_sit4
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sitting5
+      takeName: s3d_jane_sitting5
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_sit_to_stand5
+      takeName: s3d_jane_sit_to_stand5
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: s3d_jane_stand_to_sit5
+      takeName: s3d_jane_stand_to_sit5
+      firstFrame: 0
+      lastFrame: 149
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_l
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thigh_r
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: calf_l
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: calf_r
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_l
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: foot_r
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_01
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_02
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: neck_01
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_l
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: clavicle_r
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upperarm_l
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upperarm_r
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowerarm_l
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowerarm_r
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_l
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: hand_r
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ball_l
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ball_r
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_l
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_l
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_l
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_01_l
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_02_l
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_03_l
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_01_l
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_02_l
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_03_l
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_01_l
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_02_l
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_03_l
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_01_l
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_02_l
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_03_l
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_01_r
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_02_r
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: thumb_03_r
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_01_r
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_02_r
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: index_03_r
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_01_r
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_02_r
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: middle_03_r
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_01_r
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_02_r
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ring_03_r
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_01_r
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_02_r
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: pinky_03_r
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spine_03
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: s3d_jane(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_jane.body
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_jane
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Root
+      parentName: s3d_jane
+      position: {x: -0, y: -0.0002674917, z: -0.00052251463}
+      rotation: {x: 0.5005818, y: -0.49941766, z: -0.50058126, w: 0.49941802}
+      scale: {x: 1.0000002, y: 1.0000015, z: 1.0000019}
+    - name: pelvis
+      parentName: Root
+      position: {x: -0.000053529555, y: 0.0008884993, z: -4.8709918e-11}
+      rotation: {x: -0.20486173, y: 0.67678016, z: 0.2048615, w: 0.67678064}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000012}
+    - name: spine_01
+      parentName: pelvis
+      position: {x: 4.440892e-18, y: 0.00079082407, z: -2.2351741e-10}
+      rotation: {x: 0.43625784, y: -0.00000017881392, z: -0.000000014901159, w: 0.8998217}
+      scale: {x: 1.0000005, y: 0.99999833, z: 1.0000017}
+    - name: spine_02
+      parentName: spine_01
+      position: {x: -1.0769163e-16, y: 0.0006582644, z: -4.6333298e-10}
+      rotation: {x: -0.090011604, y: 0.0000001115886, z: 0.000000029959367, w: 0.99594074}
+      scale: {x: 0.9999998, y: 0.9999994, z: 0.9999995}
+    - name: spine_03
+      parentName: spine_02
+      position: {x: -1.2044096e-18, y: 0.000883698, z: 1.862645e-10}
+      rotation: {x: -0.07850971, y: -0.00000012702766, z: -0.000000008064698, w: 0.99691343}
+      scale: {x: 1.0000004, y: 0.9999989, z: 0.99999976}
+    - name: clavicle_l
+      parentName: spine_03
+      position: {x: -0.00022861494, y: 0.002276017, z: 0.00015363563}
+      rotation: {x: -0.008315328, y: -0.0009688047, z: 0.7505229, w: 0.66079146}
+      scale: {x: 1.0000037, y: 1.0000055, z: 0.99999994}
+    - name: upperarm_l
+      parentName: clavicle_l
+      position: {x: -5.0175003e-10, y: 0.0012824625, z: 3.4924597e-10}
+      rotation: {x: 0.0064752153, y: -0.003892876, z: -0.04059319, w: 0.9991473}
+      scale: {x: 0.99999756, y: 1.0000021, z: 1.0000008}
+    - name: lowerarm_l
+      parentName: upperarm_l
+      position: {x: 2.4680047e-10, y: 0.0023699205, z: -7.0780515e-10}
+      rotation: {x: 0.026471397, y: 0.00947555, z: -0.020901693, w: 0.99938613}
+      scale: {x: 1.0000061, y: 1.0000044, z: 1.0000029}
+    - name: hand_l
+      parentName: lowerarm_l
+      position: {x: 5.9604643e-10, y: 0.0021517833, z: 0.000000001490116}
+      rotation: {x: 0.11575794, y: -0.41667053, z: 0.0071904194, w: 0.90162855}
+      scale: {x: 1.0000105, y: 1.0000098, z: 0.99999064}
+    - name: index_01_l
+      parentName: hand_l
+      position: {x: 0.00011383496, y: 0.0009385928, z: 0.00010721592}
+      rotation: {x: 0.045209214, y: -0.47583356, z: 0.018078826, w: 0.87818664}
+      scale: {x: 1.0000031, y: 1.0000076, z: 1.0000019}
+    - name: index_02_l
+      parentName: index_01_l
+      position: {x: 1.6763806e-10, y: 0.00023201625, z: -9.126961e-10}
+      rotation: {x: 0.037937198, y: -0.0031126714, z: -0.0018266948, w: 0.9992736}
+      scale: {x: 1.0000013, y: 1.0000077, z: 1.0000021}
+    - name: index_03_l
+      parentName: index_02_l
+      position: {x: 3.7252902e-11, y: 0.00020692586, z: 5.7742e-10}
+      rotation: {x: 0.05149221, y: -0.0005718094, z: -0.009251578, w: 0.9986304}
+      scale: {x: 1.0000002, y: 1.000005, z: 0.9999986}
+    - name: middle_01_l
+      parentName: hand_l
+      position: {x: -0.000030513555, y: 0.00090441626, z: -0.00008355909}
+      rotation: {x: 0.02443574, y: -0.41487053, z: 0.08557631, w: 0.9055175}
+      scale: {x: 1.0000063, y: 1.0000002, z: 0.9999958}
+    - name: middle_02_l
+      parentName: middle_01_l
+      position: {x: -2.4214386e-10, y: 0.000305314, z: -5.494803e-10}
+      rotation: {x: 0.032336596, y: -0.001442819, z: -0.024543751, w: 0.9991746}
+      scale: {x: 0.99999875, y: 1.0000029, z: 0.9999986}
+    - name: middle_03_l
+      parentName: middle_02_l
+      position: {x: 2.2351741e-10, y: 0.00025020866, z: 4.4237822e-10}
+      rotation: {x: 0.028960183, y: -0.00041910313, z: 0.008970186, w: 0.99954027}
+      scale: {x: 1.0000015, y: 1.000003, z: 1.0000018}
+    - name: pinky_01_l
+      parentName: hand_l
+      position: {x: -0.00031009296, y: 0.00074000616, z: -0.00027110038}
+      rotation: {x: -0.016630616, y: -0.31150967, z: 0.09914552, w: 0.9449102}
+      scale: {x: 1.0000117, y: 0.9999946, z: 0.9999924}
+    - name: pinky_02_l
+      parentName: pinky_01_l
+      position: {x: 5.681068e-10, y: 0.00019210837, z: -9.167706e-11}
+      rotation: {x: 0.037247263, y: -0.0010510975, z: -0.012571909, w: 0.99922645}
+      scale: {x: 1.0000037, y: 1.0000081, z: 1.000005}
+    - name: pinky_03_l
+      parentName: pinky_02_l
+      position: {x: -3.4924597e-10, y: 0.00014063876, z: 0.0000000013667159}
+      rotation: {x: -0.022181967, y: -0.000050412596, z: 0.026626175, w: 0.99939936}
+      scale: {x: 1.000002, y: 1.0000076, z: 1.0000056}
+    - name: ring_01_l
+      parentName: hand_l
+      position: {x: -0.0001723646, y: 0.0008339706, z: -0.000201491}
+      rotation: {x: -0.003716988, y: -0.39919743, z: 0.10323127, w: 0.9110274}
+      scale: {x: 1.0000108, y: 0.999997, z: 0.99999475}
+    - name: ring_02_l
+      parentName: ring_01_l
+      position: {x: 0.0000000010244549, y: 0.0002677647, z: -0.0000000013178214}
+      rotation: {x: 0.033375923, y: -0.0011658064, z: -0.021649899, w: 0.9992077}
+      scale: {x: 1.0000006, y: 1.0000004, z: 0.9999986}
+    - name: ring_03_l
+      parentName: ring_02_l
+      position: {x: -2.5145708e-10, y: 0.00022312495, z: 4.8894434e-11}
+      rotation: {x: -0.035437476, y: -0.0026346187, z: 0.034615822, w: 0.9987688}
+      scale: {x: 1.0000033, y: 1.0000066, z: 1.0000072}
+    - name: thumb_01_l
+      parentName: hand_l
+      position: {x: 0.00012967206, y: 0.00035290353, z: 0.00013248611}
+      rotation: {x: -0.0013190815, y: -0.73008764, z: -0.35977277, w: 0.58097667}
+      scale: {x: 0.999995, y: 1.0000079, z: 0.9999994}
+    - name: thumb_02_l
+      parentName: thumb_01_l
+      position: {x: 4.842877e-10, y: 0.00027829275, z: 9.126961e-10}
+      rotation: {x: 0.017713252, y: 0.024265274, z: 0.030633327, w: 0.9990791}
+      scale: {x: 1.0000054, y: 0.9999931, z: 1.0000043}
+    - name: thumb_03_l
+      parentName: thumb_02_l
+      position: {x: 0.0000009842962, y: 0.0003206423, z: -0.0000011654663}
+      rotation: {x: 0.07543601, y: 0.0041737235, z: 0.038259536, w: 0.9964077}
+      scale: {x: 1.0000024, y: 1.0000007, z: 1.0000073}
+    - name: clavicle_r
+      parentName: spine_03
+      position: {x: 0.00022861501, y: 0.0022760166, z: 0.00015363553}
+      rotation: {x: -0.008315477, y: 0.00096908736, z: -0.750523, w: 0.6607914}
+      scale: {x: 1.0000018, y: 1.0000052, z: 1.0000012}
+    - name: upperarm_r
+      parentName: clavicle_r
+      position: {x: 2.9802322e-10, y: 0.0012824623, z: 4.353933e-10}
+      rotation: {x: -0.006475137, y: -0.0038929046, z: -0.04059296, w: -0.99914724}
+      scale: {x: 1.0000019, y: 1.0000074, z: 1.0000004}
+    - name: lowerarm_r
+      parentName: upperarm_r
+      position: {x: 8.268398e-10, y: 0.0023699221, z: -6.9849193e-10}
+      rotation: {x: 0.026472433, y: -0.009475541, z: 0.02090215, w: 0.9993861}
+      scale: {x: 1.0000025, y: 1.0000017, z: 1.0000015}
+    - name: hand_r
+      parentName: lowerarm_r
+      position: {x: -3.1199304e-10, y: 0.0021517836, z: 0.0000000016205013}
+      rotation: {x: 0.11575878, y: 0.41667122, z: -0.007191522, w: 0.90162814}
+      scale: {x: 1.00001, y: 1.000011, z: 0.99998856}
+    - name: index_01_r
+      parentName: hand_r
+      position: {x: -0.000113836264, y: 0.0009385934, z: 0.00010721402}
+      rotation: {x: -0.0452087, y: -0.47583318, z: 0.01807862, w: -0.8781868}
+      scale: {x: 0.9999967, y: 1.0000111, z: 1.0000072}
+    - name: index_02_r
+      parentName: index_01_r
+      position: {x: -1.4901161e-10, y: 0.000232016, z: -8.9406965e-10}
+      rotation: {x: 0.037939318, y: 0.0031126135, z: 0.0018273569, w: 0.99927354}
+      scale: {x: 0.9999994, y: 1.000005, z: 0.9999986}
+    - name: index_03_r
+      parentName: index_02_r
+      position: {x: -3.352761e-10, y: 0.0002069255, z: 3.352761e-10}
+      rotation: {x: 0.051492345, y: 0.0005717949, z: 0.009251463, w: 0.9986304}
+      scale: {x: 0.9999991, y: 1.0000036, z: 0.9999988}
+    - name: middle_01_r
+      parentName: hand_r
+      position: {x: 0.000030512772, y: 0.00090441667, z: -0.000083560466}
+      rotation: {x: -0.024438025, y: -0.4148693, z: 0.08557995, w: -0.9055177}
+      scale: {x: 1.0000035, y: 1.0000013, z: 1.0000025}
+    - name: middle_02_r
+      parentName: middle_01_r
+      position: {x: 1.862645e-10, y: 0.000305314, z: -3.352761e-10}
+      rotation: {x: 0.03233425, y: 0.0014431174, z: 0.02454449, w: 0.9991747}
+      scale: {x: 0.99999845, y: 1.0000038, z: 0.99999654}
+    - name: middle_03_r
+      parentName: middle_02_r
+      position: {x: 1.4901161e-10, y: 0.00025020892, z: 0}
+      rotation: {x: 0.028960172, y: 0.00041905098, z: -0.008970114, w: 0.99954027}
+      scale: {x: 1.0000012, y: 1.0000076, z: 1.0000035}
+    - name: pinky_01_r
+      parentName: hand_r
+      position: {x: 0.00031009293, y: 0.00074000657, z: -0.00027110096}
+      rotation: {x: 0.016625917, y: -0.3115096, z: 0.0991511, w: -0.9449098}
+      scale: {x: 1.0000134, y: 1.0000017, z: 1.0000014}
+    - name: pinky_02_r
+      parentName: pinky_01_r
+      position: {x: -6.3329936e-10, y: 0.00019210845, z: -5.0291415e-10}
+      rotation: {x: 0.03725625, y: 0.0010508292, z: 0.012578218, w: 0.99922603}
+      scale: {x: 1.0000012, y: 1.000006, z: 1}
+    - name: pinky_03_r
+      parentName: pinky_02_r
+      position: {x: 2.2351741e-10, y: 0.00014063843, z: 7.357448e-10}
+      rotation: {x: -0.022181902, y: 0.000050386738, z: -0.026626037, w: 0.99939936}
+      scale: {x: 1.0000024, y: 1.000006, z: 1.0000056}
+    - name: ring_01_r
+      parentName: hand_r
+      position: {x: 0.00017236426, y: 0.00083397067, z: -0.00020149193}
+      rotation: {x: 0.003719172, y: -0.3991962, z: 0.10323327, w: -0.9110277}
+      scale: {x: 1.0000099, y: 0.9999994, z: 1.0000032}
+    - name: ring_02_r
+      parentName: ring_01_r
+      position: {x: -0.0000000010523945, y: 0.00026776508, z: -0.00000000115484}
+      rotation: {x: 0.033373192, y: 0.0011661343, z: 0.021649795, w: 0.99920774}
+      scale: {x: 1.0000024, y: 1.0000122, z: 1.0000046}
+    - name: ring_03_r
+      parentName: ring_02_r
+      position: {x: -1.862645e-10, y: 0.00022312488, z: 0}
+      rotation: {x: -0.03543744, y: 0.0026343577, z: -0.034615856, w: 0.99876875}
+      scale: {x: 1.0000026, y: 0.9999976, z: 1.0000045}
+    - name: thumb_01_r
+      parentName: hand_r
+      position: {x: -0.00012967236, y: 0.0003529033, z: 0.0001324868}
+      rotation: {x: 0.0013188081, y: -0.7300882, z: -0.3597722, w: -0.58097625}
+      scale: {x: 0.99999666, y: 1.0000154, z: 0.9999974}
+    - name: thumb_02_r
+      parentName: thumb_01_r
+      position: {x: -3.7252902e-11, y: 0.00027829275, z: 9.313226e-10}
+      rotation: {x: 0.017713595, y: -0.024265518, z: -0.030637182, w: 0.99907905}
+      scale: {x: 1.0000064, y: 0.9999921, z: 1.0000048}
+    - name: thumb_03_r
+      parentName: thumb_02_r
+      position: {x: -0.0000009851158, y: 0.00032064161, z: -0.0000011655688}
+      rotation: {x: 0.07543434, y: -0.0041799294, z: -0.03825853, w: 0.9964078}
+      scale: {x: 1, y: 0.9999944, z: 0.99999994}
+    - name: neck_01
+      parentName: spine_03
+      position: {x: -1.2003364e-11, y: 0.002955969, z: -0.000050345774}
+      rotation: {x: 0.18916842, y: -0.00002156741, z: 0.005773717, w: 0.98192775}
+      scale: {x: 0.99999946, y: 1.0000017, z: 0.9999994}
+    - name: head
+      parentName: neck_01
+      position: {x: -5.1339155e-10, y: 0.0011280063, z: -3.6985057e-10}
+      rotation: {x: -0.20438355, y: 0.00011119803, z: -0.005772685, w: 0.9788739}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: breast_r
+      parentName: spine_03
+      position: {x: 0.000600112, y: 0.0014689458, z: 0.00043681564}
+      rotation: {x: -0.43809783, y: 0.32056287, z: 0.7220517, w: -0.4288953}
+      scale: {x: 1.0000058, y: 1.0000032, z: 1.0000025}
+    - name: breast_l
+      parentName: spine_03
+      position: {x: -0.0006001098, y: 0.0014689459, z: 0.00043681587}
+      rotation: {x: 0.43631148, y: 0.3216232, z: 0.7231326, w: 0.42810065}
+      scale: {x: 1.0000095, y: 1.0000092, z: 1.0000043}
+    - name: thigh_l
+      parentName: pelvis
+      position: {x: -0.0009386538, y: -0.00010256632, z: -0.000107226544}
+      rotation: {x: 0.940558, y: -0.109773785, z: 0.2146964, w: -0.23917736}
+      scale: {x: 1.0000004, y: 1.0000031, z: 1.0000042}
+    - name: calf_l
+      parentName: thigh_l
+      position: {x: 0.0000024892947, y: 0.0038155152, z: -0.0000047402455}
+      rotation: {x: 0.07081551, y: -0.23060866, z: 0.003999382, w: 0.97045803}
+      scale: {x: 0.9999968, y: 0.9999983, z: 1.000001}
+    - name: foot_l
+      parentName: calf_l
+      position: {x: 0.0000020868567, y: 0.0038579907, z: -0.00012434369}
+      rotation: {x: -0.5463902, y: 0.00008803605, z: -0.00013806856, w: 0.83753073}
+      scale: {x: 0.99999964, y: 1.000006, z: 1.000003}
+    - name: ball_l
+      parentName: foot_l
+      position: {x: 2.6077032e-10, y: 0.0012170834, z: -0.0000000014808028}
+      rotation: {x: -0.2530121, y: -0.018035125, z: -0.042248797, w: 0.9663719}
+      scale: {x: 0.99999964, y: 1.000001, z: 1.0000043}
+    - name: thigh_r
+      parentName: pelvis
+      position: {x: 0.00093865395, y: -0.000102566635, z: -0.00010722646}
+      rotation: {x: 0.9405581, y: 0.109773815, z: -0.21469627, w: -0.2391774}
+      scale: {x: 1.0000017, y: 1.0000074, z: 1.0000087}
+    - name: calf_r
+      parentName: thigh_r
+      position: {x: -0.000002489388, y: 0.003815515, z: -0.000004740208}
+      rotation: {x: 0.07081546, y: 0.23060885, z: -0.003999427, w: 0.97045803}
+      scale: {x: 0.9999983, y: 0.999998, z: 1.0000007}
+    - name: foot_r
+      parentName: calf_r
+      position: {x: -0.0000020867794, y: 0.003857991, z: -0.00012434475}
+      rotation: {x: -0.5463904, y: -0.000088214874, z: 0.00013805181, w: 0.8375307}
+      scale: {x: 0.9999998, y: 1.000005, z: 1.0000052}
+    - name: ball_r
+      parentName: foot_r
+      position: {x: -2.6542693e-10, y: 0.0012170841, z: -0.0000000012665987}
+      rotation: {x: -0.25301188, y: 0.01803531, z: 0.042248756, w: 0.966372}
+      scale: {x: 0.9999983, y: 1.0000032, z: 1.0000017}
+    - name: s3d_jane.hair
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_jane.eyes
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_jane.eyebrows
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_jane.clothing1
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: s3d_jane.shoes
+      parentName: s3d_jane(Clone)
+      position: {x: -0, y: 0.81802624, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 8dffa3ca3e4230b439f60e4f1d1894e3,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

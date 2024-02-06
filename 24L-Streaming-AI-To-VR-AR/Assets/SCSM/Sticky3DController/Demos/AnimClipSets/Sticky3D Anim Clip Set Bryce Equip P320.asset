@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a1d5c3e641f00849825246c31282430, type: 3}
+  m_Name: Sticky3D Anim Clip Set Bryce Equip P320
+  m_EditorClassIdentifier: 
+  animClipPairList:
+  - guidHash: -307349828
+    originalClip: {fileID: -9166263443354574237, guid: f4f9cb96352b4d34688a754bfc9f90ec, type: 3}
+    replacementClip: {fileID: -7136219435982915380, guid: f4f9cb96352b4d34688a754bfc9f90ec, type: 3}
+  - guidHash: -1266859503
+    originalClip: {fileID: -3182075636218353888, guid: f4f9cb96352b4d34688a754bfc9f90ec, type: 3}
+    replacementClip: {fileID: -6743345429912399574, guid: f4f9cb96352b4d34688a754bfc9f90ec, type: 3}

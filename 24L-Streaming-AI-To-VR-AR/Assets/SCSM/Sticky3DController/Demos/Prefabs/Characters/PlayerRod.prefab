@@ -1,0 +1,1400 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1861350078361892676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8145456127019239538}
+  m_Layer: 0
+  m_Name: Stash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8145456127019239538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861350078361892676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8807098622513621612}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5007945509089615928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7542573446981446899}
+  - component: {fileID: 5477724477769874875}
+  m_Layer: 0
+  m_Name: FootSteps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7542573446981446899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5007945509089615928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8807098622513621612}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5477724477769874875
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5007945509089615928}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &6813748789828096458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3062970972113492280}
+  - component: {fileID: 5359429506948903418}
+  - component: {fileID: 2059501838613981489}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3062970972113492280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813748789828096458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8807098622513621612}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &5359429506948903418
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813748789828096458}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &2059501838613981489
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813748789828096458}
+  m_Enabled: 1
+--- !u!135 &6354877879235917896
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526779492920057266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0003
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5357668470587054617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526779492920057266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f6817b691d4e444bd69971df30ac31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &9151132990140327320
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526779492920057276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.0003
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5000582091523660872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7526779492920057276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f6817b691d4e444bd69971df30ac31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8778814470825449964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8807098622513621612}
+  - component: {fileID: 6710911203424650015}
+  - component: {fileID: 5591069600294385977}
+  - component: {fileID: 1326894568391271165}
+  - component: {fileID: 2124337466272586444}
+  m_Layer: 0
+  m_Name: PlayerRod
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8807098622513621612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778814470825449964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7526779492920344778}
+  - {fileID: 3062970972113492280}
+  - {fileID: 7542573446981446899}
+  - {fileID: 8145456127019239538}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &6710911203424650015
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778814470825449964}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23
+  m_Height: 1.84
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.92, z: 0}
+--- !u!54 &5591069600294385977
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778814470825449964}
+  serializedVersion: 2
+  m_Mass: 65
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1326894568391271165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778814470825449964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe0f4a591aceb4fb1cbe5c8e58325c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialiseOnAwake: 1
+  selectedTabInt: 5
+  allowRepaint: 1
+  walkSpeed: 1.5
+  sprintSpeed: 6
+  strafeSpeed: 1
+  maxAcceleration: 25
+  jumpSpeed: 5
+  jumpDelay: 0.2
+  crouchSpeed: 0.5
+  allowMovementInAir: 0
+  gravitationalAcceleration: 9.81
+  arcadeFallMultiplier: 0
+  maxStepOffset: 0.25
+  stepUpSpeed: 1
+  stepUpBias: 1
+  maxSlopeAngle: 45
+  alignToGroundNormal: 0
+  verticalRotationRate: 90
+  turnRotationRate: 180
+  stuckTime: 0
+  stuckSpeedThreshold: 0.1
+  moveUpdateType: 1
+  climbSpeed: 0.8
+  minClimbSlopeAngle: 85
+  maxClimbSlopeAngle: 90
+  maxGrabDistance: 0.5
+  climbFaceSurfaceRate: 100
+  climbTopDetection: 0
+  climbableLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  isFootStepsEnabled: 1
+  s3dSurfaces: {fileID: 0}
+  leftFoot: {fileID: 7526779492920344988}
+  rightFoot: {fileID: 7526779492920344978}
+  footStepsUseMoveSpeed: 0
+  footStepWalkFrequency: 1
+  footStepSprintFrequency: 0.4
+  footStepsAudio: {fileID: 5477724477769874875}
+  footStepsDefaultClip: {fileID: 8300000, guid: 709c8a1bf89a66a4b96763af73d5993d,
+    type: 3}
+  footStepsVolume: 0.5
+  s3dFootstepList: []
+  isS3DFootstepExpanded: 0
+  isS3DFootstepListExpanded: 1
+  isThirdPerson: 0
+  lookOnInitialise: 1
+  lookFirstPersonCamera1: {fileID: 5359429506948903418}
+  lookThirdPersonCamera1: {fileID: 0}
+  isAutoFirstPersonCameraHeight: 1
+  lookFirstPersonTransform1: {fileID: 3062970972113492280}
+  lookVerticalSpeed: 5
+  lookHorizontalSpeed: 5
+  lookVerticalDamping: 0.02
+  lookHorizontalDamping: 0.02
+  lookPitchUpLimit: 90
+  lookPitchDownLimit: 90
+  lookCameraOffset: {x: 0, y: 2, z: -3}
+  lookFocusOffset: {x: 0, y: 1.5, z: 0}
+  lookMoveSpeed: 5
+  lookAutoHideCursor: 1
+  lookHideCursorTime: 3
+  lookUnzoomDelay: 0
+  lookUnzoomedFoV: 60
+  lookZoomedFoV: 10
+  lookZoomOutFactor: 1
+  lookUnorbitDelay: 0
+  lookOrbitDamping: 0.1
+  lookOrbitMinAngle: -360
+  lookOrbitMaxAngle: 360
+  lookMaxLoSFoV: 60
+  lookMaxShakeStrength: 0
+  lookMaxShakeDuration: 0.2
+  lookUpdateType: 0
+  clipObjects: 0
+  minClipMoveSpeed: 10
+  clipMinDistance: 0
+  clipMinOffsetX: 0
+  clipMinOffsetY: 0
+  clipResponsiveness: 1
+  clipObjectMask:
+    serializedVersion: 2
+    m_Bits: 0
+  lookMaxInteractiveDistance: 5
+  lookInteractiveLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  lookInteractiveLockToCamera: 0
+  lookMaxSocketDistance: 5
+  lookSocketLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  lookSocketLockToCamera: 0
+  snapTurnDegrees: 30
+  snapTurnIntervalTime: 0.5
+  height: 1.84
+  radius: 0.23
+  pivotToCentreOffsetY: 0.92
+  shoulderHeight: 1.435
+  crouchHeightNormalised: 0.86111104
+  maxSweepIterations: 3
+  sweepTolerance: 0.02
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  interactionLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  isOnTriggerEnterEnabled: 0
+  isOnTriggerStayEnabled: 0
+  isTriggerColliderEnabled: 1
+  isReactToStickyZonesEnabled: 1
+  referenceFrameLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967257
+  referenceUpdateType: 1
+  isUseRBodyReferenceFrame: 0
+  initialReferenceFrame: {fileID: 0}
+  isJetPackAvailable: 1
+  jetPackFuelLevel: 100
+  jetPackFuelBurnRate: 0.1
+  jetPackSpeed: 3
+  jetPackMaxAcceleration: 2
+  jetPackDamping: 0.5
+  jetPackAudio: {fileID: 0}
+  jetPackRampUpDuration: 0.1
+  jetPackRampDownDuration: 0.1
+  jetPackThrusterFwd: {fileID: 0}
+  jetPackThrusterBack: {fileID: 0}
+  jetPackThrusterUp: {fileID: 0}
+  jetPackThrusterDown: {fileID: 0}
+  jetPackThrusterRight: {fileID: 0}
+  jetPackThrusterLeft: {fileID: 0}
+  jetPackMinEffectsRate: 0
+  isJetPackThrusterListExpanded: 0
+  defaultAnimator: {fileID: 7526779492927319930}
+  s3dAnimActionList:
+  - standardAction: 0
+    weaponAction: 0
+    parameterType: 3
+    paramHashCode: -72387409
+    actionBoolValue: 0
+    actionFloatValue: 40
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 1887533105
+  - standardAction: 0
+    weaponAction: 0
+    parameterType: 3
+    paramHashCode: -929860769
+    actionBoolValue: 0
+    actionFloatValue: 3
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList:
+    - actionCondition: 7
+      actionWeaponCondition: 0
+      conditionType: 1
+      showInEditor: 1
+    showInEditor: 0
+    guidHash: -1406161744
+  - standardAction: 0
+    weaponAction: 0
+    parameterType: 3
+    paramHashCode: -224646685
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList:
+    - actionCondition: 30
+      actionWeaponCondition: 0
+      conditionType: 1
+      showInEditor: 1
+    - actionCondition: 5
+      actionWeaponCondition: 0
+      conditionType: 1
+      showInEditor: 1
+    showInEditor: 0
+    guidHash: 740860519
+  - standardAction: 0
+    weaponAction: 0
+    parameterType: 3
+    paramHashCode: -224646685
+    actionBoolValue: 0
+    actionFloatValue: -1
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 0.01
+    fixedFloatValue: 1
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList:
+    - actionCondition: 5
+      actionWeaponCondition: 0
+      conditionType: 0
+      showInEditor: 1
+    showInEditor: 0
+    guidHash: -274715240
+  - standardAction: 1
+    weaponAction: 0
+    parameterType: 1
+    paramHashCode: 1239866031
+    actionBoolValue: 30
+    actionFloatValue: 25
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 1178421947
+  - standardAction: 1
+    weaponAction: 0
+    parameterType: 3
+    paramHashCode: -224646685
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 0.3
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList:
+    - actionCondition: 30
+      actionWeaponCondition: 0
+      conditionType: 0
+      showInEditor: 1
+    showInEditor: 0
+    guidHash: -1287414428
+  - standardAction: 3
+    weaponAction: 0
+    parameterType: 1
+    paramHashCode: -1956876263
+    actionBoolValue: 7
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 1329428654
+  - standardAction: 3
+    weaponAction: 0
+    parameterType: 1
+    paramHashCode: 507951781
+    actionBoolValue: 10
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 1
+    guidHash: 1834262467
+  - standardAction: 99
+    weaponAction: 0
+    parameterType: 2
+    paramHashCode: -662453572
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 1209585518
+  - standardAction: 4
+    weaponAction: 0
+    parameterType: 1
+    paramHashCode: 1035320983
+    actionBoolValue: 3
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 0
+    guidHash: 681931681
+  aimIKDownLimit: 40
+  aimIKUpLimit: 40
+  aimIKLeftLimit: 80
+  aimIKRightLimit: 80
+  footIKBodyMoveSpeedY: 10
+  footIKMaxInwardRotationX: 60
+  footIKMaxOutwardRotationX: 60
+  footIKPositionOnly: 0
+  headIKMoveMaxSpeed: 3
+  headIKAdjustForVelocity: 0
+  headIKMoveDamping: 0.25
+  headIKLookUpLimit: 40
+  headIKLookDownLimit: 40
+  headIKLookLeftLimit: 80
+  headIKLookRightLimit: 80
+  headIKEyesWeight: 0.2
+  headIKHeadWeight: 0.8
+  headIKWhenClimbing: 0
+  headIKWhenMovementDisabled: 0
+  headIKBodyWeight: 0.1
+  headIKConsiderBehind: 0
+  handIKMoveMaxSpeed: 3
+  handIKWhenMovementDisabled: 0
+  leftHandRadius: 0.1
+  leftHandConstraintSettings: 0
+  rightHandConstraintSettings: 0
+  handIKLHMaxInRot: 40
+  handIKLHMaxOutRot: 40
+  handIKLHMaxUpRot: 80
+  handIKLHMaxDownRot: 80
+  handIKRHMaxInRot: 40
+  handIKRHMaxOutRot: 40
+  handIKRHMaxUpRot: 80
+  handIKRHMaxDownRot: 80
+  handIKLHInwardLimit: 30
+  handIKLHOutwardLimit: 90
+  handIKRHInwardLimit: 30
+  handIKRHOutwardLimit: 90
+  leftHandAnimator: {fileID: 0}
+  rightHandAnimator: {fileID: 0}
+  onInitialised:
+    m_PersistentCalls:
+      m_Calls: []
+  onDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
+  onInteractLookAtChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onRespawned:
+    m_PersistentCalls:
+      m_Calls: []
+  onRespawning:
+    m_PersistentCalls:
+      m_Calls: []
+  factionId: 0
+  modelId: 2
+  isDropHeldOnDestroy: 0
+  isDropEquipOnDestroy: 0
+  isDropStashOnDestroy: 0
+  isRagdollOnDestroy: 0
+  respawnTime: 10
+  customRespawnPosition: {x: 0, y: 0, z: 0}
+  customRespawnRotation: {x: 0, y: 0, z: 0}
+  equipPointGizmoColour: {r: 1, g: 0.92, b: 0.016, a: 1}
+  minEquipDropDistance: 0.3
+  maxEquipDropDistance: 1
+  minStashDropDistance: 0.3
+  maxStashDropDistance: 1
+  isNPC: 0
+  health: 1
+  isMoveGeneralExpanded: 0
+  isClimbingEnabled: 0
+  isClimbingExpanded: 1
+  isIdenficationExpanded: 0
+  isFreeLook: 0
+  isLookCameraFollowHead: 0
+  isLookGeneralExpanded: 1
+  showLookCamOffsetGizmosInSceneView: 0
+  showLookFocusOffsetGizmosInSceneView: 0
+  zoomDuration: 3
+  orbitDuration: 5
+  isLookClipObjectsExpanded: 1
+  isLookInteractiveEnabled: 0
+  isUpdateLookingAtPoint: 0
+  isLookInteractiveExpanded: 1
+  isLookSocketAutoShow: 1
+  isLookSocketsEnabled: 0
+  isLookSocketsExpanded: 1
+  socketActiveMaterial: {fileID: 0}
+  isLookVR: 0
+  isMatchHumanHeightVR: 0
+  isRoomScaleVR: 0
+  humanPostureVR: 0
+  isSnapTurnVR: 0
+  isLookVRExpanded: 0
+  lookShowCursor: 0
+  isJetPackEnabled: 0
+  jetPackHealth: 1
+  isS3DAnimActionListExpanded: 1
+  isAnimActionsExpanded: 1
+  aimBones:
+  - guidHash: -80931262
+    bone: 7
+    weight: 0.5
+  - guidHash: 1518640082
+    bone: 8
+    weight: 0.7
+  - guidHash: 879973713
+    bone: 54
+    weight: 1
+  aimIkTurnRotationRate: 30
+  isAimBonesExpanded: 0
+  isAimIKExpanded: 0
+  isAimIKWhenNotAiming: 0
+  isFootIK: 0
+  footIKAnimIKPassLayerIndex: 0
+  isFootIKExpanded: 1
+  paramHashLFootIKWeightCurve: 0
+  paramHashRFootIKWeightCurve: 0
+  isHeadIK: 0
+  headIKAnimIKPassLayerIndex: 0
+  headIKLookAtEyes: 1
+  headIKLookAtInteractive: 0
+  isHeadIKExpanded: 1
+  isHandIK: 0
+  leftHandPalmOffset: {x: 0, y: 0, z: 0}
+  rightHandPalmOffset: {x: 0, y: 0, z: 0}
+  leftHandPalmRotation: {x: 0, y: 0, z: 0}
+  rightHandPalmRotation: {x: 0, y: 0, z: 0}
+  handIKLHMaxReachDist: 0.3
+  handIKRHMaxReachDist: 0.3
+  showLHGizmosInSceneView: 0
+  showRHGizmosInSceneView: 0
+  handIKAnimIKPassLayerIndex: 0
+  isHandIKExpanded: 1
+  isLeftHandIKExpanded: 1
+  isRightHandIKExpanded: 1
+  handZoneGizmoColour: {r: 1, g: 1, b: 1, a: 0.8}
+  isHandVR: 0
+  leftHandVRGrip:
+    standardAction: 0
+    weaponAction: 0
+    parameterType: 0
+    paramHashCode: 0
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 1
+    guidHash: -912326640
+  rightHandVRGrip:
+    standardAction: 0
+    weaponAction: 0
+    parameterType: 0
+    paramHashCode: 0
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 1
+    guidHash: -145728518
+  leftHandVRTrigger:
+    standardAction: 0
+    weaponAction: 0
+    parameterType: 0
+    paramHashCode: 0
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 1
+    guidHash: -198006398
+  rightHandVRTrigger:
+    standardAction: 0
+    weaponAction: 0
+    parameterType: 0
+    paramHashCode: 0
+    actionBoolValue: 0
+    actionFloatValue: 0
+    actionTriggerValue: 0
+    actionIntegerValue: 0
+    actionWeaponBoolValue: 0
+    actionWeaponFloatValue: 0
+    actionWeaponTriggerValue: 0
+    actionWeaponIntegerValue: 0
+    floatMultiplier: 1
+    fixedFloatValue: 0
+    fixedBoolValue: 0
+    isInvert: 0
+    isToggle: 0
+    isResetCustomAfterUse: 1
+    damping: 0.1
+    s3dAnimConditionList: []
+    showInEditor: 1
+    guidHash: 1882968915
+  isHandVRExpanded: 1
+  ragdollBoneList: []
+  isRagdollExpanded: 0
+  isRootMotion: 0
+  isRootMotionTurning: 0
+  rootMotionIdleThreshold: 0.0001
+  isRootMotionExpanded: 1
+  storeMaxSelectableInScene: 0
+  onInitialisedEvtDelay: 0
+  engageColour:
+    serializedVersion: 2
+    rgba: 2147548928
+  nonengageColour:
+    serializedVersion: 2
+    rgba: 2164260863
+  damageRegionList:
+  - name: Main
+    isInvincible: 0
+    startingHealth: 1
+    useShielding: 0
+    shieldingDamageThreshold: 10
+    shieldingAmount: 100
+    shieldingRechargeRate: 0
+    shieldingRechargeDelay: 10
+    collisionDamageResistance: 10
+    s3dHumanBonePersist:
+      guidHash: -912671363
+      bone: 0
+      boneTransform: {fileID: 0}
+      boneCollider: {fileID: 0}
+    colliderId: 0
+    showInEditor: 1
+    showMultipliersInEditor: 0
+    guidHash: -1362518642
+    damageMultipliersArray:
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+    - 1
+  interactiveTags: {fileID: 11400000, guid: 3ce16291e6853e34d9a2dd67f7f3d771, type: 2}
+  isEngageGeneralExpanded: 0
+  isEngageEventsExpanded: 0
+  isEngageEquipExpanded: 0
+  isEngageStashExpanded: 0
+  isEngageDamageRegionsExpanded: 0
+  isEngageDamageRegionListExpanded: 0
+  isEngageEquipPointListExpanded: 0
+  isEngageRespawnExpanded: 0
+  equipPointList: []
+  respawnMode: 10
+  maxLives: 10
+  startLives: 3
+  stashParent: {fileID: 8145456127019239538}
+  stashList: []
+--- !u!114 &2124337466272586444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778814470825449964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db56648ff2105434295202726dedaaef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputMode: 0
+  initialiseOnAwake: 1
+  isEnabledOnInitialise: 1
+  allowRepaint: 1
+  hztlMoveInputAxisMode: 10
+  vertMoveInputAxisMode: 10
+  hztlLookInputAxisMode: 10
+  vertLookInputAxisMode: 10
+  zoomLookInputAxisMode: 10
+  orbitLookInputAxisMode: 10
+  jumpCanBeHeld: 1
+  crouchCanBeHeld: 1
+  crouchIsJetPackOnly: 0
+  leftFire1CanBeHeld: 0
+  leftFire2CanBeHeld: 0
+  rightFire1CanBeHeld: 0
+  rightFire2CanBeHeld: 0
+  jumpButtonEnabled: 1
+  sprintButtonEnabled: 1
+  crouchButtonEnabled: 1
+  jetpackButtonEnabled: 1
+  switchLookButtonEnabled: 1
+  leftFire1ButtonEnabled: 0
+  leftFire2ButtonEnabled: 0
+  rightFire1ButtonEnabled: 0
+  rightFire2ButtonEnabled: 0
+  hztlMoveShowInEditor: 0
+  vertMoveShowInEditor: 0
+  jumpShowInEditor: 0
+  sprintShowInEditor: 0
+  crouchShowInEditor: 0
+  jetpackShowInEditor: 0
+  switchLookShowInEditor: 0
+  hztlLookShowInEditor: 0
+  vertLookShowInEditor: 0
+  zoomLookShowInEditor: 0
+  orbitLookShowInEditor: 0
+  leftFire1ShowInEditor: 0
+  leftFire2ShowInEditor: 0
+  rightFire1ShowInEditor: 0
+  rightFire2ShowInEditor: 0
+  customInputsShowInEditor: 1
+  posHztrlMoveInputKeycode: 100
+  negHztrlMoveInputKeycode: 97
+  posVertMoveInputKeycode: 119
+  negVertMoveInputKeycode: 115
+  jumpInputKeycode: 32
+  sprintInputKeycode: 304
+  crouchInputKeycode: 99
+  jetpackInputKeycode: 106
+  switchLookInputKeycode: 118
+  posZoomInputKeycode: 93
+  negZoomInputKeycode: 91
+  posOrbitInputKeycode: 48
+  negOrbitInputKeycode: 57
+  leftFire1InputKeycode: 0
+  leftFire2InputKeycode: 0
+  rightFire1InputKeycode: 0
+  rightFire2InputKeycode: 0
+  isMouseScrollForZoomEnabledDKI: 1
+  isMouseCentreHztlLookDKI: 0
+  isMouseCentreVertLookDKI: 0
+  mouseHztlLookInputAxisNameDKI: Mouse X
+  mouseVertLookInputAxisNameDKI: Mouse Y
+  isMouseHztlLookInputAxisValidDKI: 1
+  isMouseVertLookInputAxisValidDKI: 1
+  hztlLookSensitivityDKI: 0.5
+  vertLookSensitivityDKI: 0.25
+  hztlLookDeadzoneDKI: 0.01
+  vertLookDeadzoneDKI: 0.0125
+  posHztlMoveInputAxisName: Horizontal
+  negHztlMoveInputAxisName: Horizontal
+  posVertMoveInputAxisName: Vertical
+  negVertMoveInputAxisName: Vertical
+  posHztlLookInputAxisName: Mouse X
+  negHztlLookInputAxisName: Mouse X
+  posVertLookInputAxisName: Mouse Y
+  negVertLookInputAxisName: Mouse Y
+  posZoomLookInputAxisName: Mouse ScrollWheel
+  negZoomLookInputAxisName: 
+  posOrbitLookInputAxisName: 
+  negOrbitLookInputAxisName: 
+  jumpInputAxisName: Jump
+  sprintInputAxisName: Sprint
+  crouchInputAxisName: 
+  jetpackInputAxisName: 
+  switchLookInputAxisName: 
+  leftFire1InputAxisName: Fire 2
+  leftFire2InputAxisName: 
+  rightFire1InputAxisName: Fire 1
+  rightFire2InputAxisName: 
+  invertHztlMoveInputAxis: 0
+  invertVertMoveInputAxis: 0
+  invertHztlLookInputAxis: 0
+  invertVertLookInputAxis: 0
+  invertZoomLookInputAxis: 0
+  invertOrbitLookInputAxis: 0
+  isPosHztlMoveInputAxisValid: 1
+  isNegHztlMoveInputAxisValid: 1
+  isPosVertMoveInputAxisValid: 1
+  isNegVertMoveInputAxisValid: 1
+  isJumpInputAxisValid: 1
+  isSprintInputAxisValid: 0
+  isCrouchInputAxisValid: 0
+  isJetPackInputAxisValid: 0
+  isSwitchLookInputAxisValid: 0
+  isPosHztlLookInputAxisValid: 1
+  isNegHztlLookInputAxisValid: 1
+  isPosVertLookInputAxisValid: 1
+  isNegVertLookInputAxisValid: 1
+  isPosZoomLookInputAxisValid: 1
+  isNegZoomLookInputAxisValid: 0
+  isPosOrbitLookInputAxisValid: 0
+  isNegOrbitLookInputAxisValid: 0
+  isLeftFire1InputAxisValid: 0
+  isLeftFire2InputAxisValid: 0
+  isRightFire1InputAxisValid: 0
+  isRightFire2InputAxisValid: 0
+  posHztlMoveInputActionIdUIS: 
+  posVertMoveInputActionIdUIS: 
+  posHztlLookInputActionIdUIS: 
+  posVertLookInputActionIdUIS: 
+  posZoomLookInputActionIdUIS: 
+  posOrbitLookInputActionIdUIS: 
+  jumpInputActionIdUIS: 
+  sprintInputActionIdUIS: 
+  crouchInputActionIdUIS: 
+  jetpackInputActionIdUIS: 
+  switchLookInputActionIdUIS: 
+  leftFire1InputActionIdUIS: 
+  leftFire2InputActionIdUIS: 
+  rightFire1InputActionIdUIS: 
+  rightFire2InputActionIdUIS: 
+  posHztlMoveInputActionDataSlotUIS: 0
+  posVertMoveInputActionDataSlotUIS: 0
+  posHztlLookInputActionDataSlotUIS: 0
+  posVertLookInputActionDataSlotUIS: 0
+  posZoomLookInputActionDataSlotUIS: 0
+  posOrbitLookInputActionDataSlotUIS: 0
+  jumpInputActionDataSlotUIS: 0
+  sprintInputActionDataSlotUIS: 0
+  crouchInputActionDataSlotUIS: 0
+  jetpackInputActionDataSlotUIS: 0
+  switchLookInputActionDataSlotUIS: 0
+  leftFire1InputActionDataSlotUIS: 0
+  leftFire2InputActionDataSlotUIS: 0
+  rightFire1InputActionDataSlotUIS: 0
+  rightFire2InputActionDataSlotUIS: 0
+  isMouseForHztlLookEnabledUIS: 0
+  isMouseForVertLookEnabledUIS: 0
+  hztlLookSensitivityUIS: 0.5
+  vertLookSensitivityUIS: 0.5
+  hztrLookDeadzoneUIS: 0.05
+  vertLookDeadzoneUIS: 0.05
+  rewiredPlayerNumber: 1
+  posHztlMoveInputActionIdRWD: 3
+  negHztlMoveInputActionIdRWD: -1
+  posVertMoveInputActionIdRWD: 4
+  negVertMoveInputActionIdRWD: -1
+  posHztlLookInputActionIdRWD: 5
+  negHztlLookInputActionIdRWD: -1
+  posVertLookInputActionIdRWD: 6
+  negVertLookInputActionIdRWD: -1
+  posZoomLookInputActionIdRWD: 7
+  negZoomLookInputActionIdRWD: -1
+  posOrbitLookInputActionIdRWD: -1
+  negOrbitLookInputActionIdRWD: -1
+  jumpInputActionIdRWD: 8
+  sprintInputActionIdRWD: 10
+  crouchInputActionIdRWD: 9
+  jetpackInputActionIdRWD: 11
+  switchLookInputActionIdRWD: 12
+  leftFire1InputActionIdRWD: -1
+  leftFire2InputActionIdRWD: -1
+  rightFire1InputActionIdRWD: -1
+  rightFire2InputActionIdRWD: -1
+  hmdPosInputAxisMode: 10
+  leftHandPosInputAxisMode: 10
+  leftHandRotInputAxisMode: 10
+  rightHandPosInputAxisMode: 10
+  rightHandRotInputAxisMode: 10
+  hmdPosInputActionIdXR: 
+  leftHandPosInputActionIdXR: 
+  leftHandRotInputActionIdXR: 
+  rightHandPosInputActionIdXR: 
+  rightHandRotInputActionIdXR: 
+  hmdPosInputActionDataSlotXR: 0
+  leftHandPosInputActionDataSlotXR: 0
+  leftHandRotInputActionDataSlotXR: 0
+  rightHandPosInputActionDataSlotXR: 0
+  rightHandRotInputActionDataSlotXR: 0
+  posHztlMoveInputActionMapIdXR: 
+  posVertMoveInputActionMapIdXR: 
+  posHztlLookInputActionMapIdXR: 
+  posVertLookInputActionMapIdXR: 
+  posZoomLookInputActionMapIdXR: 
+  posOrbitLookInputActionMapIdXR: 
+  jumpInputActionMapIdXR: 
+  sprintInputActionMapIdXR: 
+  crouchInputActionMapIdXR: 
+  jetpackInputActionMapIdXR: 
+  switchLookInputActionMapIdXR: 
+  leftFire1InputActionMapIdXR: 
+  leftFire2InputActionMapIdXR: 
+  rightFire1InputActionMapIdXR: 
+  rightFire2InputActionMapIdXR: 
+  hmdPosInputActionMapIdXR: 
+  leftHandPosInputActionMapIdXR: 
+  leftHandRotInputActionMapIdXR: 
+  rightHandPosInputActionMapIdXR: 
+  rightHandRotInputActionMapIdXR: 
+  customInputList:
+  - inputAxisMode: 10
+    isSensitivityEnabled: 0
+    sensitivity: 3
+    gravity: 3
+    isButton: 1
+    isButtonEnabled: 0
+    canBeHeldDown: 0
+    customInputEvt:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2124337466272586444}
+          m_MethodName: DisableInput
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    showInEditor: 1
+    animActionHashList: 
+    isAnimActionHashListExpanded: 1
+    dkmPositiveKeycode: 102
+    dkmNegativeKeycode: 0
+    lisPositiveAxisName: 
+    lisNegativeAxisName: 
+    lisInvertAxis: 0
+    lisIsPositiveAxisValid: 1
+    lisIsNegativeAxisValid: 1
+    uisPositiveInputActionId: 
+    uisPositiveInputActionDataSlot: 0
+    rwdPositiveInputActionId: -1
+    rwdNegativeInputActionId: -1
+    xrPositiveInputActionMapId: 
+  isCustomInputListExpanded: 1
+--- !u!1001 &7526779492919958042
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8807098622513621612}
+    m_Modifications:
+    - target: {fileID: 100080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_Name
+      value: s3d_rod
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f5a652ab80dbd654985e0a03e4b64c45, type: 2}
+    - target: {fileID: 9500000, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+      propertyPath: m_UpdateMode
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e37afbc4c13e3ec44afd05255adadd7c, type: 3}
+--- !u!4 &7526779492920344778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400080, guid: e37afbc4c13e3ec44afd05255adadd7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7526779492919958042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7526779492927319930 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: e37afbc4c13e3ec44afd05255adadd7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7526779492919958042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7526779492920057276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100262, guid: e37afbc4c13e3ec44afd05255adadd7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7526779492919958042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7526779492920344988 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400262, guid: e37afbc4c13e3ec44afd05255adadd7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7526779492919958042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7526779492920057266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100264, guid: e37afbc4c13e3ec44afd05255adadd7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7526779492919958042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7526779492920344978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400264, guid: e37afbc4c13e3ec44afd05255adadd7c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7526779492919958042}
+  m_PrefabAsset: {fileID: 0}

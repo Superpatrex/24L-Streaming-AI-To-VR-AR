@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1118598105454482}
+  m_IsPrefabParent: 1
+--- !u!1 &1118598105454482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4392909984829744}
+  - component: {fileID: 114222011194120412}
+  - component: {fileID: 114199933899362562}
+  m_Layer: 0
+  m_Name: DemoControlModule
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4392909984829744
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118598105454482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114199933899362562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118598105454482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9da70eeb39d304fb77618794a52069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideCursorTime: 3
+--- !u!114 &114222011194120412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118598105454482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b196dec1d7fb584ba428f85219909ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squadronList:
+  - squadronId: 1
+    squadronName: Grey Squadron
+    tacticalFormation: 2
+    shipPrefab: {fileID: 1800899950267440, guid: 75035c93e7bb40a479b1a9fa15d80837,
+      type: 2}
+    playerShip: {fileID: 0}
+    cameraTargetOffset: {x: 0, y: 2, z: -10}
+    factionId: 0
+    anchorPosition: {x: -1796.3394, y: 573.73145, z: 1575.0903}
+    fwdDirection: {x: 0, y: 0, z: -1}
+    offsetX: 125
+    offsetY: 175
+    offsetZ: 125
+    rowsX: 5
+    rowsY: 3
+    rowsZ: 5
+    showInEditor: 0
+  - squadronId: 2
+    squadronName: Battleship Squadron
+    tacticalFormation: 1
+    shipPrefab: {fileID: 1889644164549946, guid: 6e1e7a2cb631cb646adb1b3949827a7a,
+      type: 2}
+    playerShip: {fileID: 0}
+    cameraTargetOffset: {x: 0, y: 2, z: 0}
+    factionId: 1
+    anchorPosition: {x: -116.40259, y: 709.94434, z: -377.92285}
+    fwdDirection: {x: 0, y: 0, z: 1}
+    offsetX: 50
+    offsetY: 200
+    offsetZ: 100
+    rowsX: 3
+    rowsY: 2
+    rowsZ: 5
+    showInEditor: 0
+  - squadronId: 3
+    squadronName: Blue Squadron
+    tacticalFormation: 2
+    shipPrefab: {fileID: 1577603383374896, guid: 66aef44067c90784fa291f3e7c34e133,
+      type: 2}
+    playerShip: {fileID: 0}
+    cameraTargetOffset: {x: 0, y: 2, z: -10}
+    factionId: 1
+    anchorPosition: {x: 1929.8013, y: 577.6467, z: 1813.5503}
+    fwdDirection: {x: -0.95871544, y: 0, z: -0.2843678}
+    offsetX: 50
+    offsetY: 100
+    offsetZ: 50
+    rowsX: 3
+    rowsY: 2
+    rowsZ: 3
+    showInEditor: 0
+  - squadronId: 4
+    squadronName: EIS Squadron
+    tacticalFormation: 1
+    shipPrefab: {fileID: 1090275930014694, guid: c7796b51e2725cf42a231ddd691b5fd7,
+      type: 2}
+    playerShip: {fileID: 0}
+    cameraTargetOffset: {x: 0, y: 2, z: -10}
+    factionId: 1
+    anchorPosition: {x: -1441.876, y: 700, z: -1489.367}
+    fwdDirection: {x: 0, y: 0, z: 1}
+    offsetX: 25
+    offsetY: 30
+    offsetZ: 25
+    rowsX: 3
+    rowsY: 1
+    rowsZ: 4
+    showInEditor: 0
+  assignAITargets: 1
+  aiTargets: 2
+  reassignTargetSecs: 300
+  AddAIScriptIfMissing: 1
+  CrashAffectsHealth: 1
+  theatreBounds:
+    m_Center: {x: 0, y: 1400, z: 0}
+    m_Extent: {x: 2400, y: 1000, z: 2400}
+  isInitialised: 0
