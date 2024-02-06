@@ -1320,7 +1320,7 @@ MonoBehaviour:
       - m_Target: {fileID: 154975082}
         m_TargetAssemblyTypeName: Settings, ScriptAssembly
         m_MethodName: SetTurn
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4547,7 +4547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1163744329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4867,7 +4867,7 @@ MonoBehaviour:
       - m_Target: {fileID: 154975082}
         m_TargetAssemblyTypeName: Settings, ScriptAssembly
         m_MethodName: SetVolume
-        m_Mode: 4
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7118,7 +7118,7 @@ MonoBehaviour:
       - m_Target: {fileID: 154975082}
         m_TargetAssemblyTypeName: Settings, ScriptAssembly
         m_MethodName: SetCesiumGraphicsQuality
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
