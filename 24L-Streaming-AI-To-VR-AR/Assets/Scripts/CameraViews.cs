@@ -17,7 +17,7 @@ public class CameraViews : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlaneCamera.enabled = false;
+        PlaneCamera.enabled = true;
         SpectorCamera.enabled = true;
         CurrentCamera = SpectorCamera;
         LastCamera = PlaneCamera;
@@ -33,9 +33,10 @@ public class CameraViews : MonoBehaviour
             CurrentCamera = SpectorCamera;
             CurrentCamera.enabled = true;
         }
-        else if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha2))
+
+        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha2))
         {   
-            CurrentCamera.enabled = false;
+            //CurrentCamera.enabled = false;
             CurrentCamera = PlaneCamera;
             CurrentCamera.enabled = true;
         }
@@ -44,7 +45,8 @@ public class CameraViews : MonoBehaviour
         {
 
         }
-        else if (PlaneCamera.enabled)
+
+        if (PlaneCamera.enabled)
         {
             if (UnityEngine.Input.GetKey(KeyCode.LeftArrow))
             {
@@ -60,8 +62,8 @@ public class CameraViews : MonoBehaviour
                     fRotation = -180;
             }
 
-            PlaneCamera.transform.position = Quaternion.Euler(0, fRotation, 0) * new Vector3(0, 1.5f, -3.5f);
-            PlaneCamera.transform.rotation = Quaternion.LookRotation(SpectorCamera.transform.position - PlaneCamera.transform.position + new Vector3(-2, 0, 0));
+            //PlaneCamera.transform.position = Quaternion.Euler(0, fRotation, 0) * new Vector3(0, 1.5f, -3.5f);
+            //PlaneCamera.transform.rotation = Quaternion.LookRotation(SpectorCamera.transform.position - PlaneCamera.transform.position + new Vector3(-2, 0, 0));
         }
     }
 }
