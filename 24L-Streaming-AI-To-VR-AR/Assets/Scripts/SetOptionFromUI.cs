@@ -28,6 +28,6 @@ public class SetOptionFromUI : MonoBehaviour
     public void SetTurnPlayerPref(int value)
     {
         PlayerPrefs.SetInt("turn", value); 
-        turnTypeFromPlayerPref.ApplyPlayerPref();
+        //turnTypeFromPlayerPref.ApplyPlayerPref(); // Tayler I don't know what this was for? I think it was a difference between the snap and continuous movement
     }
 }
