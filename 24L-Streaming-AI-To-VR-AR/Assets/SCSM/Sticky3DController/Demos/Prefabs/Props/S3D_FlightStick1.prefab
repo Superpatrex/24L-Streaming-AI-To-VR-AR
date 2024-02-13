@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5643116390512238800}
   - component: {fileID: 8356832343918012200}
   - component: {fileID: 6338546117261634312}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: FlightStickBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,12 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521089481538581766}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.000020670586, y: -0.000030031571, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6661891539033356958}
   m_Father: {fileID: 275802008834286418}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8356832343918012200
 MeshFilter:
@@ -51,10 +53,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4926113065818739135
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +98,7 @@ GameObject:
   - component: {fileID: 6567637147714982329}
   - component: {fileID: 3933709520757368103}
   - component: {fileID: 2100433773796146732}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: FlightStick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,12 +112,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4926113065818739135}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 275802008834286418}
-  m_RootOrder: 1
+  m_Father: {fileID: 5643116390512238800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8035742304115177703
 MeshFilter:
@@ -133,10 +139,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -161,6 +169,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6567637147714982329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialiseOnStart: 0
+  isActivablePriorityOverGrab: 0
   isDeactivateOnDrop: 1
   isCarryInHand: 0
   isParentOnGrab: 0
@@ -181,6 +191,10 @@ MonoBehaviour:
   isDisableRegularColOnGrab: 0
   isDisableTriggerColOnGrab: 0
   isRemoveRigidbodyOnGrab: 0
+  equipFromHeldDelay: 0
+  equipOffset: {x: 0, y: 0, z: 0}
+  equipRotation: {x: 0, y: 0, z: 0}
+  equipPointGizmoColour: {r: 1, g: 0.92, b: 0.016, a: 1}
   handHold1Offset: {x: 0, y: 0.75, z: -0.3}
   handHold2Offset: {x: 0, y: 0.75, z: -0.3}
   handHold1Rotation: {x: 0, y: 270, z: 0}
@@ -195,8 +209,13 @@ MonoBehaviour:
   readableMinZ: 8
   readableMaxX: 10
   readableMaxZ: 8
+  readableSensitivityX: 3
+  readableSensitivityZ: 3
   readableSpringStrength: 50
   sitTargetOffset: {x: 0, y: 0, z: 0}
+  socketOffset: {x: 0, y: 0, z: 0}
+  socketRotation: {x: 0, y: 0, z: 0}
+  socketPointGizmoColour: {r: 0.435, g: 0.67, b: 0.717, a: 1}
   onActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -215,7 +234,13 @@ MonoBehaviour:
   onHoverExit:
     m_PersistentCalls:
       m_Calls: []
+  onPostEquipped:
+    m_PersistentCalls:
+      m_Calls: []
   onPostGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  onPostInitialised:
     m_PersistentCalls:
       m_Calls: []
   onPostStashed:
@@ -239,19 +264,27 @@ MonoBehaviour:
   selectedTabInt: 0
   allowRepaint: 1
   defaultPopupOffset: {x: 0, y: 0, z: 0}
+  isPopupRelativeUp: 0
   guidHash: 0
+  interactiveTag: 1
+  interactiveTags: {fileID: 0}
   isActivable: 0
+  isEquippable: 0
   isGrabbable: 1
   isReadable: 1
   isSelectable: 0
   isSittable: 0
+  isSocketable: 0
   isStashable: 0
   isTouchable: 0
   isAutoUnselect: 0
   isAutoDeactivate: 0
   mass: 1
+  onPostInitialisedEvtDelay: 0
   readablePivot: {fileID: 6661891539033356958}
   isSeatAllocated: 0
+  showEQPGizmosInSceneView: 0
+  showSOCPGizmosInSceneView: 0
   showHH1GizmosInSceneView: 0
   showHH1LHGizmosInSceneView: 0
   showHH2GizmosInSceneView: 0
@@ -275,8 +308,17 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4926113065818739135}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.025
   m_Height: 0.11
   m_Direction: 1
@@ -288,10 +330,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4926113065818739135}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -306,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 275802008834286418}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: S3D_FlightStick1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,12 +373,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8331247999399451271}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5643116390512238800}
-  - {fileID: 6661891539033356958}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
