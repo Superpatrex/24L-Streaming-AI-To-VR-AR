@@ -7,6 +7,7 @@ public class CameraViews : MonoBehaviour
 {
     public Camera PlaneCamera;
     public Camera SpectorCamera;
+    public Camera ChatCamera;
 
     private static CameraViews ThisInstance;
     private Camera LastCamera;
@@ -19,6 +20,7 @@ public class CameraViews : MonoBehaviour
     {
         PlaneCamera.enabled = true;
         SpectorCamera.enabled = true;
+        ChatCamera.enabled = true;
         CurrentCamera = SpectorCamera;
         LastCamera = PlaneCamera;
         ThisInstance = this;
@@ -38,6 +40,13 @@ public class CameraViews : MonoBehaviour
         {   
             //CurrentCamera.enabled = false;
             CurrentCamera = PlaneCamera;
+            CurrentCamera.enabled = true;
+        }
+
+        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            CurrentCamera.enabled = false;
+            CurrentCamera = ChatCamera;
             CurrentCamera.enabled = true;
         }
 
