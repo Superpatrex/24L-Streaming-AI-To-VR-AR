@@ -28,6 +28,8 @@ public class SceneTransitionManager : MonoBehaviour
 
         //Launch the new scene
         SceneManager.LoadScene(sceneIndex);
+       // Loader.Load(Loader.Scene.CesiumEnvironment);
+
     }
 
     public void GoToSceneAsync(int sceneIndex)
@@ -37,18 +39,24 @@ public class SceneTransitionManager : MonoBehaviour
 
     IEnumerator GoToSceneAsyncRoutine(int sceneIndex)
     {
-        fadeScreen.FadeOut();
         //Launch the new scene
+        fadeScreen.FadeOut();
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
         operation.allowSceneActivation = false;
 
-        float timer = 0;
+         float timer = 0;
         while(timer <= fadeScreen.fadeDuration && !operation.isDone)
         {
             timer += Time.deltaTime;
             yield return null;
         }
 
+       
+
         operation.allowSceneActivation = true;
+
+       
+        Loader.Load(Loader.Scene.CesiumEnvironment);
+        // Loader.Load(Loader.Scene.LoadingScene);
     }
 }
