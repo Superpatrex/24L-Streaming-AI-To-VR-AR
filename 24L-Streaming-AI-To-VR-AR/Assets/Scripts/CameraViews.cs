@@ -20,7 +20,7 @@ public class CameraViews : MonoBehaviour
     {
         PlaneCamera.enabled = true;
         SpectorCamera.enabled = true;
-        ChatCamera.enabled = true;
+        // ChatCamera.enabled = true;
         CurrentCamera = SpectorCamera;
         LastCamera = PlaneCamera;
         ThisInstance = this;
