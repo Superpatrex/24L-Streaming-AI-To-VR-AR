@@ -185,4 +185,39 @@ public class MyTests
         Assert.IsNotNull(WeatherAPI.ReturnJsonString);
         Assert.IsTrue(!String.IsNullOrEmpty(WeatherAPI.ReturnJsonString));
     }
+
+    [UnityTest]
+    public void ReadFromXmlStringWeatherPass()
+    {
+        string xmlStringWeather = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><current><city id=\"1283119\" name=\"Lobujya\"><coord lon=\"86.9253\" lat=\"27.9881\"></coord><country>NP</country><timezone>28800</timezone><sun rise=\"2024-02-20T00:46:36\" set=\"2024-02-20T12:05:58\"></sun></city><temperature value=\"-41.26\" min=\"-41.26\" max=\"-41.26\" unit=\"fahrenheit\"></temperature><feels_like value=\"-53.86\" unit=\"fahrenheit\"></feels_like><humidity value=\"33\" unit=\"%\"></humidity><pressure value=\"1026\" unit=\"hPa\"></pressure><wind><speed value=\"8.23\" unit=\"mph\" name=\"Gentle Breeze\"></speed><gusts value=\"8.77\"></gusts><direction value=\"261\" code=\"W\" name=\"West\"></direction></wind><clouds value=\"0\" name=\"clear sky\"></clouds><visibility value=\"10000\"></visibility><precipitation mode=\"no\"></precipitation><weather number=\"800\" value=\"clear sky\" icon=\"01n\"></weather><lastupdate value=\"2024-02-19T20:19:02\"></lastupdate></current>";
+    }
+
+    [UnityTest]
+    public void WriteToXmlStringWeatherPass()
+    {
+        CurrentWeather currentWeather;
+    }
+
+    [UnityTest]
+    public void ReadFromXmlStringShipInformationPass()
+    {
+        string xmlStringShipInformation = "<XMLShipStructure><Aircraft><name>FighterJet123</name><type>Jet</type><Location><latitude>34.0522</latitude><longitude>-118.2437</longitude><altitude>10000</altitude></Location><Fuel><fuelLevel>5000</fuelLevel><fuelCapacity>10000</fuelCapacity><fuelConsumptionRate>100</fuelConsumptionRate></Fuel></Aircraft</XMLShipStructure>";
+
+        XMLShipStructure ship = XMLSerializer.ReadFromXmlStringShipInformation(xmlStringShipInformation);
+
+        Assert.AreEqual(ship.craft.name, "FighterJet123");
+        Assert.AreEqual(ship.craft.type, "Jet");
+        Assert.AreEqual(ship.craft.aircraftLocation.latitude, 34.0522f);
+        Assert.AreEqual(ship.craft.aircraftLocation.longitude, -118.2437f);
+        Assert.AreEqual(ship.craft.aircraftLocation.altitude, 10000.0f);
+        Assert.AreEqual(ship.craft.fuel.fuelLevel, 5000.0f);
+        Assert.AreEqual(ship.craft.fuel.fuelCapacity, 10000.0f);
+        Assert.AreEqual(ship.craft.fuel.fuelConsumptionRate, 100.0f);
+    }
+
+    [UnityTest]
+    public void WriteToXmlStringShipInformationPass()
+    {
+        XMLShipStructure shipInformation;
+    }
 }
