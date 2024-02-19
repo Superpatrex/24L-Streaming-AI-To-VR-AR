@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4774840767684261206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9137851264075840889}
+  m_Layer: 0
+  m_Name: AdjustableDoubleDoorWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &9137851264075840889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4774840767684261206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2130805913221088645}
+  - {fileID: 8478886527727723867}
+  - {fileID: 1258099244574684163}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3923474314384163942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9137851264075840889}
+    m_Modifications:
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445620765854578472, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_Name
+      value: HalfWall_DoubleDoorway_OneSided_flipped
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+--- !u!4 &1258099244574684163 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+  m_PrefabInstance: {fileID: 3923474314384163942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5957241816997500222
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9137851264075840889}
+    m_Modifications:
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.24999955
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445620765854578472, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+      propertyPath: m_Name
+      value: HalfWall_DoubleDoorway_OneSided
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+--- !u!4 &8478886527727723867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2812306107332259941, guid: d311573cd3575f94ea86d285e6e90b04, type: 3}
+  m_PrefabInstance: {fileID: 5957241816997500222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9042529195013372826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9137851264075840889}
+    m_Modifications:
+    - target: {fileID: 4566010843988520691, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_Name
+      value: HalfWall_DoubleDividerWall_DoorJam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.068629876
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+--- !u!4 &2130805913221088645 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6984978383713517087, guid: fa1afefa45ba5fc4fa2743199393a407, type: 3}
+  m_PrefabInstance: {fileID: 9042529195013372826}
+  m_PrefabAsset: {fileID: 0}

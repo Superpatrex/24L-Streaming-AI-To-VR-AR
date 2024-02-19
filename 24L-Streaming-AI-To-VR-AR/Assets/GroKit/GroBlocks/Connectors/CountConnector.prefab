@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2614078769815072929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6407947824682559243}
+  - component: {fileID: 8236614764521745395}
+  - component: {fileID: 1852821638248951796}
+  - component: {fileID: 1818719969722756371}
+  - component: {fileID: 7571233403575683054}
+  m_Layer: 0
+  m_Name: CountConnector
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6407947824682559243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614078769815072929}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8236614764521745395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614078769815072929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80290ee08f0ebb249b7abfcb703aaaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: Count Connector
+  description: "Increments up and down based on external input. Completes at Max
+    Count. \nOptionally reversible, can UnComplete if incremented down after completed."
+--- !u!114 &1852821638248951796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614078769815072929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c920447a5731544bcfd82fcdc8d21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 'OnEvent run from Count Complete
+
+    OffEvent run from Count UnComplete'
+  runOnOnlyOnce: 0
+  onEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  runOffOnlyOnce: 0
+  offEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  showAdvancedEvents: 0
+  onSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  offSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
+  debugMessages: 0
+  inwardActivator: {fileID: 0}
+  extraActivators: []
+--- !u!114 &1818719969722756371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614078769815072929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8252d09c5c64c3b45b793a17cfa32a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 'On Event adds to Count
+
+    Off Event subtracts from Count'
+  runOnOnlyOnce: 0
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7571233403575683054}
+        m_TargetAssemblyTypeName: CountPuzzle, Assembly-CSharp
+        m_MethodName: _Add
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  runOffOnlyOnce: 0
+  offEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7571233403575683054}
+        m_TargetAssemblyTypeName: CountPuzzle, Assembly-CSharp
+        m_MethodName: _Subtract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  showAdvancedEvents: 0
+  onSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  offSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
+  debugMessages: 0
+--- !u!114 &7571233403575683054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614078769815072929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec23a3d75b7d3b649ad5d971ed673ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCount: 2
+  curCount: 0
+  isDone: 0
+  add:
+    m_PersistentCalls:
+      m_Calls: []
+  subtract:
+    m_PersistentCalls:
+      m_Calls: []
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1852821638248951796}
+        m_TargetAssemblyTypeName: BaseActivator3lb, _ImplimentorTools3lb
+        m_MethodName: _OnEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  resetEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  isReversible: 1
+  unComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1852821638248951796}
+        m_TargetAssemblyTypeName: BaseActivator3lb, _ImplimentorTools3lb
+        m_MethodName: _OffEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

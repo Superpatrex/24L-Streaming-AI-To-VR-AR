@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7571474612712692227
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1445555295031236353, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: description
+      value: Spawns objects continuously while set on with the InwardActivator, at
+        this location. Change spawned object in ObjectsToSpawn array in BaseSpawner.
+        If multiple objects are added, they will be chosen between at random, unless
+        selected by the activator event.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445555295031236353, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: displayName
+      value: Continuous Object Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2463167562923974665, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_Name
+      value: Spawner_RepeatWhileActive Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468429981842594094, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: notes
+      value: 'On Event begins Spawning
+
+        Off Event ends Spawning'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: onEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 547163854122029907}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 547163854122029907}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: onEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: _Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: _Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: onEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core3lb.LoopedTimer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Core3lb.TimedEventBase, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601897714931120151, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      propertyPath: offEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2463167562923974665, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 547163854122029907}
+  m_SourcePrefab: {fileID: 100100000, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+--- !u!1 &5421671849513318922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2463167562923974665, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+  m_PrefabInstance: {fileID: 7571474612712692227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &547163854122029907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421671849513318922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989074afd04e6fd4496fe07508c4f83d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  interval: 0.2
+  timer: 0
+  complete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6314210083106413660}
+        m_TargetAssemblyTypeName: Core3lb.BaseSpawner, Assembly-CSharp
+        m_MethodName: _SpawnObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  runEventOnStart: 0
+  start:
+    m_PersistentCalls:
+      m_Calls: []
+  runEventOnReset: 0
+  reset:
+    m_PersistentCalls:
+      m_Calls: []
+  infiniteLoops: 1
+  repeats: 0
+--- !u!114 &6314210083106413660 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4518197390873691743, guid: a0e834c9d232f1a4ca0ab6ecaaee3bc6, type: 3}
+  m_PrefabInstance: {fileID: 7571474612712692227}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421671849513318922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9b677d90e33324ca43ef553d68255d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

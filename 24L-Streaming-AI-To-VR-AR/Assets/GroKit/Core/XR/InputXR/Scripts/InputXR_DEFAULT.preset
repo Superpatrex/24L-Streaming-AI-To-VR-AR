@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: InputXR_DEFAULT
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 3993cf3e48e50df4b9fb2bd6504cc1eb, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: inputOverride
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: grab.leftHand
+    value: 
+    objectReference: {fileID: -1885566545929713078, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: grab.rightHand
+    value: 
+    objectReference: {fileID: 147295879292142392, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: move.leftHand
+    value: 
+    objectReference: {fileID: -1885566545929713078, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: move.rightHand
+    value: 
+    objectReference: {fileID: 147295879292142392, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: interact.leftHand
+    value: 
+    objectReference: {fileID: -5406325519134881818, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: interact.rightHand
+    value: 
+    objectReference: {fileID: 5228062352613825926, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: altInteract.leftHand
+    value: 
+    objectReference: {fileID: 2054813540217752413, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: altInteract.rightHand
+    value: 
+    objectReference: {fileID: -5799389249351719295, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: menu.leftHand
+    value: 
+    objectReference: {fileID: 9008057990412080952, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: menu.rightHand
+    value: 
+    objectReference: {fileID: 3642569036185405199, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_ActionAssets.Array.size
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_ActionAssets.Array.data[0]
+    value: 
+    objectReference: {fileID: -944628639613478452, guid: ff814d793670e3b47a197a8e8307e7d5, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_ActionAssets.Array.data[1]
+    value: 
+    objectReference: {fileID: -944628639613478452, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - target: {fileID: 0}
+    propertyPath: m_ActionAssets.Array.data[2]
+    value: 
+    objectReference: {fileID: -944628639613478452, guid: d325a6dd4f4af224e92e0e2c45b583f6, type: 3}
+  - target: {fileID: 0}
+    propertyPath: debugRef
+    value: 
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

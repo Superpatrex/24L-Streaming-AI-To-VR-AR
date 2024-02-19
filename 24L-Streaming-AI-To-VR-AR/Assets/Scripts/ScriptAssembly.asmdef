@@ -7,7 +7,9 @@
         "Unity.TextMeshPro.Editor",
         "OpenAI.PlayMode.Tests",
         "OpenAI.Runtime",
-        "Unity.VisualScripting"
+        "Unity.VisualScripting",
+        "CesiumEditor",
+        "CesiumRuntime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [

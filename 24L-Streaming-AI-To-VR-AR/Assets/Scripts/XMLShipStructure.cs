@@ -5,7 +5,6 @@ using UnityEngine;
 public class XMLShipStructure
 {
     Aircraft craft;
-
 }
 
 class Aircraft
@@ -13,6 +12,7 @@ class Aircraft
     string name;
     string type;
     Location aircraftLocation;
+    Fuel fuel;
 }
 
 class Location

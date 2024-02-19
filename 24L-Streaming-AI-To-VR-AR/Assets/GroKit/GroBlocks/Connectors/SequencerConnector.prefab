@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5314733824806282618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8146227037570176985}
+  - component: {fileID: 5069406572212745455}
+  - component: {fileID: 4495254290364871359}
+  - component: {fileID: 5134595803321387430}
+  m_Layer: 0
+  m_Name: SequencerConnector
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8146227037570176985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314733824806282618}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.375235, y: -0.108799696, z: -2.3453617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5069406572212745455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314733824806282618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80290ee08f0ebb249b7abfcb703aaaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: Sequencer Connector
+  description: This can run a series of InwardActivators in a sequence that is stepped
+    through. Useful for running reactive sequences, like tutorials or interactive
+    linear storytelling. Can optionally be looping, and can also be set to run the
+    off events of all the activators at each step.
+--- !u!114 &4495254290364871359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314733824806282618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8252d09c5c64c3b45b793a17cfa32a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: Add objects with InwardActivators to the ActivatorSequencer, and then step
+    between them with On and Off events.
+  runOnOnlyOnce: 0
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5134595803321387430}
+        m_TargetAssemblyTypeName: Core3lb.ActivatorSequencer, Assembly-CSharp
+        m_MethodName: _StepForward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  runOffOnlyOnce: 0
+  offEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5134595803321387430}
+        m_TargetAssemblyTypeName: Core3lb.ActivatorSequencer, Assembly-CSharp
+        m_MethodName: _StepBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  showAdvancedEvents: 0
+  onSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  offSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
+  debugMessages: 0
+--- !u!114 &5134595803321387430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314733824806282618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec1b9d52cc71f94ea7fef10dd2a6c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Activators: []
+  runTheirOffEvents: 0
+  loops: 0
+  currentIndex: 0

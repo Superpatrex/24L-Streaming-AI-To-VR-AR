@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2654200990683773704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6824385542606917249}
+  - component: {fileID: 1046285574324594530}
+  - component: {fileID: 7301969857956959036}
+  m_Layer: 0
+  m_Name: DoorOpener_Right
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6824385542606917249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654200990683773704}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2951275010520377722}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046285574324594530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654200990683773704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80290ee08f0ebb249b7abfcb703aaaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: Door Opener Right
+  description: Opens and closes a right sided door with InwardActivator using DoMovement
+    LocalRotateTo. Speed can be adjusted in the DoMovement, open and closed positions
+    in the InwardActivator events.
+--- !u!114 &7301969857956959036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2654200990683773704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8252d09c5c64c3b45b793a17cfa32a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 'On Event opens the door
+
+    Off event closes the door'
+  runOnOnlyOnce: 0
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9180690914398952302}
+        m_TargetAssemblyTypeName: Core3lb.DoMovement, Assembly-CSharp
+        m_MethodName: _LocalRotateToY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -90
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  runOffOnlyOnce: 0
+  offEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9180690914398952302}
+        m_TargetAssemblyTypeName: Core3lb.DoMovement, Assembly-CSharp
+        m_MethodName: _LocalRotateToY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  showAdvancedEvents: 0
+  onSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  offSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
+  debugMessages: 0
+--- !u!1001 &3415205220216127057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6824385542606917249}
+    m_Modifications:
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1263377533948760896, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433223350231575560, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2664631859260364342, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2928708647030557013, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990307934123414726, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244171594704878150, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296850965663864501, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6068055122796303183, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194126106595773462, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_Name
+      value: Door_HingesRightSide
+      objectReference: {fileID: 0}
+    - target: {fileID: 6194126106595773462, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388760524546699072, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614483773368807927, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7250714624975354376, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7663940452716885523, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961061589082800765, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011809571236789818, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6194126106595773462, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9180690914398952302}
+    - targetCorrespondingSourceObject: {fileID: 6194126106595773462, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8399961809764612378}
+  m_SourcePrefab: {fileID: 100100000, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+--- !u!4 &2951275010520377722 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 544997067140323115, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+  m_PrefabInstance: {fileID: 3415205220216127057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8831783091926725191 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6194126106595773462, guid: 45825b25f91d65e47bf9f9b1ecbb86b9, type: 3}
+  m_PrefabInstance: {fileID: 3415205220216127057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9180690914398952302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8831783091926725191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f98eaab190538458b7eff95132f6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  rotateSpeed: 10
+--- !u!54 &8399961809764612378
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8831783091926725191}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

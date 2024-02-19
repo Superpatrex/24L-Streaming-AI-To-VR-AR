@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2295109944375529732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7191617479534748646}
+    m_Modifications:
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7293441105556018996, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+      propertyPath: m_Name
+      value: Bandage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+--- !u!4 &2770751446004469993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4155258499708174829, guid: 2aba40152582e6a4590f0d5fe846e910, type: 3}
+  m_PrefabInstance: {fileID: 2295109944375529732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7762290490004994617
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Name
+      value: GroKitGrabObject_Bandage Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 679812188598479875, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: description
+      value: 'Universal Grab Object. Will work with any XR rig as long as it has
+        an XRHand component.
+
+        Uses ItemIDString.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 679812188598479875, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: displayName
+      value: Grok Kit Grab Bandages
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259218028977389671, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259218028977389671, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259218028977389671, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Size.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672635025175549853, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319265051619016229, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319265051619016229, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 17a9b35e7d4dc784b870584bc39459b6, type: 2}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 609380051653974495, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2770751446004469993}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6769857775991589639}
+  m_SourcePrefab: {fileID: 100100000, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+--- !u!4 &7191617479534748646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 609380051653974495, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+  m_PrefabInstance: {fileID: 7762290490004994617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7604813013118393071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+  m_PrefabInstance: {fileID: 7762290490004994617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6769857775991589639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7604813013118393071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fd310dbe550624d9edfcd8d6c1b0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemID: Bandage
+  groupID: Medical
+  DisplayName: 
+  Description: 

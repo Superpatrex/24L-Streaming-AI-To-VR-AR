@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.cesium.unity": "1.7.1",
+    "com.meta.xr.sdk.all": "60.0.0",
     "com.srcnalt.openai-unity": "https://github.com/srcnalt/OpenAI-Unity.git",
     "com.unity.collab-proxy": "2.0.7",
     "com.unity.feature.development": "1.0.1",
@@ -12,6 +13,7 @@
     "com.unity.visualscripting": "1.9.1",
     "com.unity.xr.interaction.toolkit": "2.4.3",
     "com.unity.xr.management": "4.3.3",
+    "com.unity.xr.oculus": "4.0.0",
     "com.unity.xr.openxr": "1.8.2",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

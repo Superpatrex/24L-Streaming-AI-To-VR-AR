@@ -5,6 +5,7 @@ using System.Net.Http;
 using UnityEngine;
 using UnityEngine.Networking;
 using Utility;
+using CesiumForUnity;
 
 public class WeatherAPI : MonoBehaviour
 {
@@ -16,6 +17,30 @@ public class WeatherAPI : MonoBehaviour
 
     // Private fields
     private static string returnJsonString;
+
+    [SerializeField] public CesiumGeoreference georeference;
+    
+    [SerializeField] public float timeSinceLastUpdate = 0.0f;
+
+    [SerializeField] public float timePerUpdate = 2.0f;
+
+    public void Awake()
+    {
+        // Begin the process of getting the data from the API
+        BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
+    }
+
+    public void Update()
+    {
+        timeSinceLastUpdate += Time.deltaTime;
+        if (timeSinceLastUpdate >= timePerUpdate)
+        {
+            // Begin the process of getting the data from the API
+            BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
+            timeSinceLastUpdate = 0.0f;
+            Debug.Log(CurrentWeather.getWeatherInfo(XMLSerializer.ReadFromXmlStringWeather(returnJsonString)));
+        }
+    }
 
     public static IEnumerator GetApiData(string lat, string lon)
     {
