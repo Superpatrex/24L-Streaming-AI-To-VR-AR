@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "UnityEngine",
+        "UnityEditor.InputSystem",
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor",
         "OpenAI.PlayMode.Tests",

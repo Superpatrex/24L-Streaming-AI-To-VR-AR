@@ -116,6 +116,7 @@ public class City
     [XmlElement("coord")]
     public Coord Coord { get; set; }
 
+    [XmlElement("country")]
     public string Country { get; set; }
 
     public int Timezone { get; set; }
@@ -185,9 +186,12 @@ public class Pressure
 
 public class Wind
 {
+    [XmlElement("speed")]
     public Speed Speed { get; set; }
+    [XmlElement("gusts")]
 
     public Gusts Gusts { get; set; }
+    [XmlElement("direction")]
 
     public Direction Direction { get; set; }
 }

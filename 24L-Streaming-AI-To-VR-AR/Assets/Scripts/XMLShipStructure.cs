@@ -1,30 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml.Serialization;
 
 public class XMLShipStructure
 {
-    Aircraft craft;
+    [XmlElement("Aircraft")]
+    public Aircraft craft;
 }
 
-class Aircraft
+public class Aircraft
 {
-    string name;
-    string type;
-    Location aircraftLocation;
-    Fuel fuel;
+    public string name;
+    public string type;
+    [XmlElement("Location")]
+    public Location aircraftLocation;
+    [XmlElement("Fuel")]
+    public Fuel fuel;
 }
 
-class Location
+public class Location
 {
-    float latitude;
-    float longitude;
-    float altitude;
+    public float latitude;
+    public float longitude;
+    public float altitude;
 }
 
-class Fuel
+public class Fuel
 {
-    float fuelLevel;
-    float fuelCapacity;
-    float fuelConsumptionRate;
+    public float fuelLevel;
+    public float fuelCapacity;
+    public float fuelConsumptionRate;
 }

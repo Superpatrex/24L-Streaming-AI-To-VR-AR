@@ -9,14 +9,12 @@ using CesiumForUnity;
 
 public class WeatherAPI : MonoBehaviour
 {
+    // Public fields
     public static string ReturnJsonString
     {
         get => returnJsonString;
         set => returnJsonString = value;
     }
-
-    // Private fields
-    private static string returnJsonString;
 
     [SerializeField] public CesiumGeoreference georeference;
     
@@ -24,12 +22,22 @@ public class WeatherAPI : MonoBehaviour
 
     [SerializeField] public float timePerUpdate = 2.0f;
 
+    // Private fields
+    private static string returnJsonString;
+
+
+    /// <summary>
+    /// On awake of the script, call the API to get the data
+    /// </summary>
     public void Awake()
     {
         // Begin the process of getting the data from the API
         BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
     }
 
+    /// <summary>
+    /// Update is called once per frame, essentially it calls the API every timePerUpdate in seconds
+    /// </summary>
     public void Update()
     {
         timeSinceLastUpdate += Time.deltaTime;
@@ -42,6 +50,12 @@ public class WeatherAPI : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Returns the XML string of the weather data of the latitude and the longtitude of the user
+    /// </summary>
+    /// <param name="lat">The string representation of the latitude</param>
+    /// <param name="lon">The stirng representation of the longtitude</param>
+    /// <returns></returns>
     public static IEnumerator GetApiData(string lat, string lon)
     {
         // Making sure that data being passed in is correct
@@ -91,11 +105,21 @@ public class WeatherAPI : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Returns the XML string of the weather data of the latitude and the longtitude of the user
+    /// </summary>
+    /// <param name="latLonItem">The latitude and longtitude of the user</param>
+    /// <returns></returns>
     public static IEnumerator GetApiData(LatLongLocation latLonItem)
     {
-        yield return WeatherAPI.GetApiData(latLonItem.Lat.ToString(), latLonItem.Long.ToString());
+        return WeatherAPI.GetApiData(latLonItem.Lat.ToString(), latLonItem.Long.ToString());
     }
 
+    /// <summary>
+    /// Begins the process of starting the StartCoroutine getting the data from the API
+    /// </summary>
+    /// <param name="lat"></param>
+    /// <param name="lon"></param>
     void BeginGetApiData(string lat, string lon)
     {
         StartCoroutine(GetApiData(lat, lon));
