@@ -3,11 +3,19 @@
     "rootNamespace": "",
     "references": [
         "UnityEngine",
+        "Unity.InputSystem",
+        "UnityEditor.InputSystem",
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor",
         "OpenAI.PlayMode.Tests",
         "OpenAI.Runtime",
-        "Unity.VisualScripting"
+        "Unity.VisualScripting",
+        "CesiumEditor",
+        "CesiumRuntime",
+        "Meta.WitAi.TTS",
+        "Meta.WitAI.TTS.Editor",
+        "NaughtyAttributes.Core",
+        "Unity.Mathematics"
     ],
     "includePlatforms": [],
     "excludePlatforms": [

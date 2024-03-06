@@ -1359,6 +1359,8 @@ GameObject:
   m_Component:
   - component: {fileID: 847471585}
   - component: {fileID: 847471584}
+  - component: {fileID: 847471586}
+  - component: {fileID: 847471587}
   m_Layer: 0
   m_Name: CesiumGeoreference
   m_TagString: Untagged
@@ -1402,6 +1404,35 @@ Transform:
   - {fileID: 738594192}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847471586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847471583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c52cabca3492bdf4d84926f121fdf670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateX: 26
+  updateY: 80
+  updateZ: 2208.3806427013874
+--- !u!114 &847471587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847471583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f096bda9f83a74942b5f09ca0709722d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: data.game
+  test: {fileID: 847471584}
 --- !u!1 &877942969
 GameObject:
   m_ObjectHideFlags: 0
