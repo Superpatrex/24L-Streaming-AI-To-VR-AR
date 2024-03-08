@@ -7,12 +7,14 @@
         "Unity.TextMeshPro.Editor",
         "OpenAI.PlayMode.Tests",
         "OpenAI.Runtime",
-        "Unity.VisualScripting"
+        "Unity.VisualScripting",
+        "Unity.RenderPipelines.Universal.Editor",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "CesiumRuntime"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [
-    
-    ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [],
