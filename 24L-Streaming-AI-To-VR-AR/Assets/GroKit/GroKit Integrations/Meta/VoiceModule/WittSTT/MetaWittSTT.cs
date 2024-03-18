@@ -23,12 +23,14 @@ using Oculus.Voice;
 using UnityEngine.Events;
 using Meta.WitAi.Requests;
 using Core3lb;
+using TMPro;
 
 [HelpURL("https://developer.oculus.com/experimental/voice-sdk/tutorial-overview/")]
 
 [Core3lbClass]
 public class MetaWittSTT : AppVoiceExperience
 {
+    public TMP_Text transcriptText;
     public UnityEvent onStartListening;
     public UnityEvent onStopListening;
     public UnityEvent<string> onTranscriptComplete;
@@ -63,6 +65,9 @@ public class MetaWittSTT : AppVoiceExperience
     [CoreButton]
     public void _StartListening()
     {
+        transcripedText = "";
+        partialTranscripedText = "";
+        transcriptText.text = "";
         onStartListening.Invoke();
         _request = ActivateImmediately(GetRequestEvents());
     }
@@ -76,6 +81,7 @@ public class MetaWittSTT : AppVoiceExperience
 
     public void FinishedProcessing(string text)
     {
+        transcriptText.text = text;
         onTranscriptComplete.Invoke(text);
     }
 
@@ -88,6 +94,7 @@ public class MetaWittSTT : AppVoiceExperience
     void GotPartial(string text)
     {
         partialTranscripedText = text;
+        transcriptText.text = text;
         onPartialTranscriptGotten.Invoke(text);
     }
 

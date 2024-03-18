@@ -3,12 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Xml.Serialization;
 
+/// <summary>
+/// The XMLShipStructure class is used to store the XML data of the ship
+/// </summary>
 public class XMLShipStructure
 {
     [XmlElement("Aircraft")]
     public Aircraft craft;
 }
 
+/// <summary>
+/// The Aircraft class is used to store the XML data of the aircraft, a subclass of the XMLShipStructure
+/// </summary>
 public class Aircraft
 {
     public string name;
@@ -19,6 +25,9 @@ public class Aircraft
     public Fuel fuel;
 }
 
+/// <summary>
+/// The Location class is used to store the XML data of the location of the aircraft, a subclass of the Aircraft class
+/// </summary>
 public class Location
 {
     public float latitude;
@@ -26,6 +35,9 @@ public class Location
     public float altitude;
 }
 
+/// <summary>
+/// The Fuel class is used to store the XML data of the fuel of the aircraft, a subclass of the Aircraft class
+/// </summary>
 public class Fuel
 {
     public float fuelLevel;

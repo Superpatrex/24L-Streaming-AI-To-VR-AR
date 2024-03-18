@@ -3,6 +3,9 @@ using System.Xml.Serialization;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The CurrentWeather class is used to store the XML data of the weather
+/// </summary>
 [XmlRoot("current")] // 'XMLRoot' is not defined in the current context
 public class CurrentWeather
 {

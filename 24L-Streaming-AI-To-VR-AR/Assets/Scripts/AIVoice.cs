@@ -1,15 +1,17 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Meta.WitAi.TTS.Utilities;
 
 public class AIVoice : MonoBehaviour
 {
-    public InputAction startListening;
-    public InputAction stopListening;
+    [SerializeField] public TTSSpeaker tts;
+
+    private  Contexter context = new Contexter();
 
     public void Awake()
     {
-
+        
     }
 
     public void Start()

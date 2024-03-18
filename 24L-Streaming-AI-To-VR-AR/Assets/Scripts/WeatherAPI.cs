@@ -25,6 +25,8 @@ public class WeatherAPI : MonoBehaviour
     // Private fields
     private static string returnJsonString;
 
+    public Material CLEAR_SKYBOX;
+
 
     /// <summary>
     /// On awake of the script, call the API to get the data
@@ -46,7 +48,8 @@ public class WeatherAPI : MonoBehaviour
             // Begin the process of getting the data from the API
             BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
             timeSinceLastUpdate = 0.0f;
-            Debug.Log(CurrentWeather.getWeatherInfo(XMLSerializer.ReadFromXmlStringWeather(returnJsonString)));
+            string curWeather = CurrentWeather.getWeatherInfo(XMLSerializer.ReadFromXmlStringWeather(returnJsonString));
+            ChangeSkyBox(curWeather);
         }
     }
 
@@ -97,7 +100,7 @@ public class WeatherAPI : MonoBehaviour
             else
             {
                 // Show results as text
-                Debug.Log(www.downloadHandler.text);
+                //Debug.Log(www.downloadHandler.text);
 
                 string resultString = www.downloadHandler.text;
                 ReturnJsonString = resultString;
@@ -118,10 +121,23 @@ public class WeatherAPI : MonoBehaviour
     /// <summary>
     /// Begins the process of starting the StartCoroutine getting the data from the API
     /// </summary>
-    /// <param name="lat"></param>
-    /// <param name="lon"></param>
+    /// <param name="lat">The string representation of the latitude</param>
+    /// <param name="lon">The string representation of the longitude</param>
     void BeginGetApiData(string lat, string lon)
     {
         StartCoroutine(GetApiData(lat, lon));
+    }
+
+    public void ChangeSkyBox(string weather)
+    {
+        Debug.LogError(weather);
+        switch(weather)
+        {
+            case "Clear Sky":
+                RenderSettings.skybox = CLEAR_SKYBOX;
+                break;
+            default:
+                break;
+        }
     }
 }

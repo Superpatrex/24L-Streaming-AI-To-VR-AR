@@ -3,6 +3,7 @@
     "rootNamespace": "",
     "references": [
         "UnityEngine",
+        "Unity.InputSystem",
         "UnityEditor.InputSystem",
         "Unity.TextMeshPro",
         "Unity.TextMeshPro.Editor",
@@ -10,7 +11,10 @@
         "OpenAI.Runtime",
         "Unity.VisualScripting",
         "CesiumEditor",
-        "CesiumRuntime"
+        "CesiumRuntime",
+        "Meta.WitAi.TTS",
+        "Meta.WitAI.TTS.Editor",
+        "NaughtyAttributes.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [

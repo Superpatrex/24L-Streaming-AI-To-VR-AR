@@ -3,17 +3,17 @@ using System.IO;
 using System.Xml.Serialization;
 using System.Text;
 
+/// <summary>
+/// The XMLSerializer class is used to read and write XML files
+/// </summary>
 public class XMLSerializer
 {
-    public CurrentWeather currentWeather;
-    public XMLShipStructure shipInformation;
-    public XMLHolder holder;
 
-    public void ReadFromXMLHolderShipInformation()
-    {
-        shipInformation = ReadFromXmlStringShipInformation(holder.shipInformation.text);
-    }
-
+    /// <summary>
+    /// Reads the XML string and returns the CurrentWeather object
+    /// </summary>
+    /// <param name="xmlString">The XML file string that is being read</param>
+    /// <returns>The corresponding CurrentWeather object</returns>
     public static CurrentWeather ReadFromXmlStringWeather(string xmlString)
     {
         CurrentWeather currentWeather;
@@ -27,6 +27,11 @@ public class XMLSerializer
         return currentWeather;
     }
 
+    /// <summary>
+    /// Reads the XML string and returns the XMLShipStructure object
+    /// </summary>
+    /// <param name="xmlString">The XML file string that is being read in</param>
+    /// <returns>The corresponding XMLShipStructure</returns>
     public static XMLShipStructure ReadFromXmlStringShipInformation(string xmlString)
     {
         XMLShipStructure shipInformation;
@@ -40,6 +45,11 @@ public class XMLSerializer
         return shipInformation;
     }
 
+    /// <summary>
+    /// Transcribes the XMLShipStructure object into an XML string that can be stores or used
+    /// </summary>
+    /// <param name="shipInformation">The corresponding XMLShipStructure object that is going to be serialized/param>
+    /// <returns>The XML data that was transcribed from the shipInformation</returns>
     public static string WriteToXmlStringShipInformation(XMLShipStructure shipInformation)
     {
         var xmlSerializer = new XmlSerializer(typeof(XMLShipStructure));
@@ -61,6 +71,11 @@ public class XMLSerializer
         }
     }
 
+    /// <summary>
+    /// Converts a UTF-8 string to a UTF-16 string
+    /// </summary>
+    /// <param name="utf16String">The UTF-16 string that is going to be converted</param>
+    /// <returns>The UTF-8 string that was converted</returns>
     public static string ConvertUtf16ToUtf8(string utf16String)
     {
         byte[] utf16Bytes = Convert.FromBase64String(utf16String);
