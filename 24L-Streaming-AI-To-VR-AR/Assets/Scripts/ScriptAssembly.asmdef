@@ -15,11 +15,12 @@
         "Meta.WitAi.TTS",
         "Meta.WitAI.TTS.Editor",
         "NaughtyAttributes.Core"
+        "Unity.RenderPipelines.Universal.Editor",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [
-    
-    ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [],

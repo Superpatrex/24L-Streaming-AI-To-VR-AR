@@ -50,5 +50,7 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
         operation.allowSceneActivation = true;
+
+        Loader.Load(Loader.Scene.CesiumEnvironment);
     }
 }

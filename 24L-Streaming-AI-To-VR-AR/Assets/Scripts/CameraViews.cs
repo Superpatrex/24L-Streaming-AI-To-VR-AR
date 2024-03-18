@@ -7,6 +7,7 @@ public class CameraViews : MonoBehaviour
 {
     public Camera PlaneCamera;
     public Camera SpectorCamera;
+    public Camera ChatCamera;
 
     private static CameraViews ThisInstance;
     private Camera LastCamera;
@@ -17,8 +18,9 @@ public class CameraViews : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlaneCamera.enabled = true;
+        PlaneCamera.enabled = false;
         SpectorCamera.enabled = true;
+        ChatCamera.enabled = false;
         CurrentCamera = SpectorCamera;
         LastCamera = PlaneCamera;
         ThisInstance = this;
@@ -36,8 +38,15 @@ public class CameraViews : MonoBehaviour
 
         if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha2))
         {   
-            //CurrentCamera.enabled = false;
+            CurrentCamera.enabled = false;
             CurrentCamera = PlaneCamera;
+            CurrentCamera.enabled = true;
+        }
+
+        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            CurrentCamera.enabled = false;
+            CurrentCamera = ChatCamera;
             CurrentCamera.enabled = true;
         }
 
