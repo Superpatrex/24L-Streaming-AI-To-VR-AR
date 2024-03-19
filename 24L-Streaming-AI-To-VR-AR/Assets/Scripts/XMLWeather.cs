@@ -14,13 +14,13 @@ public class CurrentWeather
         {200, "Thunderstorm with light rain"},
         {201, "Thunderstorm with rain"},
         {202, "Thunderstorm with heavy rain"},
-        {210, "Light thunderstorm"},
-        {211, "Thunderstorm"},
-        {212, "Heavy thunderstorm"},
-        {221, "Ragged thunderstorm"},
         {230, "Thunderstorm with light drizzle"},
         {231, "Thunderstorm with drizzle"},
         {232, "Thunderstorm with heavy drizzle"},
+        {210, "Light thunderstorm"},
+        {221, "Ragged thunderstorm"},
+        {212, "Heavy thunderstorm"},
+        {211, "Thunderstorm"},
         {300, "Light intensity drizzle"},
         {301, "Drizzle"},
         {302, "Heavy intensity drizzle"},
@@ -61,10 +61,10 @@ public class CurrentWeather
         {762, "Volcanic ash"},
         {771, "Squalls"},
         {781, "Tornado"},
-        {800, "Clear sky"},
-        {801, "Few clouds: 11-25%"},
-        {802, "Scattered clouds: 25-50%"},
-        {803, "Broken clouds: 51-84%"},
+        {800, "Clear sky"}, // Added
+        {801, "Few clouds: 11-25%"}, // Added
+        {802, "Scattered clouds: 25-50%"}, // Added
+        {803, "Broken clouds: 51-84%"}, // Added
         {804, "Overcast clouds: 85-100%"}
     };
 

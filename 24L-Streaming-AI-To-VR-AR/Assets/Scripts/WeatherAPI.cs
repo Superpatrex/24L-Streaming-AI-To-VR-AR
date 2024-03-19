@@ -22,10 +22,12 @@ public class WeatherAPI : MonoBehaviour
 
     [SerializeField] public float timePerUpdate = 2.0f;
 
+    [SerializeField] public Material CLEAR_SKYBOX;
+    [SerializeField] public Material FEW_CLOUDS_SKYBOX;
+    [SerializeField] public Material CLOUDS_SKYBOX;
     // Private fields
     private static string returnJsonString;
 
-    public Material CLEAR_SKYBOX;
 
 
     /// <summary>
@@ -130,11 +132,19 @@ public class WeatherAPI : MonoBehaviour
 
     public void ChangeSkyBox(string weather)
     {
-        Debug.LogError(weather);
+        Debug.Log(weather);
+
         switch(weather)
         {
             case "Clear Sky":
                 RenderSettings.skybox = CLEAR_SKYBOX;
+                break;
+            case "Few clouds: 11-25%":
+                RenderSettings.skybox = FEW_CLOUDS_SKYBOX;
+                break;
+            case "Scattered clouds: 25-50%":
+            case "Broken clouds: 51-84%":
+                RenderSettings.skybox = CLOUDS_SKYBOX;
                 break;
             default:
                 break;

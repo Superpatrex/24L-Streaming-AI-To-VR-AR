@@ -13,8 +13,9 @@
         "CesiumEditor",
         "CesiumRuntime",
         "Meta.WitAi.TTS",
+        "Meta.WitAi.Lib",
         "Meta.WitAI.TTS.Editor",
-        "NaughtyAttributes.Core"
+        "NaughtyAttributes.Core",
         "Unity.RenderPipelines.Universal.Editor",
         "Unity.RenderPipelines.Universal.Runtime",
         "Unity.RenderPipelines.Core.Runtime"
