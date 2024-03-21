@@ -11,46 +11,46 @@ public class CurrentWeather
 {
     public static Dictionary<int, string> WeatherCodes = new Dictionary<int, string>()
     {
-        {200, "Thunderstorm with light rain"},
-        {201, "Thunderstorm with rain"},
-        {202, "Thunderstorm with heavy rain"},
-        {230, "Thunderstorm with light drizzle"},
-        {231, "Thunderstorm with drizzle"},
-        {232, "Thunderstorm with heavy drizzle"},
-        {210, "Light thunderstorm"},
-        {221, "Ragged thunderstorm"},
-        {212, "Heavy thunderstorm"},
-        {211, "Thunderstorm"},
-        {300, "Light intensity drizzle"},
-        {301, "Drizzle"},
-        {302, "Heavy intensity drizzle"},
-        {310, "Light intensity drizzle rain"},
-        {311, "Drizzle rain"},
-        {312, "Heavy intensity drizzle rain"},
-        {313, "Shower rain and drizzle"},
-        {314, "Heavy shower rain and drizzle"},
-        {321, "Shower drizzle"},
-        {500, "Light rain"},
-        {501, "Moderate rain"},
-        {502, "Heavy intensity rain"},
-        {503, "Very heavy rain"},
-        {504, "Extreme rain"},
-        {511, "Freezing rain"},
-        {520, "Light intensity shower rain"},
-        {521, "Shower rain"},
-        {522, "Heavy intensity shower rain"},
-        {531, "Ragged shower rain"},
-        {600, "Light snow"},
-        {601, "Snow"},
-        {602, "Heavy snow"},
-        {611, "Sleet"},
-        {612, "Light shower sleet"},
-        {613, "Shower sleet"},
-        {615, "Light rain and snow"},
-        {616, "Rain and snow"},
-        {620, "Light shower snow"},
-        {621, "Shower snow"},
-        {622, "Heavy shower snow"},
+        {200, "Thunderstorm with light rain"}, // Added
+        {201, "Thunderstorm with rain"}, // Added
+        {202, "Thunderstorm with heavy rain"}, // Added
+        {230, "Thunderstorm with light drizzle"}, // Added
+        {231, "Thunderstorm with drizzle"}, // Added
+        {232, "Thunderstorm with heavy drizzle"}, // Added
+        {210, "Light thunderstorm"}, // Added
+        {221, "Ragged thunderstorm"}, // Added
+        {212, "Heavy thunderstorm"}, // Added
+        {211, "Thunderstorm"}, // Added
+        {300, "Light intensity drizzle"}, // Added
+        {301, "Drizzle"}, // Added
+        {302, "Heavy intensity drizzle"}, // Added
+        {310, "Light intensity drizzle rain"}, // Added
+        {311, "Drizzle rain"}, // Added
+        {312, "Heavy intensity drizzle rain"}, // Added
+        {313, "Shower rain and drizzle"}, // Added
+        {314, "Heavy shower rain and drizzle"}, // Added
+        {321, "Shower drizzle"}, // Added
+        {500, "Light rain"}, // Added
+        {501, "Moderate rain"}, // Added
+        {502, "Heavy intensity rain"}, // Added
+        {503, "Very heavy rain"}, // Added
+        {504, "Extreme rain"}, // Added
+        {511, "Freezing rain"}, // Added
+        {520, "Light intensity shower rain"}, // Added
+        {521, "Shower rain"}, // Added
+        {522, "Heavy intensity shower rain"}, // Added
+        {531, "Ragged shower rain"}, // Added
+        {600, "Light snow"}, // Added
+        {601, "Snow"}, // Added
+        {602, "Heavy snow"}, // Added
+        {611, "Sleet"}, // Added
+        {612, "Light shower sleet"}, // Added
+        {613, "Shower sleet"}, // Added
+        {615, "Light rain and snow"}, // Added
+        {616, "Rain and snow"}, // Added
+        {620, "Light shower snow"}, // Added
+        {621, "Shower snow"}, // Added
+        {622, "Heavy shower snow"}, // Added
         {701, "Mist"},
         {711, "Smoke"},
         {721, "Haze"},
@@ -59,13 +59,13 @@ public class CurrentWeather
         {751, "Sand"},
         {761, "Dust"},
         {762, "Volcanic ash"},
-        {771, "Squalls"},
-        {781, "Tornado"},
+        {771, "Squalls"}, // Added
+        {781, "Tornado"}, // Added
         {800, "Clear sky"}, // Added
         {801, "Few clouds: 11-25%"}, // Added
         {802, "Scattered clouds: 25-50%"}, // Added
         {803, "Broken clouds: 51-84%"}, // Added
-        {804, "Overcast clouds: 85-100%"}
+        {804, "Overcast clouds: 85-100%"} // Added
     };
 
     public static string getWeatherInfo(CurrentWeather weather)

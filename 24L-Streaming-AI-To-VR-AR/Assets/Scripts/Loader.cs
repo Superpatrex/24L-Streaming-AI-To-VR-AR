@@ -10,7 +10,7 @@ public static class Loader
     public enum Scene { 
         StartMenu,
         LoadingScene,
-        CesiumEnvironment,
+        JackCesiumEnvironment,
         
     }
 

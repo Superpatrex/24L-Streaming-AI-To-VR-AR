@@ -16,15 +16,38 @@ public class WeatherAPI : MonoBehaviour
         set => returnJsonString = value;
     }
 
+    public enum weatherEffects
+    {
+        CLEAR_SKY,
+        RAIN_DOWNPOUR
+    }
+
     [SerializeField] public CesiumGeoreference georeference;
     
     [SerializeField] public float timeSinceLastUpdate = 0.0f;
 
     [SerializeField] public float timePerUpdate = 2.0f;
 
+    // Skybox materials
     [SerializeField] public Material CLEAR_SKYBOX;
     [SerializeField] public Material FEW_CLOUDS_SKYBOX;
     [SerializeField] public Material CLOUDS_SKYBOX;
+    [SerializeField] public Material OVERCAST_SKYBOX;
+    [SerializeField] public Material SNOW_SKYBOX;
+    [SerializeField] public Material DARK_CLOUDS_SKYBOX;
+    [SerializeField] public Material SAND_SKYBOX;
+
+    // Weather effects
+    [SerializeField] public GameObject rainDownpour;
+    [SerializeField] public GameObject rainDrizzle;
+    [SerializeField] public GameObject rainLight;
+    [SerializeField] public GameObject rainSteady;
+    [SerializeField] public GameObject snowBlizzard;
+    [SerializeField] public GameObject mistHazeFog;
+    [SerializeField] public GameObject sandDust;
+    [SerializeField] public GameObject smokeDustVolcanicAsh;
+    private GameObject currentWeather = null;
+
     // Private fields
     private static string returnJsonString;
 
@@ -136,18 +159,122 @@ public class WeatherAPI : MonoBehaviour
 
         switch(weather)
         {
-            case "Clear Sky":
+            case "Clear sky":
+                ToggleOffWeather();
                 RenderSettings.skybox = CLEAR_SKYBOX;
                 break;
+            case "Light intensity drizzle":
+            case "Light intensity drizzle rain":
+            case "Light rain":
+            case "Light intensity shower rain":
+                ToggleWeather(rainLight);
+                RenderSettings.skybox = OVERCAST_SKYBOX;
+                break;
+            case "Drizzle":
+            case "Drizzle rain":
+            case "Shower drizzle":
+            case "Shower rain and drizzle":
+                ToggleWeather(rainDrizzle);
+                RenderSettings.skybox = OVERCAST_SKYBOX;
+                break;
+            case "Moderate rain":
+            case "Shower rain":
+            case "Freezing rain":
+                ToggleWeather(rainSteady);
+                RenderSettings.skybox = OVERCAST_SKYBOX;
+                break;
+            case "Heavy intensity drizzle":
+            case "Heavy intensity drizzle rain":
+            case "Heavy shower rain and drizzle":
+            case "Heavy intensity rain":
+            case "Very heavy rain":
+            case "Extreme rain":
+            case "Heavy intensity shower rain":
+            case "Ragged shower rain":
+            case "Thunderstorm with light rain":
+            case "Thunderstorm with rain":
+            case "Thunderstorm with heavy rain":
+            case "Thunderstorm with light drizzle":
+            case "Thunderstorm with drizzle":
+            case "Thunderstorm with heavy drizzle":
+            case "Light thunderstorm":
+            case "Ragged thunderstorm":
+            case "Heavy thunderstorm":
+            case "Thunderstorm":
+            case "Squalls":
+            case "Tornado":
+                ToggleWeather(rainDownpour);
+                RenderSettings.skybox = OVERCAST_SKYBOX;
+                break;
+            case "Overcast clouds: 85-100%":
+                ToggleOffWeather();
+                RenderSettings.skybox = OVERCAST_SKYBOX;
+                break;
+            case "Light snow":
+            case "Snow":
+            case "Sleet":
+            case "Light shower sleet":
+            case "Shower sleet":
+            case "Light rain and snow":
+            case "Rain and snow":
+            case "Light shower snow":
+            case "Shower snow":
+                ToggleWeather(snowBlizzard);
+                RenderSettings.skybox = SNOW_SKYBOX;
+                break;
+            case "Heavy snow":
+            case "Heavy shower snow":
+                ToggleWeather(snowBlizzard);
+                RenderSettings.skybox = DARK_CLOUDS_SKYBOX;
+                break;
             case "Few clouds: 11-25%":
+                ToggleOffWeather();
                 RenderSettings.skybox = FEW_CLOUDS_SKYBOX;
                 break;
             case "Scattered clouds: 25-50%":
             case "Broken clouds: 51-84%":
+                ToggleOffWeather();
                 RenderSettings.skybox = CLOUDS_SKYBOX;
                 break;
-            default:
+            case "Mist":
+            case "Haze":
+            case "Fog":
+                ToggleWeather(mistHazeFog);
+                RenderSettings.skybox = OVERCAST_SKYBOX;
                 break;
+            case "Sand/dust whirls":
+            case "Sand":
+                ToggleWeather(sandDust);
+                RenderSettings.skybox = SAND_SKYBOX;
+                break;
+            case "Smoke":
+            case "Dust":
+            case "Volcanic ash":
+                ToggleWeather(smokeDustVolcanicAsh);
+                RenderSettings.skybox = OVERCAST_SKYBOX;
+                break;
+            default:
+                Debug.LogError("Weather not found this is bad");
+                break;
+        }
+    }
+
+    public void ToggleWeather(GameObject weather)
+    {
+        if (currentWeather != weather)
+        {
+            currentWeather.SetActive(false);
+            weather.SetActive(true);
+            currentWeather = weather;
+        }
+    }
+
+    public void ToggleOffWeather()
+    {
+        if (currentWeather != null)
+        {
+            currentWeather.SetActive(false);
+            currentWeather = null;
         }
     }
 }
