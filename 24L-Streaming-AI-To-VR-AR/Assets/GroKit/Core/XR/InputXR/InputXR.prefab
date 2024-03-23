@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8339144348936926094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5578982996078395749}
+  - component: {fileID: -6887421724778145118}
+  m_Layer: 0
+  m_Name: InputXR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5578982996078395749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339144348936926094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8464502, y: 0.7348395, z: 1.3410783}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6887421724778145118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339144348936926094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3993cf3e48e50df4b9fb2bd6504cc1eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputOverride: {fileID: 0}
+  grab:
+    leftHand: {fileID: -1885566545929713078, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+    rightHand: {fileID: 147295879292142392, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  move:
+    leftHand: {fileID: -1885566545929713078, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+    rightHand: {fileID: 147295879292142392, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  interact:
+    leftHand: {fileID: -5406325519134881818, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+    rightHand: {fileID: 5228062352613825926, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  altInteract:
+    leftHand: {fileID: 2054813540217752413, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+    rightHand: {fileID: -5799389249351719295, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  menu:
+    leftHand: {fileID: 9008057990412080952, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+    rightHand: {fileID: 3642569036185405199, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  m_ActionAssets:
+  - {fileID: -944628639613478452, guid: ff814d793670e3b47a197a8e8307e7d5, type: 3}
+  - {fileID: -944628639613478452, guid: ffddd8c5f0c822c4da8a37bf34504a33, type: 3}
+  - {fileID: -944628639613478452, guid: d325a6dd4f4af224e92e0e2c45b583f6, type: 3}
+  debugRef: {fileID: 0}

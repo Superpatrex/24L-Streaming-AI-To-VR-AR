@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Meta.WitAi.TTS.Utilities;
 
 public class GameStartMenu : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GameStartMenu : MonoBehaviour
     public Button quitButton;
 
     public List<Button> returnButtons;
+    [SerializeField] public TTSSpeaker tts;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,8 @@ public class GameStartMenu : MonoBehaviour
         {
             item.onClick.AddListener(EnableMainMenu);
         }
+
+        tts.Speak("Hello! Welcome to the v Reehta. The virtual reality immersive training application. Please select an option to continue.");
     }
 
     public void QuitGame()

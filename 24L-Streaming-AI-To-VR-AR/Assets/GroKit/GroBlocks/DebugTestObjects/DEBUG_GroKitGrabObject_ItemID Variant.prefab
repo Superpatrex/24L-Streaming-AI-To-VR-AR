@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6906604922133558660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_Name
+      value: DEBUG_GroKitGrabObject_ItemID Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 679812188598479875, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: description
+      value: Use to test ItemID triggers. Has a Trigger reaction to confirm entering
+        and exiting properly. Set the ItemID and GroupID to match the ItemIDTrigger
+        settings.
+      objectReference: {fileID: 0}
+    - target: {fileID: 679812188598479875, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: displayName
+      value: Debug Grab with Item ID
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345019996897231573, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7223851782170962884}
+    - targetCorrespondingSourceObject: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3226620712339204183}
+    - targetCorrespondingSourceObject: {fileID: 920550563426888219, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4243029868602414940}
+  m_SourcePrefab: {fileID: 100100000, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+--- !u!1 &5989580011469037471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 920550563426888219, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+  m_PrefabInstance: {fileID: 6906604922133558660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4243029868602414940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5989580011469037471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d224316f1d5c7439032edfd1f69efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderers:
+  - {fileID: 9112390235963938098}
+  transitionTime: 0
+  setOnStart: 0
+  transitionOnStart: 0
+  isMultiMat: 0
+  multiMatIndex: 0
+  useFloatChanges: 0
+  materialProperty: 
+  setTo: 0
+  transistionTo: 0
+  matOriginalValue: 0
+  useColorChanges: 1
+  colorProperty: _BaseColor
+  colors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.103330135, a: 1}
+  - {r: 1, g: 0, b: 0.009225845, a: 1}
+  - {r: 0, g: 0.23238373, b: 1, a: 1}
+  setColorTo: 0
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!1 &6767146222943688018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 157779058285043926, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+  m_PrefabInstance: {fileID: 6906604922133558660}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7223851782170962884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6767146222943688018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42773c608a8d844d9d9b2de81816e74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemID: 0
+  groupID: 0
+--- !u!114 &3226620712339204183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6767146222943688018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2033eeced48d4194cac4c033596eccdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 
+  triggerRight:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4243029868602414940}
+        m_TargetAssemblyTypeName: Core3lb.MaterialTransition, Assembly-CSharp
+        m_MethodName: _SetColorTo
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerWrong:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4243029868602414940}
+        m_TargetAssemblyTypeName: Core3lb.MaterialTransition, Assembly-CSharp
+        m_MethodName: _SetColorTo
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  alwaysRunOnExit: 0
+  onExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4243029868602414940}
+        m_TargetAssemblyTypeName: Core3lb.MaterialTransition, Assembly-CSharp
+        m_MethodName: _SetColorTo
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!23 &9112390235963938098 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2426461868532064438, guid: 88106e08f28019a4ab4f895b3be5f2b9, type: 3}
+  m_PrefabInstance: {fileID: 6906604922133558660}
+  m_PrefabAsset: {fileID: 0}

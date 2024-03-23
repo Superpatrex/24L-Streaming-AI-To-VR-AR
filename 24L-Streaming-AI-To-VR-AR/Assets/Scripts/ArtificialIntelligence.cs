@@ -22,6 +22,7 @@ namespace OpenAI
         private static string _latLongString = "Give me the latitude of longitude in decimals of the location to which is specified. For instance, if the user were to say \"Epcot\" or \"Take me to Epcot\"  or \"Where is Epcot\" return \"28.3765 N, 81.5494 W\". Only return the latitude and longitude and the name of the location after the latitude and longitude separated with a space.";
         private static string _funFact = "You are an artificial intelligence model that only gives fun facts about virtual reality, flight simulators, and artificial intelligence. For instance, when prompted the artificial intelligence should give a fact like \"The precursor to the flight simulator was the \"Tonneau Antoinette\"\". Only produce one have and make it succinct and making it 10-20 words. Do not respond to the user's actual questions or comments only produce facts.";
         private static string _userQuestion = "You are the vRITA artificial intelligence that's sole function is to answer the user's questions. You will be inputted XML data and a user's question. You will return an answer to the user based on the XML data or if the the question does not directly require the XML data then just answer the question. Answers should be in the metric system.";
+        private static string _contexter = "You are an artificial intelligence model that receives strings and must classify the string.  If the string is about changing, taking, or moving the user or the aircraft to a location like a request or a command \"Take me to Epcot\" or \"Change the environment to Epcot\", return \"Change\" and the latitude and longitude like \"13.2 N 34.2 E\" of the location in the question. If there is no direct classification then return \"null\". If the string is a question about anything that does not involve the aircraft, the environment, changing the environment, or the application then simply return \"Question\". If the string is a question or command involving the weather of a specific place, country, city, or other similar places then return the word \"Weather\" and the latitude and longitude like \"13.2 N 34.2 E\". If the string is a question involving the current Weather of the environment that the user is in then simply return \"EnviroWeather\". Do not return an string besides the one's mention to return";
         private static string _openAIModel = "gpt-4-1106-preview";
 
         // Public fields
@@ -52,6 +53,7 @@ namespace OpenAI
         static UnityEvent m_LatEvemt = new UnityEvent();
         static UnityEvent m_QuestionEvent = new UnityEvent();
         static UnityEvent m_FunFactEvent = new UnityEvent();
+        static UnityEvent m_ContexterEvent = new UnityEvent();
 
 
         /// <summary>
@@ -62,6 +64,7 @@ namespace OpenAI
             m_LatEvemt.AddListener(SendLatLong);
             m_QuestionEvent.AddListener(SendUserQuestion);
             m_FunFactEvent.AddListener(SendFunFact);
+            m_ContexterEvent.AddListener(SendContexter);
         }
 
         /// <summary>
@@ -94,6 +97,11 @@ namespace OpenAI
         public void SendFunFactButtonHandler()
         {
             m_FunFactEvent.Invoke();
+        }
+
+        public void SendContexterButtonHandler()
+        {
+            m_ContexterEvent.Invoke();
         }
 
         /// <summary>
@@ -292,6 +300,70 @@ namespace OpenAI
                 {
                     returnString = choiceString;
                 }
+            }
+            catch (System.Exception e)
+            {
+                Debug.Log("Error: " + e);
+            }
+        }
+
+        /// <summary>
+        /// Returns the contexter string being what the string is about.
+        /// </summary>
+        public async void SendContexter()
+        {
+
+            while(true)
+            {
+                Debug.Log("Sending context");
+            }
+            if (returnType == AIReturnType.RETURN_TEXT_BOX)
+            {
+                _userInput = inputFunFactField.text;
+            }
+
+            var newMessage = new ChatMessage()
+            {
+                Role = "system",
+                Content = _contexter
+            };
+
+            this._msg.Add(newMessage);
+
+            newMessage = new ChatMessage()
+            {
+                Role = "user",
+                Content = _userInput
+            };
+
+            this._msg.Add(newMessage);
+
+            Debug.Log("Sending context");
+
+            try
+            {
+                var completionResponse = await this._openAI.CreateChatCompletion(new CreateChatCompletionRequest()
+                {
+                    Model = _openAIModel,
+                    Messages = this._msg,
+                    MaxTokens = 500,
+                    Temperature = 1f
+                });
+
+                if (completionResponse.Choices == null)
+                {
+                    Debug.Log("Error: No response from OpenAI API, choices");
+                }
+                else if (completionResponse.Choices.Count == 0)
+                {
+                    Debug.Log("Error: No response from OpenAI API, choices count");
+                }
+            
+                string choiceString = completionResponse.Choices[0].Message.Content.Trim();
+
+                Debug.Log("Choice String: " + choiceString);
+
+                Contexter.response = choiceString;
             }
             catch (System.Exception e)
             {

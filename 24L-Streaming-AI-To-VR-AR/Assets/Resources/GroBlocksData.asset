@@ -1,0 +1,322 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dae9103fee7c2374a8719e1739f3f619, type: 3}
+  m_Name: GroBlocksData
+  m_EditorClassIdentifier: 
+  groBlockInfos:
+  - displayName: Count Connector
+    folder: Connectors
+    prefabName: CountConnector
+    description: "Increments up and down based on external input. Completes at Max
+      Count. \nOptionally reversible, can UnComplete if incremented down after completed."
+  - displayName: Sequencer Connector
+    folder: Connectors
+    prefabName: SequencerConnector
+    description: This can run a series of InwardActivators in a sequence that is
+      stepped through. Useful for running reactive sequences, like tutorials or interactive
+      linear storytelling. Can optionally be looping, and can also be set to run
+      the off events of all the activators at each step.
+  - displayName: Timed Connector
+    folder: Connectors
+    prefabName: TimedConnector
+    description: Use to add a delay between an outward activator being triggered
+      and an inward activator being run.
+  - displayName: Debug Color Changer
+    folder: DebugTestObjects
+    prefabName: DEBUG_ColorChanger
+    description: Can be used to test outward activators.
+  - displayName: Debug Grab with Item ID
+    folder: DebugTestObjects
+    prefabName: DEBUG_GroKitGrabObject_ItemID Variant
+    description: Use to test ItemID triggers. Has a Trigger reaction to confirm entering
+      and exiting properly. Set the ItemID and GroupID to match the ItemIDTrigger
+      settings.
+  - displayName: Active State Changer
+    folder: InwardActivators
+    prefabName: ActiveStateChanger
+    description: Use to turn an object on or off with the InwardActivator.
+  - displayName: Color Changer
+    folder: InwardActivators
+    prefabName: ColorChanger
+    description: Use to change the color of an object using the InwardActivator running
+      MaterialTransition. Default sets to Cyan on and Magenta off, use Reset to return
+      to original color. Material Transition can be modified to affect any property
+      on a shader.
+  - displayName: Door Opener Left
+    folder: Doors-InwardActivators
+    prefabName: DoorOpener_Left
+    description: Opens and closes a left sided door with InwardActivator using DoMovement
+      LocalRotateTo. Speed can be adjusted in the DoMovement, open and closed positions
+      in the InwardActivator events.
+  - displayName: Door Opener Right
+    folder: Doors-InwardActivators
+    prefabName: DoorOpener_Right
+    description: Opens and closes a right sided door with InwardActivator using DoMovement
+      LocalRotateTo. Speed can be adjusted in the DoMovement, open and closed positions
+      in the InwardActivator events.
+  - displayName: Solid Double Door Opener
+    folder: Doors-InwardActivators
+    prefabName: DoubleDoorsOpener_Solid
+    description: Opens and closes a solid set of doors with InwardActivator using
+      DoMovement LocalRotateTo. Speed can be adjusted in the DoMovement, open and
+      closed positions in the InwardActivator events.
+  - displayName: Windowed Double Door Opener
+    folder: Doors-InwardActivators
+    prefabName: DoubleDoorsOpener_Window
+    description: Opens and closes a windowed set of doors with InwardActivator using
+      DoMovement LocalRotateTo. Speed can be adjusted in the DoMovement, open and
+      closed positions in the InwardActivator events.
+  - displayName: Target Offset Follower
+    folder: InwardActivators
+    prefabName: Follower_TargetOffset
+    description: "A follower object, set to behave like a drone or creature. Will
+      follow a point around with an offset, looking at it as it moves. \nTarget must
+      be an external object, and must be set for the follower to work.\nCan be turned
+      on and off with the InwardActivator."
+  - displayName: Looping FX Player
+    folder: InwardActivators
+    prefabName: FXPlayer_Looping
+    description: Turns a looping particle effect and audio source on and off.
+  - displayName: Pass or Fail FX Player
+    folder: InwardActivators
+    prefabName: FXPlayer_PassFail
+    description: Used with a PassFailTrigger or other two state system, can activate
+      a good or bad particle effect using the on and off in the activator.
+  - displayName: Continuous Object Spawner
+    folder: Spawners-InwardActivators
+    prefabName: Spawner_Continuous Variant
+    description: Spawns objects continuously while set on with the InwardActivator,
+      at this location. Change spawned object in ObjectsToSpawn array in BaseSpawner.
+      If multiple objects are added, they will be chosen between at random, unless
+      selected by the activator event.
+  - displayName: Continuous Object Spawner At Points
+    folder: Spawners-InwardActivators
+    prefabName: Spawner_ContinuousAtPoints Variant
+    description: Spawns objects continuously while set on with the InwardActivator,
+      at the locations specified by the Positioner. Change spawned object in ObjectsToSpawn
+      array in BaseSpawner. If multiple objects are added, they will be chosen between
+      at random, unless selected by the activator event. Spawn positions can be set
+      to sequential by setting DoInOrder to true.
+  - displayName: Single Object Spawner
+    folder: Spawners-InwardActivators
+    prefabName: Spawner_Single
+    description: Spawns one object at a time with the InwardActivator at this location.
+      Change spawned object in ObjectsToSpawn array in BaseSpawner. If multiple objects
+      are added, they will be chosen between at random, unless selected by the activator
+      event.
+  - displayName: Single Object Spawner At Points
+    folder: Spawners-InwardActivators
+    prefabName: Spawner_SingleAtPoints Variant
+    description: Spawns one object at a time with the InwardActivator, at the locations
+      specified by the Positioner. Change spawned object in ObjectsToSpawn array
+      in BaseSpawner. If multiple objects are added, they will be chosen between
+      at random, unless selected by the activator event. Spawn positions can be set
+      to sequential by setting DoInOrder to true.
+  - displayName: Toggled Object
+    folder: InwardActivators
+    prefabName: ToggledObject
+    description: Connect to an OutwardActivator to toggle an object active state.
+      To start toggled off, turn off the Visual object and switch the isOn variable
+      to false.
+  - displayName: Hand Trigger
+    folder: BaseTriggers-OutwardActivators
+    prefabName: HandTrigger
+    description: Runs the outward on and off events based on player's hand being
+      place in or removed from trigger area. Can be used with a TimedConnector to
+      create touch over time events.
+  - displayName: Hand Trigger Toggler
+    folder: BaseTriggers-OutwardActivators
+    prefabName: HandTrigger_ToggleSwitch
+    description: Toggles between outward on and off when player's hand enters the
+      trigger area. Exits can be used internally for FX, but do not connect outward.
+  - displayName: Item ID Trigger Pass or Fail
+    folder: BaseTriggers-OutwardActivators
+    prefabName: ItemIDPassFailTrigger
+    description: 'Outward on and off run from trigger pass or fail. Item fails if
+      IDs do not match. Trigger exit runs outward Reset.
+
+      ItemID on object
+      must match ItemIDTrigger settings to run. ItemIDTrigger accepted IDs or groups
+      set to Any will accept objects regardless of ID for that selection.'
+  - displayName: Item ID Trigger
+    folder: BaseTriggers-OutwardActivators
+    prefabName: ItemIDTrigger
+    description: "Outward on and off run from trigger enter and exit. \nItemID on
+      object must match ItemIDTrigger settings to run. ItemIDTrigger accepted IDs
+      or groups set to Any will accept objects regardless of ID for that selection."
+  - displayName: Item ID Trigger One Shot
+    folder: BaseTriggers-OutwardActivators
+    prefabName: ItemIDTrigger_OneShot
+    description: "Outward on runs from trigger enter, will only activate one time.
+      \nItemID on object must match ItemIDTrigger settings to run. ItemIDTrigger
+      accepted IDs or groups set to Any will accept objects regardless of ID for
+      that selection."
+  - displayName: Item ID Trigger Timed Toggle
+    folder: BaseTriggers-OutwardActivators
+    prefabName: ItemIDTrigger_TimedToggle
+    description: 'Outward on runs from trigger enter, outward off runs from timer
+      complete. Useful for things like timed doors.
+
+      ItemID on object must
+      match ItemIDTrigger settings to run. ItemIDTrigger accepted IDs or groups set
+      to Any will accept objects regardless of ID for that selection.'
+  - displayName: Player Trigger
+    folder: BaseTriggers-OutwardActivators
+    prefabName: PlayerTrigger
+    description: Runs the outward on and off events based on player entering or exiting
+      trigger area. Useful for things like weightpads or door openers.
+  - displayName: Player Trigger One Shot
+    folder: BaseTriggers-OutwardActivators
+    prefabName: PlayerTrigger_OneShot
+    description: "Runs the outward on event based on player entering the trigger
+      area, will only activate one time. \nUseful for things like waypoints or sequencers."
+  - displayName: Specific Object Trigger
+    folder: BaseTriggers-OutwardActivators
+    prefabName: SpecificObjectTrigger
+    description: "Outward on and off run from trigger enter and exit. \nTrigger accepts
+      only the connected item. Useful for simple door key setups and other one to
+      one triggers."
+  - displayName: Button
+    folder: OutwardActivators
+    prefabName: Button_Repeatable Variant
+    description: 'Runs the outward on and off events based on player''s hand being
+      place in or removed from trigger area. Can be used with a TimedConnector to
+      create touch over time events.
+
+      Button effects are set up in HandTrigger.
+      Trigger can be set to OnlyAcceptPokers if it should only respond to a finger
+      press.'
+  - displayName: Toggle Switch
+    folder: OutwardActivators
+    prefabName: Button_ToggleSwitch
+    description: 'Toggles between outward on and off when player''s hand enters the
+      trigger area. Exits can be used internally for FX, but do not connect outward.
+
+      Button
+      effects are set up in ToggleEvents. Trigger can be set to OnlyAcceptPokers
+      if it should only respond to a finger press.'
+  - displayName: Rocker Switch
+    folder: OutwardActivators
+    prefabName: Button_ToggleSwitch_Rocker
+    description: 'Toggles between outward on and off when player''s hand enters the
+      trigger area. Exits can be used internally for FX, but do not connect outward.
+
+      Button
+      effects are set up in ToggleEvents. Trigger can be set to OnlyAcceptPokers
+      if it should only respond to a finger press.
+
+      For a more precise switch,
+      turn off the HandTrigger_Toggle and turn on the HandTrigger_ON and HandTrigger_OFF.'
+  - displayName: Score System
+    folder: Systems
+    prefabName: ScoreSystem
+    description: 'Run various scoring methods from outward activators to change score.
+
+      Score
+      Display will run automatically.'
+  - displayName: Grok Kit Grab Object Base
+    folder: XRGrabObjects
+    prefabName: GroKitGrabObject_Base
+    description: Universal Grab Object. Will work with any XR rig as long as it has
+      an XRHand component.
+  - displayName: Grok Kit Grab Key Blue
+    folder: XRGrabObjects
+    prefabName: GroKitGrabObject_KeyBlue Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Key groupID with Blue itemID.'
+  - displayName: Grok Kit Grab Key Yellow
+    folder: XRGrabObjects
+    prefabName: GroKitGrabObject_KeyGold Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Key groupID with Yellow itemID.'
+  - displayName: Grok Kit Grab Key Red
+    folder: XRGrabObjects
+    prefabName: GroKitGrabObject_KeyRed Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Key groupID with Red itemID.'
+  - displayName: Grok Kit Grab Bandages
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_Bandage Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Uses ItemIDString.'
+  - displayName: Grok Kit Grab Forceps
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_Forceps Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Uses ItemIDString.'
+  - displayName: Grok Kit Grab Nurse Call
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_NurseCall Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Uses ItemIDString.'
+  - displayName: Grok Kit Grab Pill Bottle
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_PillBottle Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Uses ItemIDString.'
+  - displayName: Grok Kit Grab Scalpel
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_Scalpel Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Uses ItemIDString.'
+  - displayName: Grok Kit Grab Sprayer
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_Sprayer Variant
+    description: Universal Grab Object. Will work with any XR rig as long as it has
+      an XRHand component.
+  - displayName: Grok Kit Grab Syringe
+    folder: Medical-XRGrabObjects
+    prefabName: GroKitGrabObject_Syringe Variant
+    description: 'Universal Grab Object. Will work with any XR rig as long as it
+      has an XRHand component.
+
+      Uses ItemIDString.'
+  - displayName: BinSystem
+    folder: BinSystem
+    prefabName: BinSystem
+    description: 
+  - displayName: Grok Kit Grab Object Base
+    folder: BinSystem
+    prefabName: GroKitGrabObject_StringID_Blue Variant
+    description: Universal Grab Object. Will work with any XR rig as long as it has
+      an XRHand component.
+  - displayName: Grok Kit Grab Object Base
+    folder: BinSystem
+    prefabName: GroKitGrabObject_StringID_Green Variant
+    description: Universal Grab Object. Will work with any XR rig as long as it has
+      an XRHand component.
+  - displayName: Grok Kit Grab Object Base
+    folder: BinSystem
+    prefabName: GroKitGrabObject_StringID_Grey Variant
+    description: Universal Grab Object. Will work with any XR rig as long as it has
+      an XRHand component.
+  - displayName: Grok Kit Grab Object Base
+    folder: BinSystem
+    prefabName: GroKitGrabObject_StringID_Red Variant
+    description: Universal Grab Object. Will work with any XR rig as long as it has
+      an XRHand component.

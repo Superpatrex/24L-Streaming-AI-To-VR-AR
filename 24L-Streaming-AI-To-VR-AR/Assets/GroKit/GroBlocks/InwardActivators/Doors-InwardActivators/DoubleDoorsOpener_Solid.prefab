@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5669602821224709126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 137964154351345680, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351177494022907067, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_Name
+      value: DoubleDoors_Solid_Opener Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351177494022907067, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428882739975840753, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942954101120611223, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5351177494022907067, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3431169942902691231}
+    - targetCorrespondingSourceObject: {fileID: 5351177494022907067, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7360319228727990840}
+    - targetCorrespondingSourceObject: {fileID: 137964154351345680, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5248724948330911521}
+    - targetCorrespondingSourceObject: {fileID: 137964154351345680, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7322552435860573883}
+    - targetCorrespondingSourceObject: {fileID: 6942954101120611223, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 111139992208716483}
+    - targetCorrespondingSourceObject: {fileID: 6942954101120611223, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7832008332251117751}
+  m_SourcePrefab: {fileID: 100100000, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+--- !u!1 &355021507562985661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5351177494022907067, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+  m_PrefabInstance: {fileID: 5669602821224709126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3431169942902691231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355021507562985661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80290ee08f0ebb249b7abfcb703aaaa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: Solid Double Door Opener
+  description: Opens and closes a solid set of doors with InwardActivator using DoMovement
+    LocalRotateTo. Speed can be adjusted in the DoMovement, open and closed positions
+    in the InwardActivator events.
+--- !u!114 &7360319228727990840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355021507562985661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8252d09c5c64c3b45b793a17cfa32a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 'On Event opens the doors
+
+    Off event closes the doors'
+  runOnOnlyOnce: 0
+  onEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5248724948330911521}
+        m_TargetAssemblyTypeName: Core3lb.DoMovement, Assembly-CSharp
+        m_MethodName: _LocalRotateToY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -90
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 111139992208716483}
+        m_TargetAssemblyTypeName: Core3lb.DoMovement, Assembly-CSharp
+        m_MethodName: _LocalRotateToY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 90
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  runOffOnlyOnce: 0
+  offEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5248724948330911521}
+        m_TargetAssemblyTypeName: Core3lb.DoMovement, Assembly-CSharp
+        m_MethodName: _LocalRotateToY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 111139992208716483}
+        m_TargetAssemblyTypeName: Core3lb.DoMovement, Assembly-CSharp
+        m_MethodName: _LocalRotateToY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  showAdvancedEvents: 0
+  onSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  offSecondaryEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onReset:
+    m_PersistentCalls:
+      m_Calls: []
+  debugMessages: 0
+--- !u!1 &3383375683446378385 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6942954101120611223, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+  m_PrefabInstance: {fileID: 5669602821224709126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &111139992208716483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383375683446378385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f98eaab190538458b7eff95132f6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  rotateSpeed: 10
+--- !u!54 &7832008332251117751
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383375683446378385}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!1 &5711791455421324310 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 137964154351345680, guid: 8f0293187c61a7f468cc085f3ec20ab4, type: 3}
+  m_PrefabInstance: {fileID: 5669602821224709126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5248724948330911521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5711791455421324310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f98eaab190538458b7eff95132f6a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  rotateSpeed: 10
+--- !u!54 &7322552435860573883
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5711791455421324310}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
