@@ -16,7 +16,7 @@ namespace OpenAI
 
         // Private fields
         private List<ChatMessage> _msg = new List<ChatMessage>();
-        private OpenAIApi _openAI = new OpenAIApi("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");
+        private OpenAIApi _openAI = new OpenAIApi("API_KEY_HERE");
 
         private static string _userInput = "";
         private static string _latLongString = "Give me the latitude of longitude in decimals of the location to which is specified. For instance, if the user were to say \"Epcot\" or \"Take me to Epcot\"  or \"Where is Epcot\" return \"28.3765 N, 81.5494 W\". Only return the latitude and longitude and the name of the location after the latitude and longitude separated with a space.";
@@ -26,12 +26,12 @@ namespace OpenAI
         private static string _openAIModel = "gpt-4-1106-preview";
 
         // Public fields
-        [SerializeField] public TMP_Text inputFunFactField;
-        [SerializeField] public TMP_Text outputFunFactField;
-        [SerializeField] public TMP_Text inputUserQuestionField;
-        [SerializeField] public TMP_Text outputUserQuestionField;
-        [SerializeField] public TMP_Text inputLatLongField;
-        [SerializeField] public TMP_Text outputLatLongField;
+        //[SerializeField] public TMP_Text inputFunFactField;
+        //[SerializeField] public TMP_Text outputFunFactField;
+        //[SerializeField] public TMP_Text inputUserQuestionField;
+        //[SerializeField] public TMP_Text outputUserQuestionField;
+        //[SerializeField] public TMP_Text inputLatLongField;
+        //[SerializeField] public TMP_Text outputLatLongField;
 
         public static string returnString = "";
         [SerializeField] public static AIReturnType returnType = AIReturnType.RETURN_TEXT_BOX;
@@ -50,10 +50,10 @@ namespace OpenAI
         }
 
         // Non-public and Non-private fields
-        static UnityEvent m_LatEvemt = new UnityEvent();
-        static UnityEvent m_QuestionEvent = new UnityEvent();
-        static UnityEvent m_FunFactEvent = new UnityEvent();
-        static UnityEvent m_ContexterEvent = new UnityEvent();
+        public static UnityEvent m_LatEvemt = new UnityEvent();
+        public static UnityEvent m_QuestionEvent = new UnityEvent();
+        public static UnityEvent m_FunFactEvent = new UnityEvent();
+        public static UnityEvent m_ContexterEvent = new UnityEvent();
 
 
         /// <summary>
@@ -109,11 +109,6 @@ namespace OpenAI
         /// <summary>
         public async void SendLatLong()
         {
-            if (returnType == AIReturnType.RETURN_TEXT_BOX)
-            {
-                _userInput = inputLatLongField.text;
-            }
-
             var newMessage = new ChatMessage()
             {
                 Role = "system",
@@ -155,22 +150,14 @@ namespace OpenAI
                 {
                     Debug.Log("Error: Not a valid question to the location");
 
-                    if (returnType == AIReturnType.RETURN_TEXT_BOX)
-                    {
-                        outputLatLongField.text = "Not a valid destination";
-                    }
-                    else if (returnType == AIReturnType.RETURN_STRING)
+                    if (returnType == AIReturnType.RETURN_STRING)
                     {
                         returnString = "Not a valid destination";
                     }
                 }
                 else
                 {
-                    if (returnType == AIReturnType.RETURN_TEXT_BOX)
-                    {
-                        outputLatLongField.text = choiceString;
-                    }
-                    else if (returnType == AIReturnType.RETURN_STRING)
+                    if (returnType == AIReturnType.RETURN_STRING)
                     {
                         returnString = choiceString;
                     }
@@ -188,11 +175,6 @@ namespace OpenAI
         /// </summary>
         public async void SendUserQuestion()
         {
-            if (returnType == AIReturnType.RETURN_TEXT_BOX)
-            {
-                _userInput = inputUserQuestionField.text;
-            }
-
             var newMessage = new ChatMessage()
             {
                 Role = "system",
@@ -230,11 +212,7 @@ namespace OpenAI
             
                 string choiceString = completionResponse.Choices[0].Message.Content.Trim();
 
-                if (returnType == AIReturnType.RETURN_TEXT_BOX)
-                {
-                    outputUserQuestionField.text = choiceString;
-                }
-                else if (returnType == AIReturnType.RETURN_STRING)
+                if (returnType == AIReturnType.RETURN_STRING)
                 {
                     returnString = choiceString;
                 }
@@ -250,11 +228,6 @@ namespace OpenAI
         /// </summary>
         public async void SendFunFact()
         {
-            if (returnType == AIReturnType.RETURN_TEXT_BOX)
-            {
-                _userInput = inputFunFactField.text;
-            }
-
             var newMessage = new ChatMessage()
             {
                 Role = "system",
@@ -292,11 +265,7 @@ namespace OpenAI
             
                 string choiceString = completionResponse.Choices[0].Message.Content.Trim();
 
-                if (returnType == AIReturnType.RETURN_TEXT_BOX)
-                {
-                    outputFunFactField.text = choiceString;
-                }
-                else if (returnType == AIReturnType.RETURN_STRING)
+                if (returnType == AIReturnType.RETURN_STRING)
                 {
                     returnString = choiceString;
                 }
@@ -312,16 +281,6 @@ namespace OpenAI
         /// </summary>
         public async void SendContexter()
         {
-
-            while(true)
-            {
-                Debug.Log("Sending context");
-            }
-            if (returnType == AIReturnType.RETURN_TEXT_BOX)
-            {
-                _userInput = inputFunFactField.text;
-            }
-
             var newMessage = new ChatMessage()
             {
                 Role = "system",
@@ -338,7 +297,7 @@ namespace OpenAI
 
             this._msg.Add(newMessage);
 
-            Debug.Log("Sending context");
+            //Debug.Log("Sending context");
 
             try
             {
@@ -360,10 +319,10 @@ namespace OpenAI
                 }
             
                 string choiceString = completionResponse.Choices[0].Message.Content.Trim();
-
-                Debug.Log("Choice String: " + choiceString);
-
                 Contexter.response = choiceString;
+                Contexter.hasResponse = true;
+
+                Debug.LogError("Choice String: " + Contexter.response);
             }
             catch (System.Exception e)
             {

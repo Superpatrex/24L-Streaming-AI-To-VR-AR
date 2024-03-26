@@ -155,7 +155,7 @@ public class WeatherAPI : MonoBehaviour
 
     public void ChangeSkyBox(string weather)
     {
-        Debug.Log(weather);
+        Debug.LogError(weather);
 
         switch(weather)
         {
@@ -261,7 +261,12 @@ public class WeatherAPI : MonoBehaviour
 
     public void ToggleWeather(GameObject weather)
     {
-        if (currentWeather != weather)
+        if (currentWeather == null)
+        {
+            weather.SetActive(true);
+            currentWeather = weather;
+        }
+        else if (currentWeather != weather)
         {
             currentWeather.SetActive(false);
             weather.SetActive(true);

@@ -6,6 +6,8 @@ using UnityEngine.Events;
 using OpenAI;
 using NaughtyAttributes;
 using TMPro;
+using Utility;
+using CesiumForUnity;
 
 public class Contexter : MonoBehaviour
 {   
@@ -18,13 +20,15 @@ public class Contexter : MonoBehaviour
         NULL
     }
 
-    private static ArtificialIntelligence ai = new ArtificialIntelligence();
+    [SerializeField] public ArtificialIntelligence ai;
+    [SerializeField] public CesiumGeoreference geoReference;
 
     private static UnityEvent context = new UnityEvent();
 
     private static Context currentContext = Context.NULL;
     public static string userInput = "";
     public static string response = "";
+    public static bool hasResponse = false;
     public TMP_Text transcriptText;
 
     static UnityEvent m_MyEvent = new UnityEvent();
@@ -34,35 +38,35 @@ public class Contexter : MonoBehaviour
     {
     }
 
-    [Button("Button Text")]
+    public void Update()
+    {
+        if (hasResponse)
+        {
+            hasResponse = false;
+            ActOnContext();
+        }
+    }
+
+    public void ActOnContext()
+    {
+        string [] spiltString = response.Split(' ');
+
+        if (spiltString[0] == "Change")
+        {
+            geoReference.latitude = (float)(float.Parse(spiltString[1]) * ((spiltString[2] == "N") ? 1 : -1));
+            geoReference.longitude = (float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1));
+            geoReference.height = (float)10000;
+            Debug.Log("Contexter: Changed location to: " + geoReference.latitude + " " + geoReference.longitude);
+        }
+    }
+
     public void SendContext()
     {
         userInput = transcriptText.text;
-        currentStringContext();
-
-        switch (currentContext)
-        {
-            case Context.CURRENT_WEATHER:
-                // Do something
-                break;
-            case Context.OTHER_WEATHER:
-                // Do something
-                break;
-            case Context.QUESTION:
-                // Do something
-                break;
-            case Context.CHANGE:
-                // Do something
-                break;
-            case Context.NULL:
-                // Do something
-                break;
-        }
-
-        Debug.Log("Context: " + currentContext + " " + userInput);
+        SendContextInputStringToAI();
     }
 
-    public static void currentStringContext()
+    public void SendContextInputStringToAI()
     {
         ArtificialIntelligence.userInput = userInput;
         ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
