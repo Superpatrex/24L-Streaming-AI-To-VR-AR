@@ -67,6 +67,7 @@ public class Contexter : MonoBehaviour
 
             if (UpdateCurrentScenario())
             {
+                api.UpdateWeatherImmediately();
                 tts.Speak("Scenario successfully updated");
             }
             else
@@ -171,6 +172,7 @@ public class Contexter : MonoBehaviour
     /// <summary>
     /// Updates the current scenario with the new XML data, specifically the lat, long, and the altitude of the aircraft
     /// </summary>
+    /// <returns>True if the scenario was updated and false otherwise</returns>
     public bool UpdateCurrentScenario()
     {
         XMLShipStructure tempShipStructure = MongoDBAPI.shipScenario;
@@ -206,6 +208,15 @@ public class Contexter : MonoBehaviour
         {
             Debug.LogError("Contexter: ship fuel is null");
             return false;
+        }
+
+        if (tempShipStructure.craft.aircraftLocation.enemyAircraft == null || tempShipStructure.craft.aircraftLocation.enemyAircraft.number == 0)
+        {
+            Debug.Log("Contexter: enemy aircraft will not be spawned");
+        }
+        else
+        {
+            Debug.Log("Contexter: enemy aircraft will be spawned");
         }
 
         Debug.Log("Contexter: Ship Name: " + tempShipStructure.craft.name + " update in progress");

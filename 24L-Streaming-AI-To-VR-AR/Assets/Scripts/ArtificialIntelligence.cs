@@ -26,13 +26,6 @@ namespace OpenAI
         private readonly static string _openAIModel = "gpt-4-turbo-preview";
 
         // Public fields
-        //[SerializeField] public TMP_Text inputFunFactField;
-        //[SerializeField] public TMP_Text outputFunFactField;
-        //[SerializeField] public TMP_Text inputUserQuestionField;
-        //[SerializeField] public TMP_Text outputUserQuestionField;
-        //[SerializeField] public TMP_Text inputLatLongField;
-        //[SerializeField] public TMP_Text outputLatLongField;
-
         public static string returnString = "";
         [SerializeField] public static AIReturnType returnType = AIReturnType.RETURN_TEXT_BOX;
         public static string userInput

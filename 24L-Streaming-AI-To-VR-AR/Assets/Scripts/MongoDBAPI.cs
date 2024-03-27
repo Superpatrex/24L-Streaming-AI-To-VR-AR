@@ -14,12 +14,21 @@ public class MongoDBAPI: MonoBehaviour
     // Private Fields
     private string apiUrl = "https://vrita-server-02f7dd943082.herokuapp.com"; // Replace with your API endpoint
 
+    /// <summary>
+    /// Handles the button click event or just sends the data to the server
+    /// </summary>
+    /// <param name="code">The six letter string that corresponds to the database</param>
     public void ButtonHandler(string code)
     {
         Debug.Log(code);
         StartCoroutine(SendDataToMongoDB(code));
     }
 
+    /// <summary>
+    /// Sends the data to the MongoDB API
+    /// </summary>
+    /// <param name="data">The six letter string that corresponds to the database</param>
+    /// <returns>Sets information to a field of the MonogDBAPI and sets that the Contexter has a response</returns>
     IEnumerator SendDataToMongoDB(string data)
     {
         string endpoint = "/api/getXML"; // Replace with your specific API endpoint

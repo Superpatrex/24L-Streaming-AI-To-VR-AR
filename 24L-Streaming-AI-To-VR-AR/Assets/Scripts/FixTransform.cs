@@ -4,21 +4,23 @@ using UnityEngine.Events;
 
 public class FixTransform : MonoBehaviour
 {
-    //public GameObject targetObject;
-    //public InputAction fixTransform;
-    //public InputAction startListening;
-    //public UnityEvent voiceEnabled;
-    //public UnityEvent voiceDisable;
-
+    // Public Fields
     public GameObject hands;
     public GameObject camera;
 
     public GameObject ship;
 
+    /// <summary>
+    /// Start is called before the first frame update
+    /// </summary>
     void Start()
     {
         FixCameraAndHands();
     }
+
+    /// <summary>
+    /// Fixes the Camera and Hands when the script is started
+    /// </summary>
     public void FixCameraAndHands()
     {
         // This fixes the issues with the camera and hands not being in the correct position
