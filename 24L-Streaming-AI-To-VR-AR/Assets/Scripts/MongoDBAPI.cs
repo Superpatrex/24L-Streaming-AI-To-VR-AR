@@ -8,17 +8,16 @@ public class MongoDBAPI: MonoBehaviour
 {
 
     // Public Fields
-    [SerializeField] public TMP_Text changeText; // Replace with your UI text object
-    [SerializeField] public TMP_Text inputField; // Replace with your UI input field object 
+    public static string returnXMLString = "";
+    public static XMLShipStructure shipScenario = null;
 
     // Private Fields
-    private string apiUrl = "http://www.vrita.com"; // Replace with your API endpoint
+    private string apiUrl = "https://vrita-server-02f7dd943082.herokuapp.com"; // Replace with your API endpoint
 
-    public void ButtonHandler()
+    public void ButtonHandler(string code)
     {
-        Debug.Log(inputField.text);
-        string temp = inputField.text;
-        StartCoroutine(SendDataToMongoDB(temp));
+        Debug.Log(code);
+        StartCoroutine(SendDataToMongoDB(code));
     }
 
     IEnumerator SendDataToMongoDB(string data)
@@ -47,8 +46,34 @@ public class MongoDBAPI: MonoBehaviour
             {
                 Debug.Log("Data sent successfully!");
                 // Handle response if needed
-                changeText.text = request.downloadHandler.text;
+
+                if (!string.IsNullOrEmpty(request.downloadHandler.text))
+                {
+                    returnXMLString = request.downloadHandler.text;
+                }
+                else
+                {
+                    Debug.LogError("No data received from the server, code may be wrong");
+                }
+                
             }
+        }
+
+        if (!string.IsNullOrEmpty(returnXMLString))
+        {
+            try
+            {
+                shipScenario = XMLSerializer.ReadFromXmlStringShipInformation(returnXMLString);
+                Contexter.hasResponseScenario = true;
+            }
+            catch
+            {
+                Debug.LogError("Error reading XML data");
+            }
+        }
+        else
+        {
+            Debug.LogError("No data received from the server");
         }
     }
 }
