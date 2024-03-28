@@ -1,5 +1,6 @@
 using CesiumForUnity;
 using SciFiShipController;
+using scsmmedia;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -12,40 +13,90 @@ public class SpawnEnemyAI : MonoBehaviour
 
     public CesiumGeoreference cesium;
 
-    public GameObject enemyShip1;
-    public GameObject shipHolder;
+    public GameObject enemyShip;
+    private bool shipFlag = false;
 
     public GameObject player;
 
-    private void Update()
+    public string pathName = "Path Name Here";
+
+    private SSCManager sscManager;
+    private PathData flightPath;
+    private Vector3 newPosition;
+    private List<GameObject> tempList = new List<GameObject>();
+
+
+    private void Awake()
+    {
+        // Get a reference to the Ship Controller Manager instance
+        sscManager = SSCManager.GetOrCreateManager(gameObject.scene.handle);
+        // Find the Path
+        flightPath = sscManager.GetPath(pathName);
+        
+    }
+
+    private void FixedUpdate()
     {
         
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha9) && shipHolder.activeInHierarchy == false)
+        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha0) && !shipFlag)
+        {
+            LocationData nextLocationData = null;
+            PathLocationData tempPathLocationData = null;
+
+            
+            for (int i = 0; i < flightPath.pathLocationDataList.Count; i++)
+            {
+                tempPathLocationData = flightPath.pathLocationDataList[i];
+                nextLocationData = tempPathLocationData.locationData;
+
+                float xOffset = 0f;
+                float zOffset = 0f;
+
+                // Adjust position based on index
+                switch (i)
+                {
+                    case 0:
+                        xOffset = 400f;
+                        break;
+                    case 1:
+                        zOffset = 400f;
+                        break;
+                    case 2:
+                        xOffset = -400f;
+                        break;
+                    default:
+                        zOffset = -400f;
+                        break;
+                }
+
+                // Create new position
+                newPosition = new Vector3(player.transform.position.x + xOffset, player.transform.position.y, player.transform.position.z + zOffset);
+                tempList.Add(Instantiate(enemyShip, newPosition, Quaternion.identity));
+
+                // Update location
+                sscManager.UpdateLocation(nextLocationData, newPosition, false);
+            }
+
+            sscManager.RefreshPathDistances(flightPath);
+            shipFlag = true;
+
+        }
+        else if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha0) && shipFlag) 
         {
 
-             // Set the Ships Parent Object to true to activate enemy ships
-             shipHolder.SetActive(true);
+            foreach (GameObject enemyAIShips in tempList) 
+            { 
+                Destroy(enemyAIShips);
+            }
 
-             // Change the cesium environment to the Grand Canyon (designated training field with enemy AI ships)
-             cesium.SetOriginLongitudeLatitudeHeight(enemyShipsLocation.x, enemyShipsLocation.y, enemyShipsLocation.z);
+            tempList.Clear();
 
-
-            // Change the players location behind one of the enemy AI ships
-            // This allows the player to see 1/4 enemies to target
-            // playerInputModule.ResetInput();
-            Vector3 enemyPosition = enemyShip1.transform.position - enemyShip1.transform.forward * 35f;
-
-             player.transform.position = enemyPosition;
-
-
-            Debug.Log("Player: " + player.transform.position);
-            Debug.Log("Enemy: " + enemyShip1.transform.position);
-            
+            shipFlag = false;
         }
-        else if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha9) && shipHolder.activeInHierarchy == true) { 
-            shipHolder.SetActive(false);
-        }
+
+      
 
     }
+
 
 }
