@@ -8,24 +8,31 @@ using UnityEngine.Rendering.Universal;
 
 public class Tunneling : MonoBehaviour
 {
+    public static Volume volume;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (Settings.Tunneling)
-        {
-            // Enable volume component to show vignette
-            gameObject.GetComponent<Volume>().enabled = true;
-        }
-        else
-        {
-            gameObject.GetComponent<Volume>().enabled = false;
-        }
+        volume = gameObject.GetComponent<Volume>();
+        SetTunneling();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public static void SetTunneling()
+    {
+        if (Settings.Tunneling)
+        {
+            // Enable volume component to show vignette
+            volume.enabled = true;
+        }
+        else
+        {
+            volume.enabled = false;
+        }
     }
 }

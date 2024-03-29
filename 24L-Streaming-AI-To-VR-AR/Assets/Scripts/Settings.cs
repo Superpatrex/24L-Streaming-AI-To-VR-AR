@@ -20,7 +20,7 @@ public class Settings : MonoBehaviour
     public static bool Tunneling = false;
 
     // Private variables for the settings
-    private static readonly int CesiumGraphicsQualityMax = 16;
+    private static readonly int CesiumGraphicsQualityMax = 17;
     private static readonly int CesiumGraphicsQualityMin = 0;
 
     public void Start()
@@ -68,6 +68,7 @@ public class Settings : MonoBehaviour
     public void SetVolume()
     {
         AudioListener.volume = volumeSlider.value;
+        Volume = volumeSlider.value;
         Debug.Log("Volume set to " + AudioListener.volume + ".");
     }
 

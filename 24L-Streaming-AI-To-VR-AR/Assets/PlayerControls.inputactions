@@ -28,6 +28,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Settings",
+            "id": "f44b5234-0e56-4a9d-b2f2-a765f16d8e7d",
+            "actions": [
+                {
+                    "name": "ShowSettings",
+                    "type": "Button",
+                    "id": "9923a878-22da-4289-b9e7-2c2a4b83b940",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "65ee0616-d92a-4385-8084-39c74d319867",
+                    "path": "<OculusTouchController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "UI_Controls_Scheme",
+                    "action": "ShowSettings",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
