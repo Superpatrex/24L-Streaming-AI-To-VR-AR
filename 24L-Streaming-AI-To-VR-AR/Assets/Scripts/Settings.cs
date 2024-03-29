@@ -21,7 +21,7 @@ public class Settings : MonoBehaviour
     public static Settings Instance { get; private set; }
 
     // Private variables for the settings
-    private static readonly int CesiumGraphicsQualityMax = 16;
+    private static readonly int CesiumGraphicsQualityMax = 17;
     private static readonly int CesiumGraphicsQualityMin = 0;
 
     private static readonly string[] TTSNames = {
@@ -113,6 +113,7 @@ public class Settings : MonoBehaviour
     public void SetVolume()
     {
         AudioListener.volume = volumeSlider.value;
+        Volume = volumeSlider.value;
         Debug.Log("Volume set to " + AudioListener.volume + ".");
     }
 
