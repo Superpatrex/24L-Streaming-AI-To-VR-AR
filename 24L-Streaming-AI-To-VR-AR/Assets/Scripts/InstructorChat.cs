@@ -7,10 +7,11 @@ public class InstructorChat : MonoBehaviour
     private StringBuilder chatLog = new StringBuilder();
     [SerializeField] public TMP_Text chatText;
     [SerializeField] public TMP_Text chatInput;
+    [SerializeField] public Contexter contexter;
 
-    public void AddUserMessage(string message)
+    public void AddvRITAMessage(string message)
     {
-        chatLog.Append("User: ");
+        chatLog.Append("vRTIA: ");
         chatLog.Append(message);
         chatLog.AppendLine("\n");
     }
@@ -33,13 +34,22 @@ public class InstructorChat : MonoBehaviour
         {
             ButtonSendHandler();
         }
+
+        if (Contexter.hasInstructorLocationChange)
+        {
+            Contexter.hasInstructorLocationChange = false;
+            AddvRITAMessage("I have changed the location of the instructor.");
+            chatText.text = chatLog.ToString();
+        }
     }
 
     public void ButtonSendHandler()
     {
         string message = chatInput.text;
         chatInput.text = "";
-        AddUserMessage(message);
+        AddInstructorMessage(message);
+        Contexter.userInput = message;
+        contexter.ActOnContextInstructorUser();
         chatText.text = chatLog.ToString();
     }
 }

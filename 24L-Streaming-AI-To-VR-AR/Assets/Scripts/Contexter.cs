@@ -1,6 +1,8 @@
 using System;
+using System.Text;
 using System.Xml.Serialization;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using OpenAI;
@@ -23,27 +25,35 @@ public class Contexter : MonoBehaviour
 
     [SerializeField] public ArtificialIntelligence ai;
     [SerializeField] public CesiumGeoreference geoReference;
+    [SerializeField] public Cesium3DTileset tileset;
 
     private static UnityEvent context = new UnityEvent();
 
     private static Context currentContext = Context.NULL;
     public static string userInput = "";
     public static string response = "";
-    public static bool hasResponseContext = false;
-    public static bool hasResponseQuestion = false;
-    public static bool hasResponseScenario = false;
+    public static bool hasVRUserResponseContext = false;
+    public static bool hasVRUserResponseQuestion = false;
+    public static bool hasVRUserResponseScenario = false;
+    public static bool hasInstructorLocationChange = false;
+    public static bool hasInstructorResponseQuestion = false;
+    public static bool hasInstructorResponseScenario = false;
     [SerializeField] public TMP_Text transcriptText;
     [SerializeField] public TMP_Text xmlShipInformation;
     [SerializeField] public TTSSpeaker tts;
     [SerializeField] public WeatherAPI api;
     [SerializeField] public MongoDBAPI mongoDBAPI;
     [SerializeField] public GameObject entireShip;
+    [SerializeField] public GameObject uiScreen;
 
 
     static UnityEvent m_MyEvent = new UnityEvent();
 
     public void Start()
     {
+        // Set the text to speech voice to a name depending on the start menu
+        tts.customWitVoiceSettings.voice = Settings.Instance.GetTTSName();
+        tileset.maximumScreenSpaceError = Settings.Instance.GetCesiumGraphicsQuality();
     }
 
     /// <summary>
@@ -51,19 +61,20 @@ public class Contexter : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        if (hasResponseContext)
+        if (hasVRUserResponseContext)
         {
-            hasResponseContext = false;
-            ActOnContext();
+            hasVRUserResponseContext = false;
+            ActOnContextVRUser();
         }
-        else if (hasResponseQuestion)
+        else if (hasVRUserResponseQuestion)
         {
-            hasResponseQuestion = false;
-            tts.Speak(response);
+            hasVRUserResponseQuestion = false;
+            var chunks = SplitIntoSpeakableChunks(response);
+            StartCoroutine(SpeakChunks(chunks));
         }
-        else if (hasResponseScenario)
+        else if (hasVRUserResponseScenario)
         {
-            hasResponseScenario = false;
+            hasVRUserResponseScenario = false;
 
             if (UpdateCurrentScenario())
             {
@@ -76,17 +87,72 @@ public class Contexter : MonoBehaviour
             }
         }
 
+        if (hasInstructorLocationChange)
+        {
+            hasInstructorLocationChange = false;
+        }
+        else if (hasInstructorResponseQuestion)
+        {
+            hasInstructorResponseQuestion = false;
+        }
+        else if (hasInstructorResponseScenario)
+        {
+            hasInstructorResponseScenario = false;
+        }
+
         if (WeatherAPI.weatherIsReadyUser)
         {
             WeatherAPI.weatherIsReadyUser = false;
+            Debug.LogError(WeatherAPI.ReturnJsonString);
             tts.Speak(WeatherAPI.ReturnJsonString);
         }
+    }
+
+    private IEnumerator SpeakChunks(List<string> chunks)
+    {
+        foreach (var chunk in chunks)
+        {
+            Debug.Log("Contexter: Speaking chunk: " + chunk);
+            tts.Speak(chunk);
+
+            // Assuming tts.Speak() starts the speech immediately and tts.IsSpeaking() returns whether the speech is ongoing
+            while (tts.IsActive)
+            {
+                yield return null; // Wait for the next frame
+            }
+        }
+    }
+
+    private List<string> SplitIntoSpeakableChunks(string str)
+    {
+        var words = str.Split(' ');
+        var chunk = new StringBuilder();
+        var chunks = new List<string>();
+
+        foreach (var word in words)
+        {
+            if (chunk.Length + word.Length >= 200)
+            {
+                chunks.Add(chunk.ToString());
+                chunk.Length = 0;  // Clear the StringBuilder
+            }
+
+            if (chunk.Length > 0)
+                chunk.Append(' ');
+
+            chunk.Append(word);
+        }
+
+        if (chunk.Length > 0)
+            chunks.Add(chunk.ToString());
+
+        return chunks;
     }
 
     /// <summary>
     /// Acts on the context that was returned from the AI
     /// </summary>
-    public void ActOnContext()
+    public void ActOnContextVRUser()
     {
         string [] spiltString = response.Trim('\"').Split(' ');
 
@@ -108,12 +174,23 @@ public class Contexter : MonoBehaviour
         }
         else if (spiltString[0] == "Weather")
         {
-            string lat = ((float)(float.Parse(spiltString[1]) * ((spiltString[2] == "N") ? 1 : -1))).ToString();
-            string lon = ((float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1))).ToString();
-            //WeatherAPI.isInUse = true;
+            string lat;
+            string lon;
 
-            //StartCoroutine(WeatherAPI.GetApiData(lat, lon));
-            tts.Speak("The weather there is lovely!");
+            if (spiltString.Length == 1)
+            {
+                lat = geoReference.latitude.ToString();
+                lon = geoReference.longitude.ToString();
+            }
+            else
+            {
+                lat = ((float)(float.Parse(spiltString[1]) * ((spiltString[2] == "N") ? 1 : -1))).ToString();
+                lon = ((float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1))).ToString();
+            }
+
+            WeatherAPI.isInUse = true;
+            StartCoroutine(WeatherAPI.GetApiData(lat, lon));
+            //tts.Speak("The weather there is lovely!");
         }
         else if (spiltString[0] == "Question")
         {
@@ -122,7 +199,54 @@ public class Contexter : MonoBehaviour
         else if (spiltString[0] == "xmlChange")
         {
             Debug.Log("Current Scenario code: " + spiltString[1]);
-            SendScenarioInputStringToAI(spiltString[1]);
+            SendScenarioInputStringToAI(spiltString[1], true);
+        }
+        else
+        {
+            tts.Speak(response);
+        }
+    }
+
+    /// <summary>
+    /// Sends the context to the AI from the Instructor
+    /// </summary>
+    public void ActOnContextInstructorUser()
+    {
+        string [] spiltString = response.Trim('\"').Split(' ');
+
+        Debug.Log("Contexter: Reponse: " + response);
+
+        if (spiltString[0] == "null")
+        {
+            Debug.LogError("Contexter: No instructor context");
+            //tts.Speak("Instructions not understood, please try again.");
+        }
+        else if (spiltString[0] == "Change")
+        {
+            geoReference.latitude = (float)(float.Parse(spiltString[1]) * ((spiltString[2] == "N") ? 1 : -1));
+            geoReference.longitude = (float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1));
+            geoReference.height = (float)0;
+            //Debug.Log("Contexter: Changed location to: " + geoReference.latitude + " " + geoReference.longitude);
+            api.UpdateWeatherImmediately();
+            //tts.Speak("Changing Location");
+        }
+        else if (spiltString[0] == "Weather")
+        {
+            string lat = ((float)(float.Parse(spiltString[1]) * ((spiltString[2] == "N") ? 1 : -1))).ToString();
+            string lon = ((float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1))).ToString();
+            //WeatherAPI.isInUse = true;
+
+            //StartCoroutine(WeatherAPI.GetApiData(lat, lon));
+            //tts.Speak("The weather there is lovely!");
+        }
+        else if (spiltString[0] == "Question")
+        {
+            SendQuestionInputStringToAI();
+        }
+        else if (spiltString[0] == "xmlChange")
+        {
+            Debug.Log("Current Scenario code: " + spiltString[1]);
+            SendScenarioInputStringToAI(spiltString[1], false);
         }
         else
         {
@@ -135,6 +259,12 @@ public class Contexter : MonoBehaviour
     /// </summary>
     public void SendContext()
     {
+        if (!uiScreen.activeSelf)
+        {
+            Debug.Log("Contexter: UI Screen is not active");
+            return;
+        }
+
         Debug.Log("Contexter: Sending context");
         userInput = transcriptText.text;
         SendContextInputStringToAI();
@@ -164,9 +294,9 @@ public class Contexter : MonoBehaviour
     /// Sends the scenario code to the MongoDB API to retrieve the XML data
     /// </summary>
     /// <param name="code">The six digit code for the scenario</param>
-    public void SendScenarioInputStringToAI(string code)
+    public void SendScenarioInputStringToAI(string code, bool VRuser)
     {
-        mongoDBAPI.ButtonHandler(code);
+        mongoDBAPI.ButtonHandler(code, VRuser);
     }
 
     /// <summary>

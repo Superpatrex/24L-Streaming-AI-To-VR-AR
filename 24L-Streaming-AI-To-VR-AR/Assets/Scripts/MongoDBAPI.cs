@@ -18,10 +18,10 @@ public class MongoDBAPI: MonoBehaviour
     /// Handles the button click event or just sends the data to the server
     /// </summary>
     /// <param name="code">The six letter string that corresponds to the database</param>
-    public void ButtonHandler(string code)
+    public void ButtonHandler(string code, bool VRuser)
     {
         Debug.Log(code);
-        StartCoroutine(SendDataToMongoDB(code));
+        StartCoroutine(SendDataToMongoDB(code, VRuser));
     }
 
     /// <summary>
@@ -29,7 +29,7 @@ public class MongoDBAPI: MonoBehaviour
     /// </summary>
     /// <param name="data">The six letter string that corresponds to the database</param>
     /// <returns>Sets information to a field of the MonogDBAPI and sets that the Contexter has a response</returns>
-    IEnumerator SendDataToMongoDB(string data)
+    IEnumerator SendDataToMongoDB(string data, bool VRuser)
     {
         string endpoint = "/api/getXML"; // Replace with your specific API endpoint
 
@@ -73,7 +73,15 @@ public class MongoDBAPI: MonoBehaviour
             try
             {
                 shipScenario = XMLSerializer.ReadFromXmlStringShipInformation(returnXMLString);
-                Contexter.hasResponseScenario = true;
+
+                if (VRuser)
+                {
+                    Contexter.hasVRUserResponseScenario = true;
+                }
+                else
+                {
+                    Contexter.hasInstructorResponseScenario = true;
+                }
             }
             catch
             {
