@@ -30,9 +30,17 @@ public class Aircraft
 /// </summary>
 public class Location
 {
+    // Aircraft location should be lat 21.482216 and long -158.039959 for the start aircraft which is Wheeler Army Airfield
     public float latitude;
     public float longitude;
     public float altitude;
+    public EnemyAircraft enemyAircraft;
+}
+
+public class EnemyAircraft
+{
+    public int number;
+    public bool areEnemies;
 }
 
 /// <summary>
