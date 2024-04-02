@@ -34,7 +34,7 @@ public class MongoDBAPI: MonoBehaviour
         string endpoint = "/api/getXML"; // Replace with your specific API endpoint
 
         // Create a JSON object or format your data as needed
-        string jsonBody = "{\"code\": \"" + data + "\"}";
+        string jsonBody = "{\"code\":\"" + data + "\"}";
 
         Debug.Log(jsonBody);
 
@@ -58,7 +58,7 @@ public class MongoDBAPI: MonoBehaviour
 
                 if (!string.IsNullOrEmpty(request.downloadHandler.text))
                 {
-                    returnXMLString = request.downloadHandler.text;
+                    returnXMLString = JsonUtility.FromJson<JsonXMLString>(request.downloadHandler.text).scenario;
                 }
                 else
                 {
@@ -93,4 +93,9 @@ public class MongoDBAPI: MonoBehaviour
             Debug.LogError("No data received from the server");
         }
     }
+}
+
+class JsonXMLString
+{
+    public string scenario;
 }

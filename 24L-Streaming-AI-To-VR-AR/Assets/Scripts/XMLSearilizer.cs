@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Xml.Serialization;
 using System.Text;
+using UnityEngine;
 
 /// <summary>
 /// The XMLSerializer class is used to read and write XML files
@@ -38,8 +39,11 @@ public class XMLSerializer
 
         using (StringReader reader = new StringReader(xmlString))
         {
+            //Debug.Log("Starting xml deserialization");
             XmlSerializer serializer = new XmlSerializer(typeof(XMLShipStructure));
+            //Debug.Log("Middle " + xmlString);
             shipInformation = (XMLShipStructure)serializer.Deserialize(reader);
+            //Debug.Log("Ending xml deserialization");
         }
 
         return shipInformation;

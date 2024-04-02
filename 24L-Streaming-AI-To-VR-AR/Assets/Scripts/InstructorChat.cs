@@ -9,11 +9,14 @@ public class InstructorChat : MonoBehaviour
     [SerializeField] public TMP_Text chatInput;
     [SerializeField] public Contexter contexter;
 
+    public static InstructorChat Instance { get; private set; }
+
     public void AddvRITAMessage(string message)
     {
         chatLog.Append("vRTIA: ");
         chatLog.Append(message);
         chatLog.AppendLine("\n");
+        chatText.text = chatLog.ToString();
     }
 
     public void AddInstructorMessage(string message)
@@ -21,11 +24,27 @@ public class InstructorChat : MonoBehaviour
         chatLog.Append("Instructor: ");
         chatLog.Append(message);
         chatLog.AppendLine("\n");
+        chatText.text = chatLog.ToString();
+    }
+
+    public void Awake()
+    {
+        // Singleton setup
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 
     public void Start()
     {
-
+        
     }
 
     public void Update()
@@ -49,7 +68,7 @@ public class InstructorChat : MonoBehaviour
         chatInput.text = "";
         AddInstructorMessage(message);
         Contexter.userInput = message;
-        contexter.ActOnContextInstructorUser();
+        contexter.SendContextInputStringToAI(false);
         chatText.text = chatLog.ToString();
     }
 }

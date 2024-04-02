@@ -18,7 +18,9 @@
         "NaughtyAttributes.Core",
         "Unity.RenderPipelines.Universal.Editor",
         "Unity.RenderPipelines.Universal.Runtime",
-        "Unity.RenderPipelines.Core.Runtime"
+        "Unity.RenderPipelines.Core.Runtime",
+        "SCSM",
+        "Unity.Mathematics"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
