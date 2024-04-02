@@ -35,6 +35,7 @@ public class Contexter : MonoBehaviour
     public static bool hasVRUserResponseContext = false;
     public static bool hasVRUserResponseQuestion = false;
     public static bool hasVRUserResponseScenario = false;
+    public static bool hasInstructorResponseContext = false;
     public static bool hasInstructorLocationChange = false;
     public static bool hasInstructorResponseQuestion = false;
     public static bool hasInstructorResponseScenario = false;
@@ -45,6 +46,7 @@ public class Contexter : MonoBehaviour
     [SerializeField] public MongoDBAPI mongoDBAPI;
     [SerializeField] public GameObject entireShip;
     [SerializeField] public GameObject uiScreen;
+    [SerializeField] public InstructorChat chat;
 
 
     static UnityEvent m_MyEvent = new UnityEvent();
@@ -87,7 +89,12 @@ public class Contexter : MonoBehaviour
             }
         }
 
-        if (hasInstructorLocationChange)
+        if (hasInstructorResponseContext)
+        {
+            hasInstructorResponseContext = false;
+            ActOnContextInstructorUser();
+        }
+        else if (hasInstructorLocationChange)
         {
             hasInstructorLocationChange = false;
         }
@@ -98,6 +105,7 @@ public class Contexter : MonoBehaviour
         else if (hasInstructorResponseScenario)
         {
             hasInstructorResponseScenario = false;
+            ChangeLocationFromXML();
         }
 
         if (WeatherAPI.weatherIsReadyUser)
@@ -156,7 +164,7 @@ public class Contexter : MonoBehaviour
     {
         string [] spiltString = response.Trim('\"').Split(' ');
 
-        Debug.Log("Contexter: Reponse: " + response);
+        Debug.Log("Contexter: VR User Reponse: " + response);
 
         if (spiltString[0] == "null")
         {
@@ -194,12 +202,22 @@ public class Contexter : MonoBehaviour
         }
         else if (spiltString[0] == "Question")
         {
-            SendQuestionInputStringToAI();
+            SendQuestionInputStringToAI(true);
         }
         else if (spiltString[0] == "xmlChange")
         {
             Debug.Log("Current Scenario code: " + spiltString[1]);
             SendScenarioInputStringToAI(spiltString[1], true);
+        }
+        else if (spiltString[0] == "Spawn")
+        {
+            SpawnEnemyAI.Instance.spawn = true;
+            chat.AddvRITAMessage("Spawning enemy aircrafts");
+        }
+        else if (spiltString[0] == "Despawn")
+        {
+            SpawnEnemyAI.Instance.despawn = true;
+            chat.AddvRITAMessage("Despawning enemy aircrafts");
         }
         else
         {
@@ -214,7 +232,7 @@ public class Contexter : MonoBehaviour
     {
         string [] spiltString = response.Trim('\"').Split(' ');
 
-        Debug.Log("Contexter: Reponse: " + response);
+        Debug.Log("Contexter: Instructor Reponse: " + response);
 
         if (spiltString[0] == "null")
         {
@@ -241,12 +259,22 @@ public class Contexter : MonoBehaviour
         }
         else if (spiltString[0] == "Question")
         {
-            SendQuestionInputStringToAI();
+            SendQuestionInputStringToAI(false);
         }
         else if (spiltString[0] == "xmlChange")
         {
             Debug.Log("Current Scenario code: " + spiltString[1]);
             SendScenarioInputStringToAI(spiltString[1], false);
+        }
+        else if (spiltString[0] == "Spawn")
+        {
+            SpawnEnemyAI.Instance.spawn = true;
+            tts.Speak("Spawning enemy aircrafts");
+        }
+        else if (spiltString[0] == "Despawn")
+        {
+            SpawnEnemyAI.Instance.despawn = true;
+            tts.Speak("Despawning enemy aircrafts");
         }
         else
         {
@@ -257,7 +285,7 @@ public class Contexter : MonoBehaviour
     /// <summary>
     /// Sends the context to the AI
     /// </summary>
-    public void SendContext()
+    public void SendContext(bool VRUser)
     {
         if (!uiScreen.activeSelf)
         {
@@ -267,27 +295,27 @@ public class Contexter : MonoBehaviour
 
         Debug.Log("Contexter: Sending context");
         userInput = transcriptText.text;
-        SendContextInputStringToAI();
+        SendContextInputStringToAI(VRUser);
     }
 
     /// <summary>
     /// Sends the context string to the artificial intelligence
     /// </summary>
-    public void SendContextInputStringToAI()
+    public void SendContextInputStringToAI(bool VRuser)
     {
         ArtificialIntelligence.userInput = userInput;
         ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
-        ai.SendContexterButtonHandler();
+        ai.SendContexterButtonHandler(VRuser);
     }
 
     /// <summary>
     /// Sends the user question to the aritificial intelligence
     /// </summary>
-    public void SendQuestionInputStringToAI()
+    public void SendQuestionInputStringToAI(bool VRuser)
     {
         ArtificialIntelligence.userInput = xmlShipInformation.text + " " + userInput;
         ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
-        ai.SendUserQuestionButtonHandler();
+        ai.SendUserQuestionButtonHandler(VRuser);
     }
 
     /// <summary>
@@ -356,5 +384,15 @@ public class Contexter : MonoBehaviour
         geoReference.longitude = tempShipStructure.craft.aircraftLocation.longitude;
         entireShip.transform.position = new Vector3(0, tempShipStructure.craft.aircraftLocation.altitude, 0);
         return true;
+    }
+
+    public void ChangeLocationFromXML()
+    {
+        geoReference.latitude = MongoDBAPI.shipScenario.craft.aircraftLocation.latitude;
+        geoReference.longitude = MongoDBAPI.shipScenario.craft.aircraftLocation.longitude;
+        
+        // Change this to work both with the user and the instructor
+        chat.AddvRITAMessage("Changing the scenario");
+        Debug.Log("Contexter: Changing the scenario");
     }
 }

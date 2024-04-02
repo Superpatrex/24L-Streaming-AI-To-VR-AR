@@ -19537,7 +19537,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4288713706358262}
@@ -19943,7 +19943,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  selectedTabInt: 4
+  selectedTabInt: 0
   editorSearchThrusterFilter: 
 --- !u!114 &9036890099951940050
 MonoBehaviour:
@@ -19971,7 +19971,7 @@ MonoBehaviour:
   targetingAccuracy: 1
   fireAngle: 10
   maxBankAngle: 30
-  maxBankTurnAngle: 15
+  maxBankTurnAngle: 31.9
   maxPitchAngle: 90
   turnPitchThreshold: 30
   rollBias: 0.5
