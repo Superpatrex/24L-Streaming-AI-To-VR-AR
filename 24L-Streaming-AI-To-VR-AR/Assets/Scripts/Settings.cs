@@ -9,27 +9,70 @@ public class Settings : MonoBehaviour
 {
     // Public SerailzieField variables for the UI elements
     public Toggle tunnelingToggle;
-    public TMP_Dropdown turnDropDown;
+    public TMP_Dropdown ttsNameDropDown;
     public TMP_Dropdown qualityDropDown;
     public Scrollbar volumeSlider;
 
     // Public static variables for the settings
-    public static int CesiumGraphicsQuality = 8;
-    public static string Turn = "Snap";
+    public static float CesiumGraphicsQuality = 1f;
+    public static int textToSpeechVoice = 5;
     public static float Volume = 1.0f;
     public static bool Tunneling = false;
+    public static Settings Instance { get; private set; }
 
     // Private variables for the settings
     private static readonly int CesiumGraphicsQualityMax = 17;
     private static readonly int CesiumGraphicsQualityMin = 0;
 
+    private static readonly string[] TTSNames = {
+        "Skully",
+        "Cael",
+        "Cam",
+        "Carl",
+        "Cartoon Baby",
+        "Charlie",
+        "Cody",
+        "Connor",
+        "Cooper",
+        "Disaffected",
+        "Hollywood",
+        "Overconfident",
+        "Prospector",
+        "Railey",
+        "Rebecca",
+        "Remi",
+        "Rubie",
+        "Trendy",
+        "Vampire",
+        "Maria",
+        "British Butler",
+        "Pirate",
+        "Colin",
+        "Rosie"
+    };
+
+    public void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void Start()
     {
-        if (tunnelingToggle == null || turnDropDown == null || qualityDropDown == null || volumeSlider == null)
+        if (tunnelingToggle == null || ttsNameDropDown == null || qualityDropDown == null || volumeSlider == null)
         {
             Debug.LogError("One or more UI elements are not set in the inspector. Fix this before continuing.");
             throw new Exception("One or more UI elements are not set in the inspector. Fix this before continuing.");
         }
+
+        ttsNameDropDown.value = textToSpeechVoice;
     }
     
     /// <summary>
@@ -40,14 +83,14 @@ public class Settings : MonoBehaviour
     {
         int quality = (int)Math.Pow((double)2, (double)qualityDropDown.value);
 
-        if (quality <= CesiumGraphicsQualityMin || quality >= CesiumGraphicsQualityMax)
+        if (quality < CesiumGraphicsQualityMin || quality > CesiumGraphicsQualityMax)
         {
             Debug.Log("Invalid quality level. Setting to default value of 8.");
-            CesiumGraphicsQuality = 8;
+            CesiumGraphicsQuality = 8f;
         }
         else
         {
-            CesiumGraphicsQuality = quality;
+            CesiumGraphicsQuality = (float)quality;
         }
 
         Debug.Log("Cesium graphics quality set to " + CesiumGraphicsQuality + ".");
@@ -56,10 +99,12 @@ public class Settings : MonoBehaviour
     /// <summary>
     /// Sets whether the looking movement is using snap or continuous.
     /// </summary>
-    public void SetTurn()
+    public void SetTTSName()
     {
-        Turn = turnDropDown.value == 0 ? "Snap" : "Continuous";
-        Debug.Log("Turn set to " + Turn + ".");
+        textToSpeechVoice = ttsNameDropDown.value;
+        PlayerPrefs.SetInt("TTSName", textToSpeechVoice);
+        PlayerPrefs.Save();
+        Debug.Log("Turn set to " + textToSpeechVoice + ".");
     }
 
     /// <summary>
@@ -79,5 +124,15 @@ public class Settings : MonoBehaviour
     {
         Tunneling = tunnelingToggle.isOn;
         Debug.Log("Tunneling is " + (Tunneling ? "enabled" : "disabled") + ".");
+    }
+
+    public string GetTTSName()
+    {
+        return TTSNames[textToSpeechVoice];
+    }
+
+    public float GetCesiumGraphicsQuality()
+    {
+        return CesiumGraphicsQuality;
     }
 }

@@ -10,11 +10,6 @@ public class SpawnUI : MonoBehaviour
     public UnityEvent voiceEnabled;
     public UnityEvent voiceDisable;
 
-    public GameObject hands;
-    public GameObject camera;
-
-    public GameObject ship;
-
     void OnEnable()
     {
         activateUI.Enable();
@@ -48,15 +43,5 @@ public class SpawnUI : MonoBehaviour
         startListening.canceled += context => {
             voiceEnabled.Invoke();
         };
-
-        FixCameraAndHands();
     }
-
-    public void FixCameraAndHands()
-    {
-        // This fixes the issues with the camera and hands not being in the correct position
-        hands.transform.position = ship.transform.position + new Vector3(0, -.18f, 4.3f);
-        camera.transform.position = ship.transform.position + new Vector3(0, -.18f, 4.3f);
-    }
-  
 }

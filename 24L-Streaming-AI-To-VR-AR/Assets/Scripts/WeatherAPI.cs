@@ -50,6 +50,8 @@ public class WeatherAPI : MonoBehaviour
 
     // Private fields
     private static string returnJsonString;
+    public static bool isInUse = false;
+    public static bool weatherIsReadyUser = false;
 
 
 
@@ -62,13 +64,18 @@ public class WeatherAPI : MonoBehaviour
         BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
     }
 
+    public void UpdateWeatherImmediately()
+    {
+        timeSinceLastUpdate = timePerUpdate;
+    }
+
     /// <summary>
     /// Update is called once per frame, essentially it calls the API every timePerUpdate in seconds
     /// </summary>
     public void Update()
     {
         timeSinceLastUpdate += Time.deltaTime;
-        if (timeSinceLastUpdate >= timePerUpdate)
+        if (timeSinceLastUpdate >= timePerUpdate && !isInUse)
         {
             // Begin the process of getting the data from the API
             BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
@@ -131,6 +138,13 @@ public class WeatherAPI : MonoBehaviour
                 ReturnJsonString = resultString;
             }
         }
+
+        if (isInUse)
+        {
+            weatherIsReadyUser = true;
+        }
+
+        isInUse = false;
     }
 
     /// <summary>
@@ -148,14 +162,14 @@ public class WeatherAPI : MonoBehaviour
     /// </summary>
     /// <param name="lat">The string representation of the latitude</param>
     /// <param name="lon">The string representation of the longitude</param>
-    void BeginGetApiData(string lat, string lon)
+    public void BeginGetApiData(string lat, string lon)
     {
         StartCoroutine(GetApiData(lat, lon));
     }
 
     public void ChangeSkyBox(string weather)
     {
-        Debug.Log(weather);
+        //Debug.LogError(weather);
 
         switch(weather)
         {
@@ -261,7 +275,12 @@ public class WeatherAPI : MonoBehaviour
 
     public void ToggleWeather(GameObject weather)
     {
-        if (currentWeather != weather)
+        if (currentWeather == null)
+        {
+            weather.SetActive(true);
+            currentWeather = weather;
+        }
+        else if (currentWeather != weather)
         {
             currentWeather.SetActive(false);
             weather.SetActive(true);
