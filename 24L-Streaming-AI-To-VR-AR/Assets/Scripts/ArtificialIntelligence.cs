@@ -17,7 +17,7 @@ namespace OpenAI
         // Private fields
         private List<ChatMessage> _msg = new List<ChatMessage>();
         private List<ChatMessage> _questions = new List<ChatMessage>();
-        private OpenAIApi _openAI = new OpenAIApi("Yeet");
+        private OpenAIApi _openAI = new OpenAIApi("API_KEY");
 
         private static string _userInput = "";
         private static string _latLongString = "Give me the latitude of longitude in decimals of the location to which is specified. For instance, if the user were to say \"Epcot\" or \"Take me to Epcot\"  or \"Where is Epcot\" return \"28.3765 N, 81.5494 W\". Only return the latitude and longitude and the name of the location after the latitude and longitude separated with a space.";
@@ -28,7 +28,6 @@ namespace OpenAI
 
         // Public fields
         public static string returnString = "";
-        [SerializeField] public static AIReturnType returnType = AIReturnType.RETURN_TEXT_BOX;
         public static string userInput
         {
             get => _userInput;
@@ -39,11 +38,6 @@ namespace OpenAI
 
         // Public enums
 
-        public enum AIReturnType
-        {
-            RETURN_STRING,
-            RETURN_TEXT_BOX
-        }
 
         // Non-public and Non-private fields
         public static UnityEvent m_LatEvemt = new UnityEvent();
@@ -150,17 +144,14 @@ namespace OpenAI
                 {
                     Debug.Log("Error: Not a valid question to the location");
 
-                    if (returnType == AIReturnType.RETURN_STRING)
-                    {
-                        returnString = "Not a valid destination";
-                    }
+                    returnString = "Not a valid destination";
+                    
                 }
                 else
                 {
-                    if (returnType == AIReturnType.RETURN_STRING)
-                    {
-                        returnString = choiceString;
-                    }
+                    
+                    returnString = choiceString;
+                    
                 }
 
             }

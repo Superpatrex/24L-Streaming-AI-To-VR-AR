@@ -51,7 +51,9 @@ public class WeatherAPI : MonoBehaviour
     // Private fields
     private static string returnJsonString;
     public static bool isInUse = false;
-    public static bool weatherIsReadyUser = false;
+    public static bool weatherIsReadyVRUser = false;
+    public static bool weatherIsReadyInstructor = false;
+    public static bool? isVRUser = false;
 
 
 
@@ -61,7 +63,7 @@ public class WeatherAPI : MonoBehaviour
     public void Awake()
     {
         // Begin the process of getting the data from the API
-        BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
+        BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString(), null);
     }
 
     public void UpdateWeatherImmediately()
@@ -78,7 +80,7 @@ public class WeatherAPI : MonoBehaviour
         if (timeSinceLastUpdate >= timePerUpdate && !isInUse)
         {
             // Begin the process of getting the data from the API
-            BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString());
+            BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString(), null);
             timeSinceLastUpdate = 0.0f;
             string curWeather = CurrentWeather.getWeatherInfo(XMLSerializer.ReadFromXmlStringWeather(returnJsonString));
             ChangeSkyBox(curWeather);
@@ -91,7 +93,7 @@ public class WeatherAPI : MonoBehaviour
     /// <param name="lat">The string representation of the latitude</param>
     /// <param name="lon">The stirng representation of the longtitude</param>
     /// <returns></returns>
-    public static IEnumerator GetApiData(string lat, string lon)
+    public static IEnumerator GetApiData(string lat, string lon, bool? VRUser)
     {
         // Making sure that data being passed in is correct
         if (lat == null)
@@ -120,6 +122,10 @@ public class WeatherAPI : MonoBehaviour
         }
 
         string apiKey = "ecd4a3434faff0a74647d977fc4be299";
+        if (VRUser != null)
+        {
+            isVRUser = VRUser;
+        }
         string url = $"https://pro.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&APPID={apiKey}&mode=xml&units=imperial";
         using (UnityWebRequest www = UnityWebRequest.Get(url))
         {
@@ -139,12 +145,14 @@ public class WeatherAPI : MonoBehaviour
             }
         }
 
-        if (isInUse)
+        if (isVRUser == true && VRUser != null)
         {
-            weatherIsReadyUser = true;
+            weatherIsReadyVRUser = true;
         }
-
-        isInUse = false;
+        else if (VRUser != null)
+        {
+            weatherIsReadyInstructor = true;
+        }
     }
 
     /// <summary>
@@ -152,9 +160,9 @@ public class WeatherAPI : MonoBehaviour
     /// </summary>
     /// <param name="latLonItem">The latitude and longtitude of the user</param>
     /// <returns></returns>
-    public static IEnumerator GetApiData(LatLongLocation latLonItem)
+    public static IEnumerator GetApiData(LatLongLocation latLonItem, bool VRUser)
     {
-        return WeatherAPI.GetApiData(latLonItem.Lat.ToString(), latLonItem.Long.ToString());
+        return WeatherAPI.GetApiData(latLonItem.Lat.ToString(), latLonItem.Long.ToString(), VRUser);
     }
 
     /// <summary>
@@ -162,9 +170,9 @@ public class WeatherAPI : MonoBehaviour
     /// </summary>
     /// <param name="lat">The string representation of the latitude</param>
     /// <param name="lon">The string representation of the longitude</param>
-    public void BeginGetApiData(string lat, string lon)
+    public void BeginGetApiData(string lat, string lon, bool? VRUser)
     {
-        StartCoroutine(GetApiData(lat, lon));
+        StartCoroutine(GetApiData(lat, lon, null));
     }
 
     public void ChangeSkyBox(string weather)

@@ -29,21 +29,21 @@ public class CameraViews : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha1))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.F1))
         {
             CurrentCamera.enabled = false;
             CurrentCamera = SpectorCamera;
             CurrentCamera.enabled = true;
         }
 
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha2))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.F2))
         {   
             CurrentCamera.enabled = false;
             CurrentCamera = PlaneCamera;
             CurrentCamera.enabled = true;
         }
 
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha3))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.F3))
         {
             CurrentCamera.enabled = false;
             CurrentCamera = ChatCamera;

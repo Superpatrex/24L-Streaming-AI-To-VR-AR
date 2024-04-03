@@ -94,13 +94,10 @@ public class Contexter : MonoBehaviour
             hasInstructorResponseContext = false;
             ActOnContextInstructorUser();
         }
-        else if (hasInstructorLocationChange)
-        {
-            hasInstructorLocationChange = false;
-        }
         else if (hasInstructorResponseQuestion)
         {
             hasInstructorResponseQuestion = false;
+            tts.Speak(response);
         }
         else if (hasInstructorResponseScenario)
         {
@@ -108,12 +105,20 @@ public class Contexter : MonoBehaviour
             ChangeLocationFromXML();
         }
 
-        if (WeatherAPI.weatherIsReadyUser)
+        if (WeatherAPI.weatherIsReadyVRUser)
         {
-            WeatherAPI.weatherIsReadyUser = false;
+            WeatherAPI.weatherIsReadyVRUser = false;
             Debug.LogError(WeatherAPI.ReturnJsonString);
             tts.Speak(WeatherAPI.ReturnJsonString);
         }
+        else if (WeatherAPI.weatherIsReadyInstructor)
+        {
+            WeatherAPI.weatherIsReadyInstructor = false;
+            Debug.LogError(WeatherAPI.ReturnJsonString);
+            chat.AddvRITAMessage(WeatherAPI.ReturnJsonString);
+        }
+
+        
     }
 
     private IEnumerator SpeakChunks(List<string> chunks)
@@ -197,7 +202,7 @@ public class Contexter : MonoBehaviour
             }
 
             WeatherAPI.isInUse = true;
-            StartCoroutine(WeatherAPI.GetApiData(lat, lon));
+            StartCoroutine(WeatherAPI.GetApiData(lat, lon, true));
             //tts.Speak("The weather there is lovely!");
         }
         else if (spiltString[0] == "Question")
@@ -246,6 +251,7 @@ public class Contexter : MonoBehaviour
             geoReference.height = (float)0;
             //Debug.Log("Contexter: Changed location to: " + geoReference.latitude + " " + geoReference.longitude);
             api.UpdateWeatherImmediately();
+            chat.AddvRITAMessage("Changing Location");
             //tts.Speak("Changing Location");
         }
         else if (spiltString[0] == "Weather")
@@ -304,7 +310,6 @@ public class Contexter : MonoBehaviour
     public void SendContextInputStringToAI(bool VRuser)
     {
         ArtificialIntelligence.userInput = userInput;
-        ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
         ai.SendContexterButtonHandler(VRuser);
     }
 
@@ -314,7 +319,6 @@ public class Contexter : MonoBehaviour
     public void SendQuestionInputStringToAI(bool VRuser)
     {
         ArtificialIntelligence.userInput = xmlShipInformation.text + " " + userInput;
-        ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
         ai.SendUserQuestionButtonHandler(VRuser);
     }
 

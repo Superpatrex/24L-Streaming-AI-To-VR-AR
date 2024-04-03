@@ -1,26 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using SciFiShipController;
 using scsmmedia;
 using System.Diagnostics.Tracing;
 using UnityEngine.XR.Interaction.Toolkit;
+#if UNITY_EDITOR
+using UnityEditor.PackageManager.UI;
 using UnityEditorInternal;
 using UnityEditor;
+#endif
 
 
 
 public class ShowSettings : MonoBehaviour
 {
+    public Rigidbody shipRB;
     public GameObject targetObject;
     public InputAction changeSettings;
     public GameObject aircraft;
-    public GameObject rayInteractor;
+    public GameObject rayInteractorLeft;
+    public GameObject rayInteractorRight;
     public GameObject lever;
     public GameObject joystick;
     public GameObject leftHand;
+    public GameObject rightHand;
     private PlayerInputModule playerInputModule = null;
     private ShipControlModule shipControlModule = null;
     private ShipInput shipInput = null;
@@ -35,7 +40,6 @@ public class ShowSettings : MonoBehaviour
 
     void OnShowSettings()
     {
-
         if (!isSettingsMenuActive)
         {
             if (Settings.Tunneling){ Tunneling.volume.enabled = false; }
@@ -94,12 +98,17 @@ public class ShowSettings : MonoBehaviour
             isSettingsMenuActive = true;
 
             // Adjust hand position
-            leftHand.transform.localEulerAngles = new Vector3(50, 0, 90);
+            leftHand.transform.localEulerAngles = new Vector3(0, 0, 90);
+            rightHand.transform.localEulerAngles = new Vector3(0, 0, 270);
 
             // Show ray interactor
-            rayInteractor.SetActive(true);
-            rayInteractor.transform.localEulerAngles = new Vector3(40, 0, 0);
-            rayInteractor.GetComponent<XRInteractorLineVisual>().enabled = true;
+            rayInteractorLeft.SetActive(true);
+            rayInteractorLeft.transform.localEulerAngles = new Vector3(0, 0, 0);
+            rayInteractorLeft.GetComponent<XRInteractorLineVisual>().enabled = true;
+
+            rayInteractorRight.SetActive(true);
+            rayInteractorRight.transform.localEulerAngles = new Vector3(0, 0, 0);
+            rayInteractorRight.GetComponent<XRInteractorLineVisual>().enabled = true;
 
             // Deactivate ability to move the aircraft and use weapons
             lever.GetComponent<StickyInteractive>().enabled = false;
@@ -113,6 +122,8 @@ public class ShowSettings : MonoBehaviour
         }
         else
         {
+            
+
             shipInput.longitudinal = currentShipInput.longitudinal;
             //Debug.Log(shipInput.longitudinal);
             shipControlModule.SendInput(shipInput);
@@ -124,9 +135,11 @@ public class ShowSettings : MonoBehaviour
 
             // Adjust hand position
             leftHand.transform.localEulerAngles = new Vector3(0, 0, 90);
+            rightHand.transform.localEulerAngles = new Vector3(0, 0, 270);
 
             // Hide ray interactor
-            rayInteractor.SetActive(false);
+            rayInteractorLeft.SetActive(false);
+            rayInteractorRight.SetActive(false);
 
             // Activate ability to move the aircraft and use weapons
             lever.GetComponent<StickyInteractive>().enabled = true;
@@ -148,6 +161,8 @@ public class ShowSettings : MonoBehaviour
             
         }
 
+        // Makes the ship stop in mid air
+        shipRB.isKinematic = !shipRB.isKinematic;
     }
 
     void OnDisable()

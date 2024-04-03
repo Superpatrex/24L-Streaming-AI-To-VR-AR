@@ -4,7 +4,8 @@
     "references": [
         "Unity.InputSystem",
         "Unity.RenderPipelines.Universal.Runtime",
-        "Oculus.VR"
+        "Oculus.VR",
+        "UnityEditor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

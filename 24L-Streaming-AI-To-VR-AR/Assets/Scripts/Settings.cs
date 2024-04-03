@@ -14,7 +14,7 @@ public class Settings : MonoBehaviour
     public Scrollbar volumeSlider;
 
     // Public static variables for the settings
-    public static float CesiumGraphicsQuality = 1f;
+    public static float CesiumGraphicsQuality = 4f;
     public static int textToSpeechVoice = 5;
     public static float Volume = 1.0f;
     public static bool Tunneling = false;
@@ -60,7 +60,7 @@ public class Settings : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
@@ -72,7 +72,10 @@ public class Settings : MonoBehaviour
             throw new Exception("One or more UI elements are not set in the inspector. Fix this before continuing.");
         }
 
-        ttsNameDropDown.value = textToSpeechVoice;
+        if (ttsNameDropDown != null)
+        {
+            ttsNameDropDown.value = textToSpeechVoice;
+        }
     }
     
     /// <summary>
