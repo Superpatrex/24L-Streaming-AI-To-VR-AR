@@ -14,7 +14,7 @@ public class SpawnEnemyAI : MonoBehaviour
     public CesiumGeoreference cesium;
 
     public GameObject enemyShip;
-    private bool shipFlag = false;
+    public bool shipFlag = false;
 
     public GameObject player;
 

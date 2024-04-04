@@ -23,6 +23,7 @@ public class Aircraft
     public Location aircraftLocation;
     [XmlElement("Fuel")]
     public Fuel fuel;
+    public Weapons weapons;
 }
 
 /// <summary>
@@ -39,7 +40,6 @@ public class Location
 
 public class EnemyAircraft
 {
-    public int number;
     public bool areEnemies;
 }
 
@@ -52,3 +52,24 @@ public class Fuel
     public float fuelCapacity;
     public float fuelConsumptionRate;
 }
+
+public class Weapons
+{
+    public IndividualWeapon leftMissle;
+    public IndividualWeapon rightMissle;
+    public IndividualWeapon leftGun;
+    public IndividualWeapon rightGun;
+}
+
+public class IndividualWeapon
+{
+    public string name;
+    public int roundsLeft; // Corrected field name
+    public float timeBetweenFiring;
+    
+    // Weapon state should be "ready" or "reloading" or "jammed"
+    public string weaponState;
+    public float inaccuracy;
+    public int weaponType;
+}
+

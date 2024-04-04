@@ -64,6 +64,29 @@ public class Settings : MonoBehaviour
         }
     }
 
+    public void Update()
+    {
+        if (tunnelingToggle != null)
+        {
+            tunnelingToggle.isOn = Tunneling;
+        }
+
+        if (ttsNameDropDown != null)
+        {
+            ttsNameDropDown.value = textToSpeechVoice;
+        }
+
+        if (qualityDropDown != null)
+        {
+            qualityDropDown.value = (int)Math.Log(CesiumGraphicsQuality, 2);
+        }
+
+        if (volumeSlider != null)
+        {
+            volumeSlider.value = Volume;
+        }
+    }
+
     public void Start()
     {
         if (tunnelingToggle == null || ttsNameDropDown == null || qualityDropDown == null || volumeSlider == null)

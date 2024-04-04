@@ -8,28 +8,55 @@ public class FixTransform : MonoBehaviour
     public GameObject hands;
     public GameObject camera;
 
-    public GameObject ship;
+    //public GameObject ship;
+    //public GameObject head;
+    //public
 
     /// <summary>
     /// Start is called before the first frame update
     /// </summary>
     void Start()
     {
-        FixCameraAndHands();
+        //FixCameraAndHands();
     }
 
     /// <summary>
     /// Fixes the Camera and Hands when the script is started
     /// </summary>
-    public void FixCameraAndHands()
+    public void Up()
     {
-        // This fixes the issues with the camera and hands not being in the correct position
-        hands.transform.position = ship.transform.position + new Vector3(0, -.18f, 4.5f);
-        camera.transform.position = ship.transform.position + new Vector3(0, -.18f, 4.5f);
+        hands.transform.position = hands.transform.position + new Vector3(0, .1f, 0f);
+        camera.transform.position = camera.transform.position + new Vector3(0, .1f, 0f);
+    }
 
-        // Parent the camera and hands to the ship
-        hands.transform.SetParent(ship.transform, true);
-        camera.transform.SetParent(ship.transform, true);
+    public void Down()
+    {
+        hands.transform.position = hands.transform.position + new Vector3(0, -.1f, 0f);
+        camera.transform.position = camera.transform.position + new Vector3(0, -.1f, 0f);
+    }
+
+    public void Right()
+    {
+        hands.transform.position = hands.transform.position + new Vector3(.1f, 0f, 0f);
+        camera.transform.position = camera.transform.position + new Vector3(.1f, 0f, 0f);
+    }
+
+    public void Left()
+    {
+        hands.transform.position = hands.transform.position + new Vector3(-.1f, 0f, 0f);
+        camera.transform.position = camera.transform.position + new Vector3(-.1f, 0f, 0f);
+    }
+
+    public void Forward()
+    {
+        hands.transform.position = hands.transform.position + new Vector3(0f, 0f, .1f);
+        camera.transform.position = camera.transform.position + new Vector3(0f, 0f, .1f);
+    }
+
+    public void Backward()
+    {
+        hands.transform.position = hands.transform.position + new Vector3(0f, 0f, -.1f);
+        camera.transform.position = camera.transform.position + new Vector3(0f, 0f, -.1f);
     }
   
 }

@@ -83,7 +83,11 @@ public class WeatherAPI : MonoBehaviour
             BeginGetApiData(georeference.latitude.ToString(), georeference.longitude.ToString(), null);
             timeSinceLastUpdate = 0.0f;
             string curWeather = CurrentWeather.getWeatherInfo(XMLSerializer.ReadFromXmlStringWeather(returnJsonString));
-            ChangeSkyBox(curWeather);
+
+            if (isVRUser == null)
+            {
+                ChangeSkyBox(curWeather);
+            }
         }
     }
 

@@ -8,6 +8,7 @@ public class ShowControls : MonoBehaviour
     public GameObject menu;
 
     public static ShowControls Instance;
+    [SerializeField] public AircraftAPI api;
 
     void Awake()
     {
@@ -52,6 +53,7 @@ public class ShowControls : MonoBehaviour
     {
         Destroy(ShowControls.Instance.gameObject);
         Destroy(SpawnEnemyAI.Instance.gameObject);
+        api.SaveAircraft();
         Loader.Load(Loader.Scene.StartMenu);
     }
 }
