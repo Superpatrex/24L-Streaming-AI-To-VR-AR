@@ -279,6 +279,7 @@ public class Contexter : MonoBehaviour
             //Debug.Log("Contexter: Changed location to: " + geoReference.latitude + " " + geoReference.longitude);
             api.UpdateWeatherImmediately();
             chat.AddvRITAMessage("Changing Location");
+            tts.Speak("Instructor changed location");
             //tts.Speak("Changing Location");
         }
         else if (spiltString[0] == "Weather")
@@ -298,16 +299,19 @@ public class Contexter : MonoBehaviour
         {
             Debug.Log("Current Scenario code: " + spiltString[1]);
             SendScenarioInputStringToAI(spiltString[1], false);
+            tts.Speak("Instructor changed the scenario to " + spiltString[1]);
         }
         else if (spiltString[0] == "Spawn")
         {
             SpawnEnemyAI.Instance.spawn = true;
             chat.AddvRITAMessage("Spawning enemy aircrafts");
+            tts.Speak("Instructor spawned enemy aircrafts");
         }
         else if (spiltString[0] == "Despawn")
         {
             SpawnEnemyAI.Instance.despawn = true;
             chat.AddvRITAMessage("Despawning enemy aircrafts");
+            tts.Speak("Instructor despawned enemy aircrafts");
         }
         else
         {
