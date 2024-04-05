@@ -14,7 +14,7 @@ public class Settings : MonoBehaviour
     public Scrollbar volumeSlider;
 
     // Public static variables for the settings
-    public static float CesiumGraphicsQuality = 4f;
+    public static float CesiumGraphicsQuality = 8f;
     public static int textToSpeechVoice = 5;
     public static float Volume = 1.0f;
     public static bool Tunneling = false;
@@ -23,6 +23,8 @@ public class Settings : MonoBehaviour
     // Private variables for the settings
     private static readonly int CesiumGraphicsQualityMax = 17;
     private static readonly int CesiumGraphicsQualityMin = 0;
+
+    public bool firstTime = true;
 
     private static readonly string[] TTSNames = {
         "Skully",

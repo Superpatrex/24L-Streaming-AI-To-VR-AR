@@ -22,7 +22,7 @@ public class CameraViews : MonoBehaviour
         SpectorCamera.enabled = true;
         ChatCamera.enabled = false;
         CurrentCamera = SpectorCamera;
-        LastCamera = PlaneCamera;
+        //LastCamera = PlaneCamera;
         ThisInstance = this;
     }
 
@@ -38,23 +38,24 @@ public class CameraViews : MonoBehaviour
 
         if (UnityEngine.Input.GetKeyDown(KeyCode.F2))
         {   
-            CurrentCamera.enabled = false;
-            CurrentCamera = PlaneCamera;
-            CurrentCamera.enabled = true;
-        }
-
-        if (UnityEngine.Input.GetKeyDown(KeyCode.F3))
-        {
-            CurrentCamera.enabled = false;
+            //CurrentCamera.enabled = false;
             CurrentCamera = ChatCamera;
             CurrentCamera.enabled = true;
         }
 
-        if (SpectorCamera.enabled)
-        {
+        //if (UnityEngine.Input.GetKeyDown(KeyCode.F3))
+        //{
+        //    CurrentCamera.enabled = false;
+        //    CurrentCamera = ChatCamera;
+        //    CurrentCamera.enabled = true;
+        //}
 
-        }
+        //if (SpectorCamera.enabled)
+        //{
+        //
+        //}
 
+        /*
         if (PlaneCamera.enabled)
         {
             if (UnityEngine.Input.GetKey(KeyCode.LeftArrow))
@@ -74,5 +75,6 @@ public class CameraViews : MonoBehaviour
             //PlaneCamera.transform.position = Quaternion.Euler(0, fRotation, 0) * new Vector3(0, 1.5f, -3.5f);
             //PlaneCamera.transform.rotation = Quaternion.LookRotation(SpectorCamera.transform.position - PlaneCamera.transform.position + new Vector3(-2, 0, 0));
         }
+        */
     }
 }

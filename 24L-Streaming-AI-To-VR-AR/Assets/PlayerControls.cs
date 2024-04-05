@@ -69,7 +69,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""65ee0616-d92a-4385-8084-39c74d319867"",
-                    ""path"": ""<OculusTouchController>{LeftHand}/secondaryButton"",
+                    ""path"": ""<OculusTouchController>{LeftHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""UI_Controls_Scheme"",

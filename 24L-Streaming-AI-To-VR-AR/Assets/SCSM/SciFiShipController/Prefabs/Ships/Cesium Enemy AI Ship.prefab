@@ -19866,7 +19866,7 @@ MonoBehaviour:
       isInvincible: 0
       relativePosition: {x: 0, y: 0, z: 0}
       size: {x: 10, y: 10, z: 10}
-      startingHealth: 100
+      startingHealth: 1
       useShielding: 0
       shieldingDamageThreshold: 10
       shieldingAmount: 100

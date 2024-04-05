@@ -8,7 +8,7 @@ public class FixTransform : MonoBehaviour
     public GameObject hands;
     public GameObject camera;
 
-    //public GameObject ship;
+    public GameObject ship;
     //public GameObject head;
     //public
 
@@ -25,38 +25,44 @@ public class FixTransform : MonoBehaviour
     /// </summary>
     public void Up()
     {
-        hands.transform.position = hands.transform.position + new Vector3(0, .1f, 0f);
-        camera.transform.position = camera.transform.position + new Vector3(0, .1f, 0f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0, .1f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
 
     public void Down()
     {
-        hands.transform.position = hands.transform.position + new Vector3(0, -.1f, 0f);
-        camera.transform.position = camera.transform.position + new Vector3(0, -.1f, 0f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0, -.1f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
 
     public void Right()
     {
-        hands.transform.position = hands.transform.position + new Vector3(.1f, 0f, 0f);
-        camera.transform.position = camera.transform.position + new Vector3(.1f, 0f, 0f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(.1f, 0f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
 
     public void Left()
     {
-        hands.transform.position = hands.transform.position + new Vector3(-.1f, 0f, 0f);
-        camera.transform.position = camera.transform.position + new Vector3(-.1f, 0f, 0f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(-.1f, 0f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
 
     public void Forward()
     {
-        hands.transform.position = hands.transform.position + new Vector3(0f, 0f, .1f);
-        camera.transform.position = camera.transform.position + new Vector3(0f, 0f, .1f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0f, 0f, .1f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
 
     public void Backward()
     {
-        hands.transform.position = hands.transform.position + new Vector3(0f, 0f, -.1f);
-        camera.transform.position = camera.transform.position + new Vector3(0f, 0f, -.1f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0f, 0f, -.1f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
   
 }

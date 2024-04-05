@@ -19,6 +19,7 @@ public class SpawnUI : MonoBehaviour
     void OnDisable()
     {
         activateUI.Disable();
+        
     }
 
     
