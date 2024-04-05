@@ -15,6 +15,9 @@ public class CameraViews : MonoBehaviour
 
     private float oRotation = -90;
     private float fRotation = -90;
+
+    public static bool isChatCameraActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,18 +32,20 @@ public class CameraViews : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (UnityEngine.Input.GetKeyDown(KeyCode.F1))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.LeftBracket))
         {
             CurrentCamera.enabled = false;
             CurrentCamera = SpectorCamera;
             CurrentCamera.enabled = true;
+            isChatCameraActive = false;
         }
 
-        if (UnityEngine.Input.GetKeyDown(KeyCode.F2))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.RightBracket))
         {   
             //CurrentCamera.enabled = false;
             CurrentCamera = ChatCamera;
             CurrentCamera.enabled = true;
+            isChatCameraActive = true;
         }
 
         //if (UnityEngine.Input.GetKeyDown(KeyCode.F3))

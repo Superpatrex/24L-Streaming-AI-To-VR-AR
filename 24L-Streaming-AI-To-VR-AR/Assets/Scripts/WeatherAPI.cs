@@ -53,7 +53,7 @@ public class WeatherAPI : MonoBehaviour
     public static bool isInUse = false;
     public static bool weatherIsReadyVRUser = false;
     public static bool weatherIsReadyInstructor = false;
-    public static bool? isVRUser = false;
+    public static bool? isVRUser = null;
 
 
 
@@ -84,6 +84,7 @@ public class WeatherAPI : MonoBehaviour
             timeSinceLastUpdate = 0.0f;
             string curWeather = CurrentWeather.getWeatherInfo(XMLSerializer.ReadFromXmlStringWeather(returnJsonString));
 
+            Debug.Log("OpenWeatherAPI update " + isVRUser);
             if (isVRUser == null)
             {
                 ChangeSkyBox(curWeather);
@@ -181,7 +182,7 @@ public class WeatherAPI : MonoBehaviour
 
     public void ChangeSkyBox(string weather)
     {
-        //Debug.LogError(weather);
+        Debug.LogError(weather);
 
         switch(weather)
         {

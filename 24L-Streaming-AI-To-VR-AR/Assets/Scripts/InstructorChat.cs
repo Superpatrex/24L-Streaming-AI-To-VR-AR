@@ -1,12 +1,14 @@
 using UnityEngine;
 using System.Text;
 using TMPro;
+using UnityEngine.UI;
 
 public class InstructorChat : MonoBehaviour
 {
     private StringBuilder chatLog = new StringBuilder();
     [SerializeField] public TMP_Text chatText;
     [SerializeField] public TMP_Text chatInput;
+    [SerializeField] public TMP_InputField inputField;
     [SerializeField] public Contexter contexter;
 
     public static InstructorChat Instance { get; private set; }
@@ -49,6 +51,11 @@ public class InstructorChat : MonoBehaviour
 
     public void Update()
     {
+        if (CameraViews.isChatCameraActive)
+        {
+            inputField.Select();
+        }
+
         if (UnityEngine.Input.GetKeyDown(KeyCode.Return))
         {
             ButtonSendHandler();

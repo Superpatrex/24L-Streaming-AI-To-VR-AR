@@ -95,6 +95,7 @@ public class Contexter : MonoBehaviour
         else if (hasVRUserResponseWeather)
         {
             hasVRUserResponseWeather = false;
+            WeatherAPI.isVRUser = null;
             tts.Speak(response);
         }
 
@@ -123,6 +124,7 @@ public class Contexter : MonoBehaviour
         else if (hasInstructorResponseWeather)
         {
             hasInstructorResponseWeather = false;
+            WeatherAPI.isVRUser = null;
             chat.AddvRITAMessage(response);
         }
 
