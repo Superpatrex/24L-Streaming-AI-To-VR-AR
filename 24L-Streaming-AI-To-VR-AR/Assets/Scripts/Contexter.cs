@@ -197,7 +197,7 @@ public class Contexter : MonoBehaviour
         if (spiltString[0] == "null")
         {
             Debug.LogError("Contexter: No context");
-            tts.Speak("Instructions not understood, please try again.");
+            tts.Speak("Instructions not understood or not supported, please try again.");
         }
         else if (spiltString[0] == "Change")
         {
@@ -241,12 +241,12 @@ public class Contexter : MonoBehaviour
         else if (spiltString[0] == "Spawn")
         {
             SpawnEnemyAI.Instance.spawn = true;
-            chat.AddvRITAMessage("Spawning enemy aircrafts");
+            tts.Speak("Spawning enemy aircrafts");
         }
         else if (spiltString[0] == "Despawn")
         {
             SpawnEnemyAI.Instance.despawn = true;
-            chat.AddvRITAMessage("Despawning enemy aircrafts");
+            tts.Speak("Despawning enemy aircrafts");
         }
         else
         {
@@ -266,6 +266,7 @@ public class Contexter : MonoBehaviour
         if (spiltString[0] == "null")
         {
             Debug.LogError("Contexter: No instructor context");
+            chat.AddvRITAMessage("Instructions not understood or not supported, please try again.");
             //tts.Speak("Instructions not understood, please try again.");
         }
         else if (spiltString[0] == "Change")
@@ -299,16 +300,16 @@ public class Contexter : MonoBehaviour
         else if (spiltString[0] == "Spawn")
         {
             SpawnEnemyAI.Instance.spawn = true;
-            tts.Speak("Spawning enemy aircrafts");
+            chat.AddvRITAMessage("Spawning enemy aircrafts");
         }
         else if (spiltString[0] == "Despawn")
         {
             SpawnEnemyAI.Instance.despawn = true;
-            tts.Speak("Despawning enemy aircrafts");
+            chat.AddvRITAMessage("Despawning enemy aircrafts");
         }
         else
         {
-            tts.Speak(response);
+            chat.AddvRITAMessage(response);
         }
     }
 
