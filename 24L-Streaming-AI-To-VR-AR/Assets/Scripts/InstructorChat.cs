@@ -51,7 +51,7 @@ public class InstructorChat : MonoBehaviour
 
     public void Update()
     {
-        if (CameraViews.isChatCameraActive)
+        if (CameraViews.isChatCameraActive && !inputField.isFocused)
         {
             inputField.Select();
         }

@@ -23,6 +23,8 @@ public class ShowSettings : MonoBehaviour
     public GameObject rayInteractorLeft;
     public GameObject rayInteractorRight;
     public GameObject lever;
+    public GameObject flightStick;
+    private Transform originalFlightStickTransform;
     public GameObject joystick;
     public GameObject leftHand;
     public GameObject rightHand;
@@ -173,17 +175,28 @@ public class ShowSettings : MonoBehaviour
 
     void Start()
     {
+        originalFlightStickTransform = flightStick.transform;
+
         changeSettings.started += context =>
         {
             targetObject.SetActive(!targetObject.activeSelf);
+            FixLever();
         };
         changeSettings.performed += context =>
         {
             targetObject.SetActive(!targetObject.activeSelf);
+            FixLever();
         };
         changeSettings.canceled += context =>
         {
             targetObject.SetActive(!targetObject.activeSelf);
+            FixLever();
         };
+    }
+
+    private void FixLever()
+    {
+        flightStick.transform.position = originalFlightStickTransform.position;
+        flightStick.transform.rotation = originalFlightStickTransform.rotation;
     }
 }
