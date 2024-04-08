@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using MGAssets;
+using UnityEngine;
 using UnityEngine.UI;
+using System.Text;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////// Advanced Analogical Panel Script - Version 1.0.190821 - Unity 2018.3.4f1 - Maloke Games 2019
@@ -216,6 +218,47 @@ public class AnalogAdvancedScript : MonoBehaviour
         if (aircraft == null && aircraftRB == null) aircraft = Camera.main.transform;   //If there is no reference set, then it gets the MainCamera
         if (aircraft == null && aircraftRB != null) aircraft = aircraftRB.transform;
     }
+
+    public float GetSpeed()
+    {
+        return speed;
+    }
+
+    public float GetAltitude()
+    {
+        return altitude / 10.0f;
+    }
+
+    public float GetVerticalSpeed()
+    {
+        return vv;
+    }
+
+    public float GetHeading()
+    {
+        return heading;
+    }
+
+    public string GetMovementInformation()
+    {
+        StringBuilder sb = new StringBuilder();
+
+        sb.Append("Speed: ");
+        sb.Append((int)(GetSpeed()));
+        sb.Append(" mph/h\n");
+        sb.Append("Altitude: ");
+        sb.Append((int)(GetAltitude()));
+        sb.Append(" ft\n");
+        sb.Append("Vertical Speed: ");
+        sb.Append((int)(GetVerticalSpeed()));
+        sb.Append(" ft/s\n");
+        sb.Append("Heading: ");
+        sb.Append((int)(GetHeading()));
+        sb.Append(" degrees\n");
+
+        return sb.ToString();
+    }
+
     void OnEnable()
     {
         if (aircraft == null && aircraftRB == null) aircraft = Camera.main.transform;

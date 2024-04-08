@@ -7,7 +7,7 @@ public class ThrottleChange : MonoBehaviour
     
     public InputAction adjustThrottle;
     public GameObject ship;
-    public float [] values = {0.0f, 30.0f, 60.0f, 30.0f, -10.0f};
+    public float [] values = {0.0f, 30.0f, 60.0f, 30.0f, -20.0f};
     private int i = 0;
     void Update()
     {

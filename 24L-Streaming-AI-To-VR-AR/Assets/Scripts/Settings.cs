@@ -11,6 +11,7 @@ public class Settings : MonoBehaviour
     public Toggle tunnelingToggle;
     public TMP_Dropdown ttsNameDropDown;
     public TMP_Dropdown qualityDropDown;
+    public Toggle controllerOrLeverDropDown;
     public Scrollbar volumeSlider;
 
     // Public static variables for the settings
@@ -18,6 +19,7 @@ public class Settings : MonoBehaviour
     public static int textToSpeechVoice = 5;
     public static float Volume = 1.0f;
     public static bool Tunneling = false;
+    public static bool Lever = true;
     public static Settings Instance { get; private set; }
 
     // Private variables for the settings
@@ -124,6 +126,12 @@ public class Settings : MonoBehaviour
         Debug.Log("Cesium graphics quality set to " + CesiumGraphicsQuality + ".");
     }
 
+    public void SetControllerOrLever()
+    {
+        Lever = controllerOrLeverDropDown.isOn;
+        Debug.Log("Controller or Lever set to " + (Lever ? "Lever" : "Controller") + ".");
+    }
+
     /// <summary>
     /// Sets whether the looking movement is using snap or continuous.
     /// </summary>
@@ -162,5 +170,10 @@ public class Settings : MonoBehaviour
     public float GetCesiumGraphicsQuality()
     {
         return CesiumGraphicsQuality;
+    }
+
+    public bool IsLeverOn()
+    {
+        return Lever;
     }
 }

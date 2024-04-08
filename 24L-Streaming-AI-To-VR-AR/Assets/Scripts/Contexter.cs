@@ -51,6 +51,7 @@ public class Contexter : MonoBehaviour
     [SerializeField] public GameObject uiScreen;
     [SerializeField] public InstructorChat chat;
     [SerializeField] public ShipControlModule shipControl;
+    [SerializeField] public AnalogAdvancedScript aas;
 
     static UnityEvent m_MyEvent = new UnityEvent();
 
@@ -349,7 +350,7 @@ public class Contexter : MonoBehaviour
     /// </summary>
     public void SendQuestionInputStringToAI(bool VRuser)
     {
-        ArtificialIntelligence.userInput = xmlShipInformation.text + " " + userInput;
+        ArtificialIntelligence.userInput = xmlShipInformation.text + " " + aas.GetMovementInformation() + " " + userInput;
         ai.SendUserQuestionButtonHandler(VRuser);
     }
 

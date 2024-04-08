@@ -22,7 +22,8 @@
         "SCSM",
         "Unity.Mathematics",
         "Unity.XR.Interaction.Toolkit",
-        "UnityEditor"
+        "UnityEditor",
+        "MGA"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
