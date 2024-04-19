@@ -244,16 +244,16 @@ public class AnalogAdvancedScript : MonoBehaviour
         StringBuilder sb = new StringBuilder();
 
         sb.Append("Speed: ");
-        sb.Append((int)(GetSpeed()));
+        sb.Append(((int)(GetSpeed())));
         sb.Append(" mph/h\n");
         sb.Append("Altitude: ");
         sb.Append((int)(GetAltitude()));
         sb.Append(" ft\n");
         sb.Append("Vertical Speed: ");
-        sb.Append((int)(GetVerticalSpeed()));
+        sb.Append((int)(GetVerticalSpeed()/10.0));
         sb.Append(" ft/s\n");
         sb.Append("Heading: ");
-        sb.Append((int)(GetHeading()));
+        sb.Append((int)((GetHeading() + 360) % 360));
         sb.Append(" degrees\n");
 
         return sb.ToString();
