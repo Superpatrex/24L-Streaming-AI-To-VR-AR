@@ -6,6 +6,10 @@ Welcome to the vRITA, a cutting-edge application built within Unity that combine
 
 This VR Flight Simulator takes your flying experience to the next level by integrating advanced artificial intelligence and a powerful language model. Whether you're a seasoned pilot or a beginner, this application provides a unique and engaging environment for virtual flight.
 
+## Vidoes 
+
+[Demo & Information](https://youtu.be/oiFRRdHeE-k)
+
 ## Features
 
 ### 1. Realistic Flight Simulation
@@ -30,7 +34,7 @@ Follow these steps to set up the Virtual Reality Flight Simulator on your system
 
 1. Clone this repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/vr-flight-simulator.git
+   git clone https://github.com/your-username/24L-Streaming-AI-To-VR-AR.git
    ```
 
 2. Open the project in Unity Hub (version 3.5.1 recommended).
