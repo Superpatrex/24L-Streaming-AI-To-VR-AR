@@ -11,6 +11,7 @@ using TMPro;
 using Utility;
 using CesiumForUnity;
 using Meta.WitAi.TTS.Utilities;
+using SciFiShipController;
 
 public class Contexter : MonoBehaviour
 {   
@@ -35,10 +36,12 @@ public class Contexter : MonoBehaviour
     public static bool hasVRUserResponseContext = false;
     public static bool hasVRUserResponseQuestion = false;
     public static bool hasVRUserResponseScenario = false;
+    public static bool hasVRUserResponseWeather = false;
     public static bool hasInstructorResponseContext = false;
     public static bool hasInstructorLocationChange = false;
     public static bool hasInstructorResponseQuestion = false;
     public static bool hasInstructorResponseScenario = false;
+    public static bool hasInstructorResponseWeather = false;
     [SerializeField] public TMP_Text transcriptText;
     [SerializeField] public TMP_Text xmlShipInformation;
     [SerializeField] public TTSSpeaker tts;
@@ -47,7 +50,8 @@ public class Contexter : MonoBehaviour
     [SerializeField] public GameObject entireShip;
     [SerializeField] public GameObject uiScreen;
     [SerializeField] public InstructorChat chat;
-
+    [SerializeField] public ShipControlModule shipControl;
+    [SerializeField] public AnalogAdvancedScript aas;
 
     static UnityEvent m_MyEvent = new UnityEvent();
 
@@ -71,6 +75,7 @@ public class Contexter : MonoBehaviour
         else if (hasVRUserResponseQuestion)
         {
             hasVRUserResponseQuestion = false;
+            Debug.Log("I should be saying this " + response);
             var chunks = SplitIntoSpeakableChunks(response);
             StartCoroutine(SpeakChunks(chunks));
         }
@@ -88,32 +93,58 @@ public class Contexter : MonoBehaviour
                 tts.Speak("Error updating scenario");
             }
         }
+        else if (hasVRUserResponseWeather)
+        {
+            hasVRUserResponseWeather = false;
+            WeatherAPI.isVRUser = null;
+            tts.Speak(response);
+        }
 
         if (hasInstructorResponseContext)
         {
             hasInstructorResponseContext = false;
             ActOnContextInstructorUser();
         }
-        else if (hasInstructorLocationChange)
-        {
-            hasInstructorLocationChange = false;
-        }
         else if (hasInstructorResponseQuestion)
         {
             hasInstructorResponseQuestion = false;
+            chat.AddvRITAMessage(response);
         }
         else if (hasInstructorResponseScenario)
         {
             hasInstructorResponseScenario = false;
-            ChangeLocationFromXML();
+            if (UpdateCurrentScenario())
+            {
+                chat.AddvRITAMessage("Scenario successfully updated");
+            }
+            else
+            {
+                chat.AddvRITAMessage("Error updating scenario");
+            }
+        }
+        else if (hasInstructorResponseWeather)
+        {
+            hasInstructorResponseWeather = false;
+            WeatherAPI.isVRUser = null;
+            chat.AddvRITAMessage(response);
         }
 
-        if (WeatherAPI.weatherIsReadyUser)
+        if (WeatherAPI.weatherIsReadyVRUser)
         {
-            WeatherAPI.weatherIsReadyUser = false;
-            Debug.LogError(WeatherAPI.ReturnJsonString);
-            tts.Speak(WeatherAPI.ReturnJsonString);
+            WeatherAPI.weatherIsReadyVRUser = false;
+            //Debug.LogError(WeatherAPI.ReturnJsonString);
+            //tts.Speak(WeatherAPI.ReturnJsonString);
+            SendWeatherInputStringToAI(true);
         }
+        else if (WeatherAPI.weatherIsReadyInstructor)
+        {
+            WeatherAPI.weatherIsReadyInstructor = false;
+            //Debug.LogError(WeatherAPI.ReturnJsonString);
+            //chat.AddvRITAMessage(WeatherAPI.ReturnJsonString);
+            SendWeatherInputStringToAI(false);
+        }
+
+        
     }
 
     private IEnumerator SpeakChunks(List<string> chunks)
@@ -169,7 +200,7 @@ public class Contexter : MonoBehaviour
         if (spiltString[0] == "null")
         {
             Debug.LogError("Contexter: No context");
-            tts.Speak("Instructions not understood, please try again.");
+            tts.Speak("Instructions not understood or not supported, please try again.");
         }
         else if (spiltString[0] == "Change")
         {
@@ -178,6 +209,7 @@ public class Contexter : MonoBehaviour
             geoReference.height = (float)0;
             //Debug.Log("Contexter: Changed location to: " + geoReference.latitude + " " + geoReference.longitude);
             api.UpdateWeatherImmediately();
+            Debug.Log("I should be saying this " + response);
             tts.Speak("Changing Location");
         }
         else if (spiltString[0] == "Weather")
@@ -196,8 +228,8 @@ public class Contexter : MonoBehaviour
                 lon = ((float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1))).ToString();
             }
 
-            WeatherAPI.isInUse = true;
-            StartCoroutine(WeatherAPI.GetApiData(lat, lon));
+            //WeatherAPI.isInUse = true;
+            StartCoroutine(WeatherAPI.GetApiData(lat, lon, true));
             //tts.Speak("The weather there is lovely!");
         }
         else if (spiltString[0] == "Question")
@@ -212,12 +244,12 @@ public class Contexter : MonoBehaviour
         else if (spiltString[0] == "Spawn")
         {
             SpawnEnemyAI.Instance.spawn = true;
-            chat.AddvRITAMessage("Spawning enemy aircrafts");
+            tts.Speak("Spawning enemy aircrafts");
         }
         else if (spiltString[0] == "Despawn")
         {
             SpawnEnemyAI.Instance.despawn = true;
-            chat.AddvRITAMessage("Despawning enemy aircrafts");
+            tts.Speak("Despawning enemy aircrafts");
         }
         else
         {
@@ -237,6 +269,7 @@ public class Contexter : MonoBehaviour
         if (spiltString[0] == "null")
         {
             Debug.LogError("Contexter: No instructor context");
+            chat.AddvRITAMessage("Instructions not understood or not supported, please try again.");
             //tts.Speak("Instructions not understood, please try again.");
         }
         else if (spiltString[0] == "Change")
@@ -246,6 +279,8 @@ public class Contexter : MonoBehaviour
             geoReference.height = (float)0;
             //Debug.Log("Contexter: Changed location to: " + geoReference.latitude + " " + geoReference.longitude);
             api.UpdateWeatherImmediately();
+            chat.AddvRITAMessage("Changing Location");
+            tts.Speak("Instructor changed location");
             //tts.Speak("Changing Location");
         }
         else if (spiltString[0] == "Weather")
@@ -254,7 +289,7 @@ public class Contexter : MonoBehaviour
             string lon = ((float)(float.Parse(spiltString[3]) * ((spiltString[4] == "E") ? 1 : -1))).ToString();
             //WeatherAPI.isInUse = true;
 
-            //StartCoroutine(WeatherAPI.GetApiData(lat, lon));
+            StartCoroutine(WeatherAPI.GetApiData(lat, lon, false));
             //tts.Speak("The weather there is lovely!");
         }
         else if (spiltString[0] == "Question")
@@ -265,20 +300,23 @@ public class Contexter : MonoBehaviour
         {
             Debug.Log("Current Scenario code: " + spiltString[1]);
             SendScenarioInputStringToAI(spiltString[1], false);
+            tts.Speak("Instructor changed the scenario to " + spiltString[1]);
         }
         else if (spiltString[0] == "Spawn")
         {
             SpawnEnemyAI.Instance.spawn = true;
-            tts.Speak("Spawning enemy aircrafts");
+            chat.AddvRITAMessage("Spawning enemy aircrafts");
+            tts.Speak("Instructor spawned enemy aircrafts");
         }
         else if (spiltString[0] == "Despawn")
         {
             SpawnEnemyAI.Instance.despawn = true;
-            tts.Speak("Despawning enemy aircrafts");
+            chat.AddvRITAMessage("Despawning enemy aircrafts");
+            tts.Speak("Instructor despawned enemy aircrafts");
         }
         else
         {
-            tts.Speak(response);
+            chat.AddvRITAMessage(response);
         }
     }
 
@@ -293,7 +331,7 @@ public class Contexter : MonoBehaviour
             return;
         }
 
-        Debug.Log("Contexter: Sending context");
+        Debug.Log("Contexter: Sending context " + (VRUser ? "VR User" : "Instructor") + " context to AI");
         userInput = transcriptText.text;
         SendContextInputStringToAI(VRUser);
     }
@@ -304,7 +342,6 @@ public class Contexter : MonoBehaviour
     public void SendContextInputStringToAI(bool VRuser)
     {
         ArtificialIntelligence.userInput = userInput;
-        ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
         ai.SendContexterButtonHandler(VRuser);
     }
 
@@ -313,9 +350,15 @@ public class Contexter : MonoBehaviour
     /// </summary>
     public void SendQuestionInputStringToAI(bool VRuser)
     {
-        ArtificialIntelligence.userInput = xmlShipInformation.text + " " + userInput;
-        ArtificialIntelligence.returnType = ArtificialIntelligence.AIReturnType.RETURN_STRING;
+        ArtificialIntelligence.userInput = xmlShipInformation.text + " " + aas.GetMovementInformation() + " " + userInput;
         ai.SendUserQuestionButtonHandler(VRuser);
+    }
+
+    public void SendWeatherInputStringToAI(bool VRuser)
+    {
+        ArtificialIntelligence.userInput = WeatherAPI.ReturnJsonString + " " + userInput;
+        //Debug.Log(ArtificialIntelligence.userInput);
+        ai.SendWeatherButtonHandler(VRuser);
     }
 
     /// <summary>
@@ -368,13 +411,19 @@ public class Contexter : MonoBehaviour
             return false;
         }
 
-        if (tempShipStructure.craft.aircraftLocation.enemyAircraft == null || tempShipStructure.craft.aircraftLocation.enemyAircraft.number == 0)
+        if (tempShipStructure.craft.aircraftLocation.enemyAircraft == null)
         {
             Debug.Log("Contexter: enemy aircraft will not be spawned");
+        }
+        else if (tempShipStructure.craft.aircraftLocation.enemyAircraft.areEnemies == false)
+        {
+            Debug.Log("Contexter: enemy aircraft are being deleted");
+            SpawnEnemyAI.Instance.despawn = SpawnEnemyAI.Instance.shipFlag;
         }
         else
         {
             Debug.Log("Contexter: enemy aircraft will be spawned");
+            SpawnEnemyAI.Instance.spawn = true;
         }
 
         Debug.Log("Contexter: Ship Name: " + tempShipStructure.craft.name + " update in progress");
@@ -383,16 +432,46 @@ public class Contexter : MonoBehaviour
         geoReference.latitude = tempShipStructure.craft.aircraftLocation.latitude;
         geoReference.longitude = tempShipStructure.craft.aircraftLocation.longitude;
         entireShip.transform.position = new Vector3(0, tempShipStructure.craft.aircraftLocation.altitude, 0);
-        return true;
-    }
 
-    public void ChangeLocationFromXML()
-    {
-        geoReference.latitude = MongoDBAPI.shipScenario.craft.aircraftLocation.latitude;
-        geoReference.longitude = MongoDBAPI.shipScenario.craft.aircraftLocation.longitude;
+        if (tempShipStructure.craft.weapons == null)
+        {
+            Debug.LogError("Contexter: ship weapons are null");
+            return false;
+        }
         
-        // Change this to work both with the user and the instructor
-        chat.AddvRITAMessage("Changing the scenario");
-        Debug.Log("Contexter: Changing the scenario");
+        List<SciFiShipController.Weapon> weapons = shipControl.GetWeapons();
+
+        foreach (Weapon w in weapons)
+        {
+            if (w.name == "Left Gun")
+            {
+                w.ammunition = tempShipStructure.craft.weapons.leftGun.roundsLeft;
+                w.reloadTime = tempShipStructure.craft.weapons.leftGun.timeBetweenFiring;
+                w.inaccuracy = tempShipStructure.craft.weapons.leftGun.inaccuracy;
+                w.inaccuracy = tempShipStructure.craft.weapons.leftGun.weaponType;
+            }
+            else if (w.name == "Right Gun")
+            {
+                w.ammunition = tempShipStructure.craft.weapons.rightGun.roundsLeft;
+                w.reloadTime = tempShipStructure.craft.weapons.rightGun.timeBetweenFiring;
+                w.inaccuracy = tempShipStructure.craft.weapons.rightGun.inaccuracy;
+                w.inaccuracy = tempShipStructure.craft.weapons.rightGun.weaponType;
+            }
+            else if (w.name == "Left Missile")
+            {
+                w.ammunition = tempShipStructure.craft.weapons.leftMissle.roundsLeft;
+                w.reloadTime = tempShipStructure.craft.weapons.leftMissle.timeBetweenFiring;
+                w.inaccuracy = tempShipStructure.craft.weapons.leftMissle.inaccuracy;
+                w.inaccuracy = tempShipStructure.craft.weapons.leftMissle.weaponType;
+            }
+            else if (w.name == "Right Missile")
+            {
+                w.ammunition = tempShipStructure.craft.weapons.rightMissle.roundsLeft;
+                w.reloadTime = tempShipStructure.craft.weapons.rightMissle.timeBetweenFiring;
+                w.inaccuracy = tempShipStructure.craft.weapons.rightMissle.inaccuracy;
+                w.inaccuracy = tempShipStructure.craft.weapons.rightMissle.weaponType;
+            }
+        }
+        return true;
     }
 }

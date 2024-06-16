@@ -11,18 +11,22 @@ public class Settings : MonoBehaviour
     public Toggle tunnelingToggle;
     public TMP_Dropdown ttsNameDropDown;
     public TMP_Dropdown qualityDropDown;
+    public Toggle controllerOrLeverDropDown;
     public Scrollbar volumeSlider;
 
     // Public static variables for the settings
-    public static float CesiumGraphicsQuality = 1f;
+    public static float CesiumGraphicsQuality = 8f;
     public static int textToSpeechVoice = 5;
     public static float Volume = 1.0f;
     public static bool Tunneling = false;
+    public static bool Lever = true;
     public static Settings Instance { get; private set; }
 
     // Private variables for the settings
     private static readonly int CesiumGraphicsQualityMax = 17;
     private static readonly int CesiumGraphicsQualityMin = 0;
+
+    public bool firstTime = true;
 
     private static readonly string[] TTSNames = {
         "Skully",
@@ -60,7 +64,30 @@ public class Settings : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+        }
+    }
+
+    public void Update()
+    {
+        if (tunnelingToggle != null)
+        {
+            tunnelingToggle.isOn = Tunneling;
+        }
+
+        if (ttsNameDropDown != null)
+        {
+            ttsNameDropDown.value = textToSpeechVoice;
+        }
+
+        if (qualityDropDown != null)
+        {
+            qualityDropDown.value = (int)Math.Log(CesiumGraphicsQuality, 2);
+        }
+
+        if (volumeSlider != null)
+        {
+            volumeSlider.value = Volume;
         }
     }
 
@@ -72,7 +99,10 @@ public class Settings : MonoBehaviour
             throw new Exception("One or more UI elements are not set in the inspector. Fix this before continuing.");
         }
 
-        ttsNameDropDown.value = textToSpeechVoice;
+        if (ttsNameDropDown != null)
+        {
+            ttsNameDropDown.value = textToSpeechVoice;
+        }
     }
     
     /// <summary>
@@ -94,6 +124,12 @@ public class Settings : MonoBehaviour
         }
 
         Debug.Log("Cesium graphics quality set to " + CesiumGraphicsQuality + ".");
+    }
+
+    public void SetControllerOrLever()
+    {
+        Lever = controllerOrLeverDropDown.isOn;
+        Debug.Log("Controller or Lever set to " + (Lever ? "Lever" : "Controller") + ".");
     }
 
     /// <summary>
@@ -134,5 +170,10 @@ public class Settings : MonoBehaviour
     public float GetCesiumGraphicsQuality()
     {
         return CesiumGraphicsQuality;
+    }
+
+    public bool IsLeverOn()
+    {
+        return Lever;
     }
 }

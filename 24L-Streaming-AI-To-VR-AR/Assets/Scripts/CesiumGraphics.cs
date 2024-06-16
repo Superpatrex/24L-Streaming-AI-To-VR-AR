@@ -23,6 +23,9 @@ public class CesiumGraphics : MonoBehaviour
 
     public static void SetCesiumGraphicsQuality()
     {
-        tileset.maximumScreenSpaceError = Settings.CesiumGraphicsQuality;
+        if (tileset != null && tileset.maximumScreenSpaceError != Settings.CesiumGraphicsQuality)
+        {
+            tileset.maximumScreenSpaceError = Settings.CesiumGraphicsQuality;
+        }
     }
 }

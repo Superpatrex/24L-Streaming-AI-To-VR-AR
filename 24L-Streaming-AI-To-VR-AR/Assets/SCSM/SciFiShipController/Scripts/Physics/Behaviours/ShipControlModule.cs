@@ -1879,6 +1879,11 @@ namespace SciFiShipController
             }
         }
 
+        public List<Weapon> GetWeapons()
+        {
+            return shipInstance.weaponList;
+        }
+
         /// <summary>
         /// Sends the specified input to the ship control module in order to control the ship.
         /// By default all data inputs should be enabled even when sending 0 values.

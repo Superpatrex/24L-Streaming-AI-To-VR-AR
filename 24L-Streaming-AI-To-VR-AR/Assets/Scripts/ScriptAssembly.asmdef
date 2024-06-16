@@ -21,7 +21,9 @@
         "Unity.RenderPipelines.Core.Runtime",
         "SCSM",
         "Unity.Mathematics",
-        "Unity.XR.Interaction.Toolkit"
+        "Unity.XR.Interaction.Toolkit",
+        "UnityEditor",
+        "MGA"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

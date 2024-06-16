@@ -6,6 +6,23 @@ public class ShowControls : MonoBehaviour
 {
     public GameObject controls;
     public GameObject menu;
+
+    public static ShowControls Instance;
+    [SerializeField] public AircraftAPI api;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +45,15 @@ public class ShowControls : MonoBehaviour
     public void Back()
     {
         // Show menu, hide controls
-        controls.SetActive(false);
         menu.gameObject.SetActive(true);
+        controls.SetActive(false);
+    }
+
+    public void BackToStart()
+    {
+        Destroy(ShowControls.Instance.gameObject);
+        Destroy(SpawnEnemyAI.Instance.gameObject);
+        api.SaveAircraft();
+        Loader.Load(Loader.Scene.StartMenu);
     }
 }

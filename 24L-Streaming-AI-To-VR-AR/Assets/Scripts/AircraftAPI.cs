@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Utility;
 using CesiumForUnity;
+using SciFiShipController;
 
 public class AircraftAPI : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class AircraftAPI : MonoBehaviour
     [SerializeField] public float timePerUpdate = 10.0f;
 
     [SerializeField] public XMLHolder holder;
+    [SerializeField] public ShipControlModule shipControl;
     private XMLShipStructure shipInformation;
 
     // Private fields
@@ -49,6 +51,62 @@ public class AircraftAPI : MonoBehaviour
             shipInformation.craft.aircraftLocation.longitude = (float)georeference.longitude;
             shipInformation.craft.aircraftLocation.altitude = (float)georeference.height;
             timeSinceLastUpdate = 0.0f;
+
+            List<Weapon> weapons = shipControl.GetWeapons();
+
+            foreach (Weapon w in weapons)
+            {
+                if (shipInformation == null)
+                {
+                    Debug.Log("Ship Information is null");
+                }
+                else if (shipInformation.craft == null)
+                {
+                    Debug.Log("Craft is null");
+                }
+                else if (shipInformation.craft.weapons == null)
+                {
+                    Debug.Log("Weapons is null");
+                }
+                else if (shipInformation.craft.weapons.leftGun == null)
+                {
+                    Debug.Log("Left Gun is null");
+                }
+                else if (shipInformation.craft.weapons.rightGun == null)
+                {
+                    Debug.Log("Right Gun is null");
+                }
+                else if (shipInformation.craft.weapons.leftMissle == null)
+                {
+                    Debug.Log("Left Missile is null");
+                }
+                else if (shipInformation.craft.weapons.rightMissle == null)
+                {
+                    Debug.Log("Right Missile is null");
+                }
+
+                if (w.name == "Left Gun")
+                {
+                    shipInformation.craft.weapons.leftGun.roundsLeft = w.ammunition;
+                    //Debug.Log("Left Gun: " + w.ammunition);
+                }
+                else if (w.name == "Right Gun")
+                {
+                    shipInformation.craft.weapons.rightGun.roundsLeft = w.ammunition;
+                    //Debug.Log("Right Gun: " + w.ammunition);
+                }
+                else if (w.name == "Left Missile")
+                {
+                    shipInformation.craft.weapons.leftMissle.roundsLeft = w.ammunition;
+                    //Debug.Log("Left Missile: " + w.ammunition);
+                }
+                else if (w.name == "Right Missile")
+                {
+                    shipInformation.craft.weapons.rightMissle.roundsLeft = w.ammunition;
+                    //Debug.Log("Right Missile: " + w.ammunition);
+                }
+            }
+
             holder.shipInformation.text = XMLSerializer.WriteToXmlStringShipInformation(shipInformation);
             //Debug.Log("Updated");
         }
@@ -68,10 +126,14 @@ public class AircraftAPI : MonoBehaviour
 
     public void SaveAircraft()
     {
+        /*
         shipInformation.craft.aircraftLocation.latitude = (float)georeference.latitude;
         shipInformation.craft.aircraftLocation.longitude = (float)georeference.longitude;
         shipInformation.craft.aircraftLocation.altitude = (float)georeference.height;
         holder.shipInformation.text = XMLSerializer.WriteToXmlStringShipInformation(shipInformation);
+        */
+        this.timeSinceLastUpdate = this.timePerUpdate;
+        Update();
         //Debug.Log("Updated on save");
     }
 

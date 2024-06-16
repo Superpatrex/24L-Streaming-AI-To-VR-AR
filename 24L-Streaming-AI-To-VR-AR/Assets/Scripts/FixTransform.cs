@@ -9,27 +9,60 @@ public class FixTransform : MonoBehaviour
     public GameObject camera;
 
     public GameObject ship;
+    //public GameObject head;
+    //public
 
     /// <summary>
     /// Start is called before the first frame update
     /// </summary>
     void Start()
     {
-        FixCameraAndHands();
+        //FixCameraAndHands();
     }
 
     /// <summary>
     /// Fixes the Camera and Hands when the script is started
     /// </summary>
-    public void FixCameraAndHands()
+    public void Up()
     {
-        // This fixes the issues with the camera and hands not being in the correct position
-        hands.transform.position = ship.transform.position + new Vector3(0, -.18f, 4.5f);
-        camera.transform.position = ship.transform.position + new Vector3(0, -.18f, 4.5f);
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0, .1f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
+    }
 
-        // Parent the camera and hands to the ship
-        hands.transform.SetParent(ship.transform, true);
-        camera.transform.SetParent(ship.transform, true);
+    public void Down()
+    {
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0, -.1f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
+    }
+
+    public void Right()
+    {
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(.1f, 0f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
+    }
+
+    public void Left()
+    {
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(-.1f, 0f, 0f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
+    }
+
+    public void Forward()
+    {
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0f, 0f, .1f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
+    }
+
+    public void Backward()
+    {
+        Vector3 direction = ship.transform.TransformDirection(new Vector3(0f, 0f, -.1f));
+        hands.transform.position += direction;
+        camera.transform.position += direction;
     }
   
 }

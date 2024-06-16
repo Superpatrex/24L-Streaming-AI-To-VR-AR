@@ -36,7 +36,11 @@ public class GameStartMenu : MonoBehaviour
             item.onClick.AddListener(EnableMainMenu);
         }
 
-        tts.Speak("Hello! Welcome to the v Reehta. The virtual reality immersive training application. Please select an option to continue.");
+        if (Settings.Instance.firstTime)
+        {
+            tts.Speak("Hello! Welcome to the v Reehta. The virtual reality immersive training application. Please select an option to continue.");
+            Settings.Instance.firstTime = false;
+        }
     }
 
     public void QuitGame()

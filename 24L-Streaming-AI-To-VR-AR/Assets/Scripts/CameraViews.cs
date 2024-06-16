@@ -15,6 +15,9 @@ public class CameraViews : MonoBehaviour
 
     private float oRotation = -90;
     private float fRotation = -90;
+
+    public static bool isChatCameraActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,39 +25,42 @@ public class CameraViews : MonoBehaviour
         SpectorCamera.enabled = true;
         ChatCamera.enabled = false;
         CurrentCamera = SpectorCamera;
-        LastCamera = PlaneCamera;
+        //LastCamera = PlaneCamera;
         ThisInstance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha1))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.LeftBracket))
         {
             CurrentCamera.enabled = false;
             CurrentCamera = SpectorCamera;
             CurrentCamera.enabled = true;
+            isChatCameraActive = false;
         }
 
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha2))
+        if (UnityEngine.Input.GetKeyDown(KeyCode.RightBracket))
         {   
-            CurrentCamera.enabled = false;
-            CurrentCamera = PlaneCamera;
-            CurrentCamera.enabled = true;
-        }
-
-        if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            CurrentCamera.enabled = false;
+            //CurrentCamera.enabled = false;
             CurrentCamera = ChatCamera;
             CurrentCamera.enabled = true;
+            isChatCameraActive = true;
         }
 
-        if (SpectorCamera.enabled)
-        {
+        //if (UnityEngine.Input.GetKeyDown(KeyCode.F3))
+        //{
+        //    CurrentCamera.enabled = false;
+        //    CurrentCamera = ChatCamera;
+        //    CurrentCamera.enabled = true;
+        //}
 
-        }
+        //if (SpectorCamera.enabled)
+        //{
+        //
+        //}
 
+        /*
         if (PlaneCamera.enabled)
         {
             if (UnityEngine.Input.GetKey(KeyCode.LeftArrow))
@@ -74,5 +80,6 @@ public class CameraViews : MonoBehaviour
             //PlaneCamera.transform.position = Quaternion.Euler(0, fRotation, 0) * new Vector3(0, 1.5f, -3.5f);
             //PlaneCamera.transform.rotation = Quaternion.LookRotation(SpectorCamera.transform.position - PlaneCamera.transform.position + new Vector3(-2, 0, 0));
         }
+        */
     }
 }

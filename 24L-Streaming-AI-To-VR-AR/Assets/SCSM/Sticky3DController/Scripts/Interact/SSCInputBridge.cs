@@ -73,12 +73,12 @@ namespace scsmmedia
         /// <summary>
         /// Interactive Readable left-right data, to be send to the input axis of the Sci-Fi Ship Controller player ship
         /// </summary>
-        [SerializeField] protected InputAxis inputAxisX = InputAxis.None;
+        [SerializeField] public InputAxis inputAxisX = InputAxis.None;
 
         /// <summary>
         /// Interactive Readable forward-back data, to be send to the input axis of the Sci-Fi Ship Controller player ship
         /// </summary>
-        [SerializeField] protected InputAxis inputAxisZ = InputAxis.None;
+        [SerializeField] public InputAxis inputAxisZ = InputAxis.None;
 
         /// <summary>
         /// The player ship from your scene which should contain a ShipControlModule on the same gameobject.
@@ -92,8 +92,8 @@ namespace scsmmedia
         protected bool isInitialised = false;
         protected bool isPlayerInputAttached = false;
         protected bool isConfigured = false;
-        protected int inputAxisXInt = InputAxisNoneInt;
-        protected int inputAxisZInt = InputAxisNoneInt;
+        public int inputAxisXInt = InputAxisNoneInt;
+        public int inputAxisZInt = InputAxisNoneInt;
 
         #if SCSM_SSC
         protected ShipControlModule shipControlModule = null;
